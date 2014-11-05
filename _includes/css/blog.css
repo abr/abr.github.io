@@ -1,0 +1,10 @@
+.post h2,
+.post small {
+    display: inline-block;
+}
+
+.post h2 {
+    font-size: 40px;
+    line-height: 1.4;
+    padding-bottom: 14px;
+}

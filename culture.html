@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="container main">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <ol>
+        {% for point in site.culture %}
+        <li>
+          <h2>{{ point.title }}</h2>
+          <p>{{ point.content }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</div>

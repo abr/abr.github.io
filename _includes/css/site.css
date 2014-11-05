@@ -1,0 +1,26 @@
+/* Padding below the footer and lighter body text */
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+.img-bordered {
+    border: 4px solid #222;
+}
+
+.container.main {
+    padding-top: 100px;
+}
+
+.emphasize-first > :first-child {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .emphasize-first > :first-child {
+        font-size: 21px;
+    }
+}

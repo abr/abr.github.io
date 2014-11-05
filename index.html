@@ -1,0 +1,72 @@
+---
+layout: default
+title: Applied Brain Research
+carousel:
+  - title: Suprisingly good at AI and robotics
+    img: ai-robotics.jpg
+    text: >
+      Our goal is to build the best integrated AI systems,
+      ultimately resulting in devices that you can work with
+      in the real world.
+    url: projects
+    button: Current projects
+  - title: Inspired by the brain.
+    img: brain.jpg
+    text: >
+      The team behind ABR has been building
+      models of the brain for the past decade.
+      Now it's time to apply what we've learned.
+    url: team
+    button: Meet the team
+  - title: Open culture
+    img: open.jpg
+    text: >
+      We use and are inspired by
+      open source software,
+      open access in science,
+      and the open data movement.
+    url: culture
+    button: Our culture
+---
+<div id="index-carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#index-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#index-carousel" data-slide-to="1"></li>
+    <li data-target="#index-carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    {% for item in page.carousel %}
+    <div class="item{% if forloop.index0 == 0 %} active{% endif %}">
+      <img src="{{ site.baseurl }}/img/{{ item.img }}" alt="">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>{{ item.title }}</h1>
+          <p>{{ item.text }}</p>
+          <p><a class="btn btn-lg btn-primary" href="{{ site.baseurl }}/{{ item.url }}" role="button">{{ item.button }}</a></p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <a class="left carousel-control" href="#index-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#index-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container marketing">
+  <div class="row">
+    {% for project in site.projects limit:3 %}
+    <div class="col-lg-4">
+      <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ project.img }}" alt="" style="width: 140px; height: 140px;">
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.pitch }}</p>
+      <p><a class="btn btn-default" href="{{ site.baseurl }}/projects/#{{ project.title | slugify }}" role="button">Learn more &raquo;</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

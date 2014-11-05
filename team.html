@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="container main team">
+  {% for person in site.team %}
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img class="center-block img-circle img-responsive" src="{{ site.baseurl }}/img/{{ person.img }}" alt="">
+      <h2>{{ person.name }}</h2>
+      <p>{{ person.job }}</p>
+      <small><a href="{{ person.homepage }}">Website</a> &middot; <a href="mailto:{{ person.email }}">Email</a></small>
+    </div>
+    <div class="col-md-8">
+      {{ person.content }}
+    </div>
+  </div>
+  <hr>
+  {% endfor %}
+</div>
