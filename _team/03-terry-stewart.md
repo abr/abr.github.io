@@ -22,17 +22,18 @@ determine the quantitative predictions of these theories. These models
 should also be _mechanistic_. That is, they should be process models
 where the behaviour of the overall system is caused by the interaction
 of internal components over time. These components should then
-correspond to the components of the real system. To achieve this, his
-main research interests are in the development of modelling tools to
+correspond to the components of the real system. To achieve this, he
+develops modelling tools to
 support large-scale cognitive models. This has involved both
 high-level cognitive architectures (such as ACT-R) and detailed neural
-models (such as the Neural Engineering Framework). Of particular
-interest is models involving cognitive reasoning, experience-based
-learning, and reinforcement learning to interact with a complex
-environment. In concert with this, Terry has worked on statistical tools
-for comparing modelling results with empirical results, and how such
+models (such as the Neural Engineering Framework and Nengo). Of particular
+interest to him are models involving cognitive reasoning, experience-based
+learning, and reinforcement learning. In concert with this, Terry has 
+worked on statistical tools
+for comparing modelling results with empirical results, and he has clarified
+how such
 results should be interpretted. In particular, instead of the standard
 approaches of finding best-fit parameter settings based on minimizing
-the mean squared error, he advocate finding a range of parameter
-settings for which the model and reality are not statistically
+the mean squared error, he advocates finding a range of parameter
+settings for which the model and reality are _not_ statistically
 significantly different.
