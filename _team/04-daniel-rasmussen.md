@@ -2,8 +2,8 @@
 name: Dr. Daniel Rasmussen
 job: Co-founder
 img: dan.jpg
-homepage: https://www.researchgate.net/profile/Daniel_Rasmussen/
-email: drasmuss@uwaterloo.ca
+homepage: http://www.drasmussen.org
+email: drasmussen@princeton.edu
 ---
 
 Daniel Rasmussen is interested in general intelligence: what is it,
