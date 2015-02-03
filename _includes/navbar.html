@@ -23,6 +23,9 @@
               <a href="{{ site.baseurl }}/{{ collection[0] }}">{{ collection[0] | capitalize }}</a>
             </li>
             {% endfor %}
+            <li{% if page.path == "contact.html" %} class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
