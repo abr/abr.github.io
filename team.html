@@ -6,12 +6,15 @@ layout: default
   <div class="row">
     <div class="col-md-4 text-center">
       <img class="center-block img-circle img-responsive" src="{{ site.baseurl }}/img/{{ person.img }}" alt="">
-      <h2>{{ person.name }}</h2>
-      <p>{{ person.job }}</p>
-      <small><a href="{{ person.homepage }}">Website</a> &middot; <a href="mailto:{{ person.email }}">Email</a></small>
     </div>
     <div class="col-md-8">
-      {{ person.content }}
+      <h2>{{ person.name }} <small>{{ person.job }}</small></h2>
+      <a class="btn btn-default" href="{{ person.homepage }}"> Website</a>
+      <a class="btn btn-default" href="mailto:{{ person.email }}">Email</a>
+      <button class="btn btn-default" data-toggle="collapse" data-target="#{{ person.name | slugify }}">Bio <span class="caret"></span></button>
+      <div class="collapse" id="{{ person.name | slugify }}">
+        {{ person.content }}
+      </div>
     </div>
   </div>
   <hr>
