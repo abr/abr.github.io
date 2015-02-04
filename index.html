@@ -5,7 +5,7 @@ extrajs:
   - index.js
 carousel:
   - title: Suprisingly good at AI and robotics
-    img: ai-robotics.jpg
+    img: ai-robotics
     text: >
       Our goal is to build the best integrated AI systems,
       ultimately resulting in devices that you can work with
@@ -13,7 +13,7 @@ carousel:
     url: projects
     button: Current projects
   - title: Inspired by the brain.
-    img: brain.jpg
+    img: brain
     text: >
       The team behind ABR has been building
       models of the brain for the past decade.
@@ -21,7 +21,7 @@ carousel:
     url: team
     button: Meet the team
   - title: Open culture
-    img: open.jpg
+    img: open
     text: >
       We use and are inspired by
       open source software,
@@ -38,8 +38,7 @@ carousel:
   </ol>
   <div class="carousel-inner" role="listbox">
     {% for item in page.carousel %}
-    <div class="item{% if forloop.index0 == 0 %} active{% endif %}">
-      <img src="{{ site.baseurl }}/img/{{ item.img }}" alt="">
+    <div class="item {{ item.img }}{% if forloop.index0 == 0 %} active{% endif %}">
       <div class="container">
         <div class="carousel-caption">
           <h1>{{ item.title }}</h1>
