@@ -1,6 +1,6 @@
 ---
 name: Dr. Chris Eliasmith
-job: Chief Technology Executive Officer
+job: Co-founder
 img: chris.jpg
 homepage: http://arts.uwaterloo.ca/~celiasmi/
 email: chris.eliasmith@appliedbrainresearch.com

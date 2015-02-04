@@ -1,6 +1,6 @@
 ---
 name: Peter Suma
-job: Chief Commercial Executive Officer
+job: Co-founder
 img: pete.jpg
 homepage: http://ca.linkedin.com/in/petersuma/
 email: peter.suma@appliedbrainresearch.com
