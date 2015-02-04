@@ -64,7 +64,9 @@ carousel:
   <div class="row">
     {% for project in site.projects limit:3 %}
     <div class="col-lg-4">
-      <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ project.img }}" alt="" style="width: 140px; height: 140px;">
+      <a href="{{ site.baseurl }}/projects/#{{ project.title | slugify }}">
+        <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ project.img }}" alt="" style="width: 140px; height: 140px;">
+      </a>
       <h2>{{ project.title }}</h2>
       <p>{{ project.pitch }}</p>
       <p><a class="btn btn-default" href="{{ site.baseurl }}/projects/#{{ project.title | slugify }}" role="button">Learn more &raquo;</a></p>
