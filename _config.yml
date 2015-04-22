@@ -16,6 +16,8 @@ collections:
     output: false
   team:
     output: false
+  press:
+    output: false
 
 permalink: pretty
 
