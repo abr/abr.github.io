@@ -11,5 +11,4 @@ for scientists to study
 the behavioural consequences of brain damage
 in a safe, simulated environment,
 without damaging a real brain.
-It will provide new insights into how the brain actually works
-and potentially revolutionize the way we treat brain disorders.
+It will provide new insights into how the brain actually works.
