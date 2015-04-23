@@ -3,6 +3,14 @@ layout: default
 abr:
   - source: PR Newswire
     url: http://www.prnewswire.com/news-releases/oces-discovery-celebrates-10-years-of-innovation-with-largest-ever-show-500788531.html
+  - source: UWaterloo on How to Build a Brain
+    url: https://uwaterloo.ca/arts/news/how-build-brain-chris-eliasmith-publishes-book-and-shares
+  - source: UWaterloo on Stephen Hawking's Brave New World
+    url: https://uwaterloo.ca/news/news/waterloo-professor-co-hosts-new-stephen-hawking-tv-series
+  - source: UWaterloo on John C. Polanyi Award
+    url: https://uwaterloo.ca/news/news/three-waterloo-academics-named-among-canadas-top-natural
+  - source: UWaterloo on Royal Society of Canada's College of New Scholars
+    url: https://uwaterloo.ca/philosophy/news/c-eliasmith-royal-society-canadas-college-new-scholars
 nengo:
   - source: Motherboard
     url: http://motherboard.vice.com/read/how-to-make-a-human-brain-in-python
@@ -28,6 +36,8 @@ quoted:
 spaun:
   - source: Nature
     url: http://www.nature.com/news/simulated-brain-scores-top-test-marks-1.11914
+  - source: UWaterloo press release
+    url: https://uwaterloo.ca/news/news/waterloo-researchers-create-worlds-largest-functioning-model
   - source: BBC World Radio interview (opening 5s; interview starts at 11:50)
     url: http://www.bbc.co.uk/iplayer/episode/p010z973/Science_In_Action_Melting_ice_caps/
   - source: CNN
@@ -154,7 +164,7 @@ spaun:
       {% endfor %}
     </div>
     <div class="col-md-6">
-      <h3>Articles about ABR</h3>
+      <h3>Articles about ABR & ABR's founders</h3>
       <ul>
         {% for article in page.abr %}
         <li><a href="{{ article.url }}">{{ article.source }}</a></li>
@@ -172,7 +182,7 @@ spaun:
         <li><a href="{{ article.url }}">{{ article.source }}</a></li>
         {% endfor %}
       </ul>
-      <h3>Articles quoting ABR members</h3>
+      <h3>Articles quoting ABR founders</h3>
       <ul>
         {% for article in page.quoted %}
         <li><a href="{{ article.url }}">{{ article.source }}</a></li>
