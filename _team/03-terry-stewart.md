@@ -6,8 +6,7 @@ homepage: https://www.researchgate.net/profile/Terrence_Stewart
 email: terry.stewart@gmail.com
 ---
 
-Terry is a post-doctoral research associate working with Chris Eliasmith
-and Paul Thagard. His initial training was as an engineer (B.A.Sc. in
+Terry's initial training was as an engineer (B.A.Sc. in
 Systems Design Engineering, University of Waterloo, 1999); his masters
 involved applying experimental psychology on simulated robots (M.Phil.
 in Computer Science and Artificial Intelligence, University of Sussex,
