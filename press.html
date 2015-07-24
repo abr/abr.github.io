@@ -1,7 +1,16 @@
 ---
 layout: default
+awards:
+  - source: Applied Brain Research's Nengo 2.0 Winner of the 2015 R&D Top 100 Editor's Choice Software Special Recogniton Award
+    url: http://www.rdmag.com/articles/2015/11/special-recognition-and-editors-choice-awards-presented-2015-r-d-100-awards-banquet-las-vegas
+  - source: Applied Brain Research's Nengo 2.0 one of the Top 100 R&D Award Winners
+    url: http://www.rdmag.com/news/2015/11/2015-r-d-100-award-winners
+  - source: ABR Wins in Silicon Valley Innovation & Entrpreneurship 2015 Top 30 Award 
+    url: http://www.svief.org/2015/english/cx.php
+  - source: Applied Brain Research Selected as 2015 Finalist for R&D Top 100
+    url: http://www.rdmag.com/articles/2015/07/2015-r-d-100-award-finalists
 abr:
-  - source: PR Newswire
+  - source: ABR Featured at OCE Discovery 2015
     url: http://www.prnewswire.com/news-releases/oces-discovery-celebrates-10-years-of-innovation-with-largest-ever-show-500788531.html
   - source: UWaterloo on How to Build a Brain
     url: https://uwaterloo.ca/arts/news/how-build-brain-chris-eliasmith-publishes-book-and-shares
@@ -15,6 +24,8 @@ nengo:
   - source: Motherboard
     url: http://motherboard.vice.com/read/how-to-make-a-human-brain-in-python
 quoted:
+  - source: Futurism.com Interview with Dr. Eliasmith
+    url: http://futurism.com/interview-chris-eliasmith-talks-reverse-engineering-the-brain-dangerous-ai-and-universal-basic-income/
   - source: UMich Engineering
     url: http://dme.engin.umich.edu/artificialintelligence
   - source: LiveScience
@@ -166,6 +177,12 @@ spaun:
       {% endfor %}
     </div>
     <div class="col-md-6">
+      <h3>Awards</h3>
+      <ul>
+        {% for article in page.awards %}
+        <li><a href="{{ article.url }}">{{ article.source }}</a></li>
+        {% endfor %}
+      </ul>
       <h3>Articles about ABR & ABR's founders</h3>
       <ul>
         {% for article in page.abr %}

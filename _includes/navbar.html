@@ -14,17 +14,17 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li{% if site.posts contains page or page.path == "blog.html" %} class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/blog">Blog</a>
-            </li>
             {% for collection in site.collections %}
             {% capture path %}{{ collection[0] }}.html{% endcapture %}
             <li{% if page.collection == collection[0] or page.path == path %} class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/{{ collection[0] }}">{{ collection[0] | capitalize }}</a>
+              <a href="{% if collection[1].externallink %} {{ collection[1].linkname }} {% else %} {{ site.baseurl }}/{{ collection[1].linkname }} {% endif %}"> {{ collection[1].menuname | capitalize }} </a>
             </li>
             {% endfor %}
             <li{% if page.path == "contact.html" %} class="active"{% endif %}>
               <a href="{{ site.baseurl }}/contact">Contact</a>
+            </li>
+            <li{% if site.posts contains page or page.path == "blog.html" %} class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/blog">Blog</a>
             </li>
           </ul>
         </div>

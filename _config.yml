@@ -10,15 +10,43 @@ source: .
 baseurl:
 
 collections:
+  home:
+    output: false
+    externallink: false
+    linkname: 
+    menuname: home
   projects:
     output: false
+    externallink: false
+    linkname: projects
+    menuname: projects
+  research:
+    output: false
+    externallink: true
+    linkname: http://compneuro.uwaterloo.ca/
+    menuname: research
   culture:
     output: false
+    externallink: false
+    linkname: culture
+    menuname: culture    
   team:
     output: false
+    externallink: false
+    linkname: team
+    menuname: team    
   press:
     output: false
-
+    externallink: false
+    linkname: press
+    menuname: press
+  awards:
+    output:  false
+    externallink: false
+    linkname: press
+    menuname: awards
+    
+    
 permalink: pretty
 
 gems:
