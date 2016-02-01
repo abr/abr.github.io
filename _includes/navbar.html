@@ -15,9 +15,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {% for collection in site.collections %}
-            {% capture path %}{{ collection[0] }}.html{% endcapture %}
-            <li{% if page.collection == collection[0] or page.path == path %} class="active"{% endif %}>
-              <a href="{% if collection[1].externallink %} {{ collection[1].linkname }} {% else %} {{ site.baseurl }}/{{ collection[1].linkname }} {% endif %}"> {{ collection[1].menuname | capitalize }} </a>
+            {% capture path %}{{ collection.label }}.html{% endcapture %}
+            <li{% if page.collection == collection.label or page.path == path %} class="active"{% endif %}>
+              <a href="{% if collection.externallink %} {{ collection.linkname }} {% else %} {{ site.baseurl }}/{{ collection.linkname }} {% endif %}"> {{ collection.menuname | capitalize }} </a>
             </li>
             {% endfor %}
             <li{% if page.path == "contact.html" %} class="active"{% endif %}>
