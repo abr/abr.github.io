@@ -3,14 +3,18 @@ name: Dr. Daniel Rasmussen
 job: Co-founder
 img: dan.jpg
 homepage: http://www.drasmussen.org
-email: drasmussen@princeton.edu
+email: daniel.rasmussen@appliedbrainresearch.com
 ---
 
-Daniel Rasmussen is interested in general intelligence: what is it,
-how does it develop, what are its components, and how might we model
-it. He is particularly interested in incorporating large scale
-adaptability into these models, so that we can understand how they
-come to be and how they develop into the future. This has led to his
-interest in reinforcement learning, where he seeks to understand how we
-could learn from experience to build up the complex processing of
-intelligence.
+Daniel's research is motivated by a general interest in building more flexible,
+adaptive computational systems.  This has led to work in a range of different 
+areas, including computational neuroscience, (hierarchical) reinforcement learning, 
+and deep learning.  Daniel works to build hybrid systems that combine these (and other)
+approaches, in order to best leverage the strengths of each method.
+
+In 2014 Daniel completed his PhD at the University of Waterloo, where his thesis involved
+developing the first neural model capable of performing hierarchical reinforcement learning. 
+From 2014--2016 he worked as a postdoc at Princeton University, where he developed a 
+Hessian-free optimization package for deep learning, with the aim to apply these methods 
+to RL.  Now at ABR he works to expand these and other projects from their academic origins
+into practical, state-of-the-art applications.
