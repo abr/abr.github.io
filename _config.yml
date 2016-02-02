@@ -30,11 +30,6 @@ collections:
     externallink: false
     linkname: press
     navmenu: true
-  awards:
-    output: false
-    externallink: false
-    linkname: awards
-    navmenu: false
     
 permalink: pretty
 

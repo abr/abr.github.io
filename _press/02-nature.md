@@ -2,6 +2,7 @@
 title: Simulated brain scores top test marks
 source: Nature
 url: http://www.nature.com/news/simulated-brain-scores-top-test-marks-1.11914
+type: quote
 ---
 Spaun [...] stands apart from other attempts to simulate a brain,
 such as the ambitious Blue Brain Project,

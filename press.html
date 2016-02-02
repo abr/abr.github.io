@@ -160,7 +160,8 @@ spaun:
 <div class="container main">
   <div class="row press">
     <div class="col-md-6">
-      {% for press in site.press %}
+      {% assign quotes=site.press | where: "type", "quote" %}
+      {% for press in quotes %}
       <blockquote>
         {{ press.content }}
         <footer>
@@ -172,11 +173,12 @@ spaun:
       {% endfor %}
     </div>
     <div class="col-md-6">
-      <h3>Awards</h3>
+      <h3 id="awards">Awards</h3>
       <ul>
-        {% for article in site.awards | offset:1 %}
-        <li><a href="{{ article.url }}">{{ article.title }}</a>
-        <br> {{ article.content }} </li>
+        {% assign awards=site.press | where: "type", "award"%}
+        {% for award in awards | offset:1%}
+        <li><a href="{{ award.url }}">{{ award.title }}</a>
+        <br> {{ award.content }} </li>
         {% endfor %}
       </ul>
       <h3>Press Releases</h3>

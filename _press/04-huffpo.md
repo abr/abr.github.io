@@ -2,6 +2,7 @@
 title: Artificial Brain - 'Spaun' Software Model Mimics Abilities, Flaws Of Human Brain
 source: Huffington Post
 url: http://www.huffingtonpost.com/2012/11/30/artificial-brain-spaun-software-model_n_2217750.html
+type: quote
 ---
 Ask Spaun a question, and it hesitates a moment before answering,
 pausing for about as long as humans do.

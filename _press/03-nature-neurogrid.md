@@ -2,6 +2,7 @@
 title: "Neuroelectronics: Smart connections"
 source: Nature
 url: http://www.nature.com/news/neuroelectronics-smart-connections-1.14089
+type: quote
 ---
 The system is explicitly designed for real-world applications.
 On a five-year timescale, says Boahen,

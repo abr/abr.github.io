@@ -2,6 +2,7 @@
 title: College of New Scholars, Artists and Scientists Inaugural Cohort
 source: The Royal Society of Canada
 url: http://rsc-src.ca/sites/default/files/pdf/College%20Citations%202014.pdf
+type: quote
 ---
 Chris Eliasmith is a pioneering figure
 in the rapidly developing field of theoretical neuroscience.

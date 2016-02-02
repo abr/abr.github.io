@@ -2,6 +2,7 @@
 title: 2015 Polanyi prize announcement
 source: Natural Sciences and Engineering Research Council of Canada (NSERC)
 url: http://www.nserc-crsng.gc.ca/Prizes-Prix/Polanyi-Polanyi/Profiles-Profils/Eliasmith-Eliasmith_eng.asp
+type: quote
 ---
 Dr. Eliasmith has drawn on his experience in
 philosophy, neuroscience, systems design engineering
