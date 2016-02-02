@@ -1,9 +1,6 @@
 ---
 layout: default
 
-pressreleases:
-  - source: Applied Brain Research Signs Joint Development and Marketing Agreement with Brain Chip Inc.
-    url: http://appliedbrainresearch.com/PRBrainChipPartnership.html
 abr:
   - source: ABR Featured at OCE Discovery 2015
     url: http://www.prnewswire.com/news-releases/oces-discovery-celebrates-10-years-of-innovation-with-largest-ever-show-500788531.html
@@ -183,8 +180,8 @@ spaun:
       </ul>
       <h3>Press Releases</h3>
       <ul>
-        {% for article in page.pressreleases %}
-        <li><a href="{{ article.url }}">{{ article.source }}</a></li>
+        {% for article in site.pressreleases %}
+        <li><a href="{{ article.url }}">{{ article.title }}</a></li>
         {% endfor %}
       </ul>     
       <h3>Articles about ABR & ABR's founders</h3>

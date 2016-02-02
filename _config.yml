@@ -8,6 +8,7 @@ source: .
 # These we can modify.
 
 baseurl:
+encoding: UTF-8
 
 collections:
   projects:
@@ -30,6 +31,11 @@ collections:
     externallink: false
     linkname: press
     navmenu: true
+  pressreleases:
+    output: true
+    externallink: false
+    linkname: pressreleases
+    navmenu: false
     
 permalink: pretty
 
