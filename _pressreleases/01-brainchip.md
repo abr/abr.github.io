@@ -14,14 +14,13 @@ Under the terms of the agreement, BrainChip and ABR will jointly, non-exclusivel
 "The partnership with BrainChip represents a significant opportunity for our team to work with a breakthrough company," said Dr. Chris Eliasmith, Co-founder of Applied Brain Research. "We believe neuromorphic semiconductor chips will run the next generation of AI systems, and BrainChip's hardware technology is a complete development solution for companies entering the neuromorphic chip market."
  
 
-About BrainChip Holdings Limited
---------------------------------
+### About BrainChip Holdings Limited
 
 BrainChip Holdings Limited (ASX: BRN), located in Aliso Viejo, CA, has developed a revolutionary new Spiking Neuron Adaptive Processor (SNAP) technology that has the ability to learn autonomously, evolve and associate information just like the human brain. The technology is fast, completely digital, and consumes very low power, making it feasible to integrate large networks into Smart phones and devices, something that has never been possible before. Additional information is available by visiting www.brainchipinc.com.
  
 
-About Applied Brain Research
-----------------------------
+### About Applied Brain Research
+
 
 Applied Brain Research (ABR) is an owner and provider of an integrated technology software platform focused on building the best integrated AI systems. ABR's Nengo is a suite of software tools that is used to develop and build large scale brain models. ABR's Spaun program is the world's largest functional brain simulation. ABR also provides a neuromorphic hardware platform for developing integrated AI systems with the next generation of computer hardware: inspired by the brain, powerful, and extremely efficient. For more information, please visit www.appliedbrainresearch.com.
 
@@ -29,10 +28,10 @@ Applied Brain Research (ABR) is an owner and provider of an integrated technolog
 
 **Company Contact:**
 
-Peter Suma
-co-CEO & Chairman
-Applied Brain Research Inc.
-416-505-8973
+Peter Suma  
+co-CEO & Chairman  
+Applied Brain Research Inc.  
+416-505-8973  
 peter.suma@appliedbrainresearch.com
  
 
