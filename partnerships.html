@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="container main">
+  {% for partner in site.partnerships %}
+  {% capture evenodd %}{% cycle 'even', 'odd' %}{% endcapture %}
+  <div class="row project" id="{{ partner.title | slugify }}">
+    <div class="col-md-7{% if evenodd == 'odd' %} col-md-push-5 text-right{% endif %}">
+      <h2 class="project-heading">{{ partner.title }}</h2>
+      <div class="emphasize-first">
+        {{ partner.content }}
+      </div>
+    </div>
+    {% if partner.img != null %}
+    <div class="col-md-5 {% if evenodd == 'odd' %} col-md-pull-7{% endif %}">
+      <img class="center-block img-circle img-bordered img-responsive" src="{{ site.baseurl }}/img/{{ partner.img }}" alt="">
+    </div>
+    {% endif %}
+  </div>
+
+  <hr class="project-divider">
+  {% endfor %}
+</div>

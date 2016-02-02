@@ -36,6 +36,11 @@ collections:
     externallink: false
     linkname: pressreleases
     navmenu: false
+  partnerships:
+    output: false
+    externallink: false
+    linkname: partnerships
+    navmenu: true
     
 permalink: pretty
 
