@@ -10,31 +10,32 @@ source: .
 baseurl:
 
 collections:
-  home:
-    output: false
-    externallink: false
-    linkname: 
-    menuname: home
   projects:
     output: false
     externallink: false
     linkname: projects
-    menuname: projects
+    navmenu: true
   culture:
     output: false
     externallink: false
     linkname: culture
-    menuname: culture    
+    navmenu: true    
   team:
     output: false
     externallink: false
     linkname: team
-    menuname: team    
+    navmenu: true   
   press:
     output: false
     externallink: false
     linkname: press
-    menuname: press
+    navmenu: true
+  awards:
+    output: false
+    externallink: false
+    linkname: awards
+    navmenu: false
+    
 permalink: pretty
 
 gems:

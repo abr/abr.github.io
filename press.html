@@ -1,14 +1,6 @@
 ---
 layout: default
-awards:
-  - source: Applied Brain Research's Nengo 2.0 Winner of the 2015 R&D Top 100 Editor's Choice Software Special Recogniton Award
-    url: http://www.rdmag.com/articles/2015/11/special-recognition-and-editors-choice-awards-presented-2015-r-d-100-awards-banquet-las-vegas
-  - source: Applied Brain Research's Nengo 2.0 one of the Top 100 R&D Award Winners
-    url: http://www.rdmag.com/news/2015/11/2015-r-d-100-award-winners
-  - source: ABR Wins in Silicon Valley Innovation & Entrpreneurship 2015 Top 30 Award 
-    url: http://www.svief.org/2015/english/cx.php
-  - source: Applied Brain Research Selected as 2015 Finalist for R&D Top 100
-    url: http://www.rdmag.com/articles/2015/07/2015-r-d-100-award-finalists
+
 pressreleases:
   - source: Applied Brain Research Signs Joint Development and Marketing Agreement with Brain Chip Inc.
     url: http://appliedbrainresearch.com/PRBrainChipPartnership.html
@@ -182,8 +174,9 @@ spaun:
     <div class="col-md-6">
       <h3>Awards</h3>
       <ul>
-        {% for article in page.awards %}
-        <li><a href="{{ article.url }}">{{ article.source }}</a></li>
+        {% for article in site.awards | offset:1 %}
+        <li><a href="{{ article.url }}">{{ article.title }}</a>
+        <br> {{ article.content }} </li>
         {% endfor %}
       </ul>
       <h3>Press Releases</h3>

@@ -14,10 +14,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            {% for collection in site.collections %}
-            {% capture path %}{{ collection.label }}.html{% endcapture %}
-            <li{% if page.collection == collection.label or page.path == path %} class="active"{% endif %}>
-              <a href="{% if collection.externallink %} {{ collection.linkname }} {% else %} {{ site.baseurl }}/{{ collection.linkname }} {% endif %}"> {{ collection.menuname | capitalize }} </a>
+            {% assign navitems = site.collections | where: "navmenu", "true" %}
+            {% for nav in navitems %}
+            {% capture path %}{{ nav.label }}.html{% endcapture %}
+            <li{% if page.collection == nav.label or page.path == path %} class="active"{% endif %}>
+              <a href="{% if nav.externallink %} {{ nav.linkname }} {% else %} {{ site.baseurl }}/{{ nav.linkname }} {% endif %}"> {{ nav.linkname | capitalize }} </a>
             </li>
             {% endfor %}
             <li{% if page.path == "contact.html" %} class="active"{% endif %}>
