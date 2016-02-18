@@ -1,5 +1,5 @@
 ---
-name: Trevor Bekolay
+name: Dr. Trevor Bekolay
 job: Co-founder
 img: trevor.jpg
 homepage: http://www.bekolay.org/
