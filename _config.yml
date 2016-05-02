@@ -1,14 +1,18 @@
 # --- Jekyll configuration
 
 # Github sets these, and we can't change them.
-safe: true
 lsi: false
+safe: true
 source: .
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
 
 # These we can modify.
 
-baseurl:
 encoding: UTF-8
+permalink: pretty
 
 collections:
   projects:
@@ -20,12 +24,12 @@ collections:
     output: false
     externallink: false
     linkname: culture
-    navmenu: true    
+    navmenu: true
   team:
     output: false
     externallink: false
     linkname: team
-    navmenu: true   
+    navmenu: true
   press:
     output: false
     externallink: false
@@ -41,8 +45,3 @@ collections:
     externallink: false
     linkname: partnerships
     navmenu: true
-    
-permalink: pretty
-
-gems:
-  - jekyll-sitemap
