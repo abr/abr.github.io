@@ -1,3 +1,11 @@
+.news ul {
+    list-style-type: none;
+}
+
+.news li>a {
+    font-size: 20px;
+}
+
 .post h2,
 .post small {
     display: inline-block;
