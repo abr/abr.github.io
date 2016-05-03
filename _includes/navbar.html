@@ -14,6 +14,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li{% if site.posts contains page or page.path == "news.html" %} class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/news">News</a>
+            </li>
             {% assign navitems = site.collections | where: "navmenu", "true" %}
             {% for nav in navitems %}
             {% capture path %}{{ nav.label }}.html{% endcapture %}
