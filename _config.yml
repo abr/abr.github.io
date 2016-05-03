@@ -17,31 +17,25 @@ permalink: pretty
 collections:
   projects:
     output: false
-    externallink: false
     linkname: projects
     navmenu: true
   culture:
     output: false
-    externallink: false
     linkname: culture
     navmenu: true
   team:
     output: false
-    externallink: false
     linkname: team
     navmenu: true
   press:
     output: false
-    externallink: false
     linkname: press
     navmenu: true
   pressreleases:
     output: true
-    externallink: false
     linkname: pressreleases
     navmenu: false
   partnerships:
     output: false
-    externallink: false
     linkname: partnerships
     navmenu: true

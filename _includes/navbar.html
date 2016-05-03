@@ -18,7 +18,9 @@
             {% for nav in navitems %}
             {% capture path %}{{ nav.label }}.html{% endcapture %}
             <li{% if page.collection == nav.label or page.path == path %} class="active"{% endif %}>
-              <a href="{% if nav.externallink %} {{ nav.linkname }} {% else %} {{ site.baseurl }}/{{ nav.linkname }} {% endif %}"> {{ nav.linkname | capitalize }} </a>
+              <a href="{{ site.baseurl }}/{{ nav.linkname }}">
+                {{ nav.linkname | capitalize }}
+              </a>
             </li>
             {% endfor %}
             <li{% if page.path == "contact.html" %} class="active"{% endif %}>
