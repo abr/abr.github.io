@@ -17,6 +17,8 @@ layout: default
       </div>
     </div>
   </div>
+  {% if forloop.last == false %}
   <hr>
+  {% endif %}
   {% endfor %}
 </div>

@@ -18,6 +18,8 @@ layout: default
     {% endif %}
   </div>
 
+  {% if forloop.last == false %}
   <hr class="project-divider">
+  {% endif %}
   {% endfor %}
 </div>
