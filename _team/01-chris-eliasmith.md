@@ -41,4 +41,5 @@ and his seminal
 When he is not pushing the boundaries of theoretical neuroscience
 forward or hanging out with his team at the CNRG, Chris spends time
 with his family and occasionally straps on the blades for a game of
-hockey near his home in Waterloo.
+hockey near his home in Waterloo.  He has a [Bacon-Erdos](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Bacon_number) 
+number of 8.
