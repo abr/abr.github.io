@@ -2,11 +2,6 @@ hr.project-divider {
     margin: 20px 0;
 }
 
-.project:nth-of-type(even) ul,
-.project:nth-of-type(even) ol {
-    direction: rtl;
-}
-
 .project img {
     width: 300px;
 }
