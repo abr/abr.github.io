@@ -4,22 +4,20 @@ layout: default
 <div class="container main">
   {% for partner in site.partnerships %}
   {% capture evenodd %}{% cycle 'even', 'odd' %}{% endcapture %}
-  <div class="row project" id="{{ partner.title | slugify }}">
-    <div class="col-md-7{% if evenodd == 'odd' %} col-md-push-5 text-right{% endif %}">
-      <h2 class="project-heading">{{ partner.title }}</h2>
+  <div class="row partner" id="{{ partner.title | slugify }}">
+    <div class="col-md-6 {% if evenodd == 'odd' %} col-md-push-6{% endif %}">
       <div class="emphasize-first">
         {{ partner.content }}
       </div>
     </div>
-    {% if partner.img != null %}
-    <div class="col-md-5 {% if evenodd == 'odd' %} col-md-pull-7{% endif %}">
-      <img class="center-block img-circle img-bordered img-responsive" src="{{ site.baseurl }}/img/{{ partner.img }}" alt="">
+    <div class="col-md-5 {% if evenodd == 'odd' %}col-md-pull-6{% else %}col-md-offset-1{% endif %}">
+      <a href="{{ partner.url }}">
+        <img class="center-block img-responsive" src="{{ site.baseurl }}/img/{{ partner.img }}" alt="{{ partner.title }}">
+      </a>
     </div>
-    {% endif %}
   </div>
-
   {% if forloop.last == false %}
-  <hr class="project-divider">
+  <hr class="partner-divider">
   {% endif %}
   {% endfor %}
 </div>
