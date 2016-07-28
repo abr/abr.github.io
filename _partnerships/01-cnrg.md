@@ -1,7 +1,7 @@
 ---
 title: Computational Neuroscience Research Group
 img: cnrg.svg
-url: http://compneuro.uwaterloo.ca/
+link: http://compneuro.uwaterloo.ca/
 ---
 
 ABR was founded by a group of researchers from the

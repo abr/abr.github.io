@@ -1,7 +1,7 @@
 ---
 title: BrainChip Inc.
 img: brainchip.png
-url: http://www.brainchipinc.com/
+link: http://www.brainchipinc.com/
 ---
 
 ABR has signed a strategic joint development and marketing agreement

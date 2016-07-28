@@ -1,6 +1,7 @@
 ---
 title: ANSYS
 img: ansys.png
+link: http://www.ansys.com/
 ---
 
 ABR uses [ANSYS](http://www.ansys.com/) software to design and test
