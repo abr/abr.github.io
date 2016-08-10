@@ -1,8 +1,80 @@
-.news ul {
-    list-style-type: none;
+.news .timeline {
+    position: relative;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: hidden;
 }
 
-.news li>a {
+.news .timeline::before {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: auto;
+    margin-left: 140px;
+    background-color: #CFCFC4;
+    content: "";
+}
+
+.news .timeline-block {
+    position: relative;
+    margin-left: 174px;
+    margin-right: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.news .timeline-icon {
+    position: absolute;
+    left: auto;
+    margin-left: -49px;
+    margin-top: 6px;
+    width: 32px;
+    height: 32px;
+    border: 4px solid #779ECB;
+    border-radius: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.news .timeline-icon-hide-border {
+    border: 0;
+}
+
+.news .timeline-icon-hide-border i.fa {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+    line-height: 32px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.news .timeline-date {
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 14px;
+    margin-left: -160px;
+    text-align: right;
+    font-size: 85%;
+}
+
+.news .timeline-content {
+    width: auto;
+    position: relative;
+    top: -4px;
+    padding: 12px;
+    line-height: 28px;
+    min-height: 48px;
     font-size: 20px;
 }
 

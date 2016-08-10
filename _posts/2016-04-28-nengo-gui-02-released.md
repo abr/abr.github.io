@@ -2,6 +2,7 @@
 layout: post
 title: Nengo GUI 0.2 released
 author: Trevor Bekolay
+icon: github
 extracss: |
     @media (max-width: 991px) {
         .post img {

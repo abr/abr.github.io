@@ -2,6 +2,7 @@
 layout: post
 title: Nengo 2.0 released
 author: Trevor Bekolay
+icon: github
 ---
 
 The [Nengo team](https://github.com/nengo/nengo/blob/master/CONTRIBUTORS.rst)

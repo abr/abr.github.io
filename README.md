@@ -76,3 +76,11 @@ bundle exec jekyll serve
 ```
 
 The site will now be served at <http://localhost:4000>.
+
+Props
+=====
+
+The news page's timeline layout is inspired by
+[Timelined](https://github.com/andriussev/timelined)
+and uses some of its CSS styles under the terms of its
+[MIT license](https://github.com/andriussev/timelined#license).

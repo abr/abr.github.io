@@ -4,14 +4,23 @@ layout: default
 <div class="container main news">
   <div class="row">
     <div class="col-md-8">
-      <ul>
+      <div class="timeline">
         {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <small>{{ post.date | date: "%B %-d, %Y" }}</small>
-        </li>
+        <div class="timeline-block">
+          <div class="timeline-icon{% if post.icon %} timeline-icon-hide-border{% endif %}">
+            {% if post.icon %}
+            <i class="fa fa-{{ post.icon }}" aria-hidden="true"></i>
+            {% endif %}
+          </div>
+          <div class="timeline-date">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </div>
+          <div class="timeline-content">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </div>
+        </div>
         {% endfor %}
-      </ul>
+      </div>
     </div>
     <div class="col-md-4">
       <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/abr_inc" data-widget-id="730104444638081024">Tweets by @abr_inc</a>

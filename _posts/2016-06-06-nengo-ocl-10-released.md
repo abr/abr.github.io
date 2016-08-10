@@ -2,6 +2,7 @@
 layout: post
 title: Nengo OpenCL 1.0 released
 author: Trevor Bekolay
+icon: github
 ---
 
 The [Nengo OCL team](https://github.com/nengo/nengo_ocl/blob/master/CONTRIBUTORS.rst)

@@ -2,6 +2,7 @@
 layout: post
 title: Chris Eliasmith at Tech Leadership Conference 2016
 author: Trevor Bekolay
+icon: map-marker
 ---
 
 <p class="lead">
