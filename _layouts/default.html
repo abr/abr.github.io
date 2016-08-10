@@ -1,3 +1,6 @@
+---
+extracss: nil
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,6 +32,11 @@
       ga('create', 'UA-41658423-3', 'auto');
       ga('send', 'pageview');
     </script>
+    {% if page.extracss %}
+    <style>
+      {{ page.extracss | rstrip }}
+    </style>
+    {% endif %}
   </head>
   <body>
 
