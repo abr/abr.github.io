@@ -65,14 +65,13 @@ carousel:
     {% assign blurbs = site.projects | push: tmp %}
     {% for blurb in blurbs %}
     <div class="col-lg-3">
-        <a href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.title | slugify }}">
+      <a href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.title | slugify }}">
         <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ blurb.img }}" alt="" style="width: 140px; height: 140px;">
       </a>
       <h2>{{ blurb.title }}</h2>
-      <p>{{ blurb.pitch }}</p>
+      <p>{{ blurb.content }}</p>
       <p><a class="btn btn-default" href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.title | slugify }}" role="button">Learn more &raquo;</a></p>
     </div>
     {% endfor %}
   </div>
 </div>
-
