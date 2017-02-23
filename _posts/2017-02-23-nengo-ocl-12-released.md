@@ -47,7 +47,7 @@ the recently released
 
 This version of Nengo OpenCL also contains
 some changes under the hood
-to decrease the changes that changes in Nengo
+to decrease the chances that changes in Nengo
 will require changes in Nengo OpenCL.
 To see the full list of changes in version 1.2,
 head to the
