@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Nengo OpenCL 1.1 released
+title: Nengo OpenCL 1.2 released
 author: Trevor Bekolay
 icon: github
 ---
 
 The [Nengo OCL team](https://github.com/nengo/nengo_ocl/blob/master/CONTRIBUTORS.rst)
-is delighted to announce the release of Nengo OpenCL 1.1.
+is delighted to announce the release of Nengo OpenCL 1.2.
 
 ### What is Nengo OpenCL?
 
@@ -40,22 +40,18 @@ and that's it!
 
 ### What's new?
 
-Nengo OpenCL 1.1.0 adds support
-for several Nengo features,
-including `RectifiedLinear` and `Sigmoid` neuron types,
-arbitrary `Process` subclasses,
-and filtering matrices.
+Nengo OpenCL 1.2.0 is a compatibility release,
+adding compatibility for
+the recently released
+[Nengo 2.3.1]({% post_url 2017-02-18-nengo231-released %}).
 
-This version of Nengo OpenCL
-also improves compatibility with Nengo, NumPy, and Python 3.
-Nengo OpenCL works on Python 2.7 and 3.4+,
-with Nengo version 2.1.2 and later,
-including the newly released
-[2.3.0]({% post_url 2016-11-30-nengo-23-released %}).
-
-To see the full list of changes in Nengo OpenCL 1.1,
+This version of Nengo OpenCL also contains
+some changes under the hood
+to decrease the changes that changes in Nengo
+will require changes in Nengo OpenCL.
+To see the full list of changes in version 1.2,
 head to the
-[Github release page](https://github.com/nengo/nengo_ocl/releases/tag/v1.1.0).
+[Github release page](https://github.com/nengo/nengo_ocl/releases/tag/v1.2.0).
 
 ### How do I get it?
 
