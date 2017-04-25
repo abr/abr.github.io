@@ -44,9 +44,9 @@ can be found in the [documentation](https://nengo.github.io/nengo_dl/).
 ### What's new?
 
 The major changes with this release are a number of behind-the-scenes 
-improvement that result in faster simulation speeds and lower build times.  
-We've also added more documentation, fixed some bugs, and brought 
-everything up to date with Nengo 2.4.0.  Check out the 
+improvement that result in faster simulation speeds and lower build 
+times. We've also added more documentation, fixed some bugs, and brought 
+everything up to date with Nengo 2.4.0. Check out the 
 [GitHub release page](https://github.com/nengo/nengo_dl/releases) for a 
 full changelog.
 
