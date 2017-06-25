@@ -1,5 +1,6 @@
 ---
 title: Spaun
+anchor: spaun
 img: spaun.png
 pitch: >
   Spaun is the the world's largest functional brain model.

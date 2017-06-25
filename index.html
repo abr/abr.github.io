@@ -61,16 +61,15 @@ carousel:
 
 <div class="container marketing">
   <div class="row">
-    {% assign tmp = site.press | where: "type", "award" | first %}
-    {% assign blurbs = site.projects | push: tmp %}
-    {% for blurb in blurbs %}
-    <div class="col-lg-3">
+    {% assign blurbs = site.projects %}
+    {% for blurb in blurbs limit:3 %}
+    <div class="col-lg-4">
       <a href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.title | slugify }}">
-        <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ blurb.img }}" alt="" style="width: 140px; height: 140px;">
+        <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ blurb.img }}" alt="" width="200">
       </a>
       <h2>{{ blurb.title }}</h2>
       <p>{{ blurb.pitch }}</p>
-      <p><a class="btn btn-default" href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.title | slugify }}" role="button">Learn more &raquo;</a></p>
+      <a class="btn btn-default" href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.title | slugify }}" role="button">Learn more &raquo;</a>
     </div>
     {% endfor %}
   </div>

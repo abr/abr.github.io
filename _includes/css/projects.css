@@ -20,10 +20,10 @@ hr.project-divider {
 
 @media (min-width: 992px) {
     .project img {
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
     .project-heading {
-        margin-top: 60px;
+        margin-top: 10px;
     }
 }

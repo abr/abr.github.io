@@ -1,5 +1,6 @@
 ---
 title: Nengo
+anchor: nengo
 img: nengo.png
 pitch: >
   Nengo is a suite of software tools

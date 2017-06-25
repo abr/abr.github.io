@@ -1,8 +1,8 @@
 /* Override the bootstrap style */
-blockquote {
+.press blockquote {
     border-left: none;
 }
-blockquote {
+.press blockquote {
     font-family: Georgia, serif;
     font-size: 18px;
     width: 500px;
@@ -13,7 +13,7 @@ blockquote {
     color: #383838;
 }
 
-blockquote:before {
+.press blockquote:before {
     display: block;
     padding-left: 10px;
     content: "\201C";
@@ -24,13 +24,13 @@ blockquote:before {
     color: #7a7a7a;
 }
 
-blockquote cite {
+.press blockquote cite {
     color: #999999;
     font-size: 14px;
     display: block;
     margin-top: 5px;
 }
 
-blockquote cite:before {
+.press blockquote cite:before {
     content: "\2014 \2009";
 }
