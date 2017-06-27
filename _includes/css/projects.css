@@ -19,7 +19,7 @@ hr.project-divider {
 }
 
 @media (min-width: 992px) {
-    .project img {
+    .project img, .project iframe {
         margin-top: 40px;
     }
 
