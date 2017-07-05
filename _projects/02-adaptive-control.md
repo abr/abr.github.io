@@ -42,8 +42,6 @@ in real-time, showcasing the utility of
 low-power, adaptive, embedded robotic systems.
 
 - [Demo videos](https://www.youtube.com/watch?v=muaG2VETgHU&list=PL0Xs4sfQU-Q1MeTNaizzFWYv1Xz3ua7ZAs&index=1)
-
-
-<!-- Uncomment once public: - [ABR Control code](https://github.com/abr/abr_control) -->
+- [ABR Control code](https://github.com/abr/abr_control)
 
 <!-- TODO: Add link to paper (eventually) -->
