@@ -53,8 +53,8 @@ pip install --upgrade nengo
 
 - [Install from PyPI](https://pypi.python.org/pypi/nengo)
 - [Source on Github](https://github.com/nengo/nengo)
-- [Documentation](https://pythonhosted.org/nengo)
-- [Example models](https://pythonhosted.org/nengo/examples.html)
+- [Documentation](https://www.nengo.ai/nengo/)
+- [Example models](https://www.nengo.ai/nengo/examples.html)
 
 ### Where can I get help?
 

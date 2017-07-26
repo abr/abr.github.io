@@ -31,10 +31,10 @@ by taking advantage of your GPU.
 Nengo itself has learned several new features. Some highlights:
 
 - The output of a node can now be properly reset by using a
-  [Process](http://pythonhosted.org/nengo/examples/processes.html).
+  [Process](https://www.nengo.ai/nengo/examples/processes.html).
   Processes can also be used to inject noise into an ensemble.
 - We added a new learning rule called
-  [Voja](http://pythonhosted.org/nengo/examples/learn_associations.html)
+  [Voja](https://www.nengo.ai/nengo/examples/learn_associations.html)
   that updates an ensemble's encoders to fire selectively to its inputs.
 
 We also changed how learning rules get error information.
@@ -59,5 +59,5 @@ pip install --upgrade nengo
 
 - [Install from PyPI](https://pypi.python.org/pypi/nengo)
 - [Source on Github](https://github.com/nengo/nengo)
-- [Documentation](https://pythonhosted.org/nengo)
-- [Example models](https://pythonhosted.org/nengo/examples.html)
+- [Documentation](https://www.nengo.ai/nengo/)
+- [Example models](https://www.nengo.ai/nengo/examples.html)

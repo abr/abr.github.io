@@ -28,11 +28,11 @@ Along with this release,
 we have added documentation
 for some of the more confusing parts of Nengo,
 like the
-[config system](http://pythonhosted.org/nengo/examples/config_quirks.html).
+[config system](https://www.nengo.ai/nengo/examples/config_quirks.html).
 Some documentation that applies to all Nengo projects,
-like our [code of conduct](https://nengo.github.io/conduct.html),
+like our [code of conduct](https://www.nengo.ai/conduct.html),
 has been moved to a new home
-at <https://nengo.github.io/>.
+at <https://www.nengo.ai>.
 We will be adding more general documentation
 there over the coming months.
 
@@ -56,8 +56,8 @@ pip install --upgrade nengo
 
 - [Install from PyPI](https://pypi.python.org/pypi/nengo)
 - [Source on Github](https://github.com/nengo/nengo)
-- [Documentation](https://pythonhosted.org/nengo)
-- [Example models](https://pythonhosted.org/nengo/examples.html)
+- [Documentation](https://www.nengo.ai/nengo/)
+- [Example models](https://www.nengo.ai/nengo/examples.html)
 
 ### Where can I get help?
 

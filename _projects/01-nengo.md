@@ -39,6 +39,6 @@ a model which combines many
 of the previously listed models
 in a single comprehensive whole.
 
-- [Example Nengo models](https://pythonhosted.org/nengo/examples.html)
-- [Learn more about Nengo](https://pythonhosted.org/nengo/)
-- [Follow Nengo development](https://github.com/nengo/nengo)
+- [Example Nengo models](https://www.nengo.ai/nengo/examples.html)
+- [Learn more about Nengo](https://www.nengo.ai/)
+- [Follow Nengo development](https://github.com/nengo)

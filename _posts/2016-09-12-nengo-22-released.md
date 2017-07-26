@@ -45,7 +45,7 @@ should be silent up to a certain input threshold,
 several parameters need to be set
 to get good performance.
 Those parameters can be set all at once with
-the [`ThresholdingEnsembles` preset](http://pythonhosted.org/nengo/config.html#nengo.presets.ThresholdingEnsembles).
+the [`ThresholdingEnsembles` preset](https://www.nengo.ai/nengo/config.html#nengo.presets.ThresholdingEnsembles).
 
 If you're still using the ancient NumPy 1.6,
 then now is a good time to update,
@@ -66,8 +66,8 @@ pip install --upgrade nengo
 
 - [Install from PyPI](https://pypi.python.org/pypi/nengo)
 - [Source on Github](https://github.com/nengo/nengo)
-- [Documentation](https://pythonhosted.org/nengo)
-- [Example models](https://pythonhosted.org/nengo/examples.html)
+- [Documentation](https://www.nengo.ai/nengo/)
+- [Example models](https://www.nengo.ai/nengo/examples.html)
 
 ### Where can I get help?
 
