@@ -43,7 +43,7 @@ and that's it!
 Nengo OpenCL 1.3.0 is a compatibility release,
 adding compatibility for
 the recently released
-[Nengo 2.6.0]({% post_url 2017-10-06-nengo26-released %}).
+[Nengo 2.6.0]({% post_url 2017-10-06-nengo-26-released %}).
 
 This version of Nengo OpenCL also contains
 some bugfixes for issues that could occur
