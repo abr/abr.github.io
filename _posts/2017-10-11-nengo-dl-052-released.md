@@ -45,8 +45,8 @@ in the [documentation](https://www.nengo.ai/nengo_dl/).
 optimize Nengo models, such as support for visualizing data in TensorBoard, 
 variable learning rate schedules, and multi-objective training.  We've also 
 added two new examples that demonstrate how NengoDL can be used to improve 
-performance in more complicated SPA models (thanks to new contributor @pblouw).  
-And, as always, we've fixed some bugs.  Check out the 
+performance in more complicated SPA models (thanks to new contributor 
+@pblouw). And, as always, we've fixed some bugs.  Check out the 
 [GitHub release page](https://github.com/nengo/nengo_dl/releases) for a full 
 changelog.
 
