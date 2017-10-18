@@ -18,7 +18,7 @@ extracss: |
 ---
 
 The [Nengo GUI team](https://www.nengo.ai/people.html)
-is happy to announce the release of Nengo GUI 0.3.
+is happy to announce the release of Nengo GUI 0.3.1.
 
 Nengo GUI is a relatively new project that is changing rapidly.
 We would love to
