@@ -1,33 +1,32 @@
 ---
-title: ABR & Intel Unveil First AI Demonstration Applications for Loihi, 
-Intel's New Neuromoprhic Chip
+title: ABR & Intel Unveil First AI Demonstration Applications for Loihi, Intel's New Neuromoprhic Chip
 author: Applied Brain Research
 layout: post
 ---
 
-**Portland, Oregon, USA - March 1, 2018** - 
-At the Intel Lab's Conference Centre on Intelâ€™s Jones Farm campus just outside 
+**Waterloo, Ontario, Canada - March 1, 2018** - 
+At the Intel Lab's Conference Centre on Intel’s Jones Farm campus just outside 
 of Portland, during the Neuro Inspired Computational Elements (NICE) Workshop, 
 ABR and Intel unveiled the first suite of Intel Loihi AI demonstration 
 applications. The NICE conference brings together a global group of leading 
 neuromorphic computing scientists, engineers and corporate representatives.
  
-Announced by Intelâ€™s CEO, Brian Krzanich, this past January during his 
-keynote of the 2018 Consumer Electronics Show in Las Vegas, Intelâ€™s 
+Announced by Intel’s CEO, Brian Krzanich, this past January during his 
+keynote of the 2018 Consumer Electronics Show in Las Vegas, Intel’s 
 Loihi chip is manufactured in 14nm process technology and delivers leading 
 density and performance for a neuromorphic chip. Learning is supported 
 directly on the chip with programmable learning rules. ABR implemented 
-several of ABRâ€™s spiking learning rules, demonstrating supervised 
+several of ABR’s spiking learning rules, demonstrating supervised 
 learning and reinforcement learning running directly on the Loihi 
 chip to demonstrate at NICE. 
 
 Intel showed the first application ever built, its visual object 
 recognition application for Loihi. ABR then unveiled three, 
 real-time, online learning demonstration AI applications it 
-created using ABRâ€™s neuromorphic compiler, Nengo, for Loihi. 
+created using ABR’s neuromorphic compiler, Nengo, for Loihi. 
 The applications are: (1) a keyword speech recognition app, 
 trained using deep learning and converted to a spiking neural 
-network using ABRâ€™s machine learning to spiking network transfer 
+network using ABR’s machine learning to spiking network transfer 
 methods, (2) an expert online reinforcement learning agent 
 visitors could play in a game of tic-tac-toe, (3) a hybrid 
 neuromorphic robotic controller using online non-linear 
@@ -35,13 +34,13 @@ adaptive control that moves the Kinova Jaco2 arm to
 track a vision system trained with deep learning.  
  
 ABR developed the applications for Intel in the span of the 
-eight weeks preceding the workshop. Intelâ€™s Loihi chip performed 
-flawlessly. ABRâ€™s neural modeling and simulation software, Nengo, 
-and Intelâ€™s Loihi provide a complete neuromorphic stack for both 
+eight weeks preceding the workshop. Intel’s Loihi chip performed 
+flawlessly. ABR’s neural modeling and simulation software, Nengo, 
+and Intel’s Loihi provide a complete neuromorphic stack for both 
 low-power, next-generation AI applications development for edge and 
 cloud AI computing, as well as advanced computational neuroscience 
 research. ABR is now working on completing the Nengo backend to fully 
-support Loihiâ€™s features. Loihi will then have access to the full 
+support Loihi’s features. Loihi will then have access to the full 
 range of components, networks, and applications already developed on Nengo. 
 
 Intel and ABR ran these applications demonstrating the breadth of uses 
@@ -54,7 +53,7 @@ software stack to program with Loihi.
 
 ### About Nengo
 
-ABRâ€™s Nengo is a neuromorphic compiler for building and simulating 
+ABR’s Nengo is a neuromorphic compiler for building and simulating 
 large-scale neural models for AI, robotics and neuroscience uses. 
 Nengo models are built once and then can run on any of the backends 
 that Nengo support, including: CPUs, GPUs, MPIs and neuromorphic 
@@ -64,10 +63,10 @@ non-spiking neurons. Nengo provides an extensive framework and set of
 libraries for building applications, reducing the overhead for users to 
 build complex systems. Applications can be constructed with traditional 
 neural network training methods, such as deep learning, or built using 
-ABRâ€™s Neural Engineering Framework (NEF) and Semantic Pointer Architecture 
+ABR’s Neural Engineering Framework (NEF) and Semantic Pointer Architecture 
 (SPA; a library of methods to build cognitive applications).
 
-Nengo on a number of measures is the worldâ€™s leading neuromorphic 
+Nengo on a number of measures is the world’s leading neuromorphic 
 applications tool. Nengo is the result of over 15 years of theory, 
 research, development and optimization by a team of leading computational 
 and theoretical neuroscientists from the University of Waterloo. Nengo 
@@ -98,7 +97,7 @@ Nengo. ABR also builds applications with Nengo, such as AI vision and
 robotic controllers, for the next major generation of computer 
 chips referred to as neuromorphic hardware.
 
-ABR was launched out of Dr. Chris Eliasmithâ€™s lab, the Centre for 
+ABR was launched out of Dr. Chris Eliasmith’s lab, the Centre for 
 Theoretical Neuroscience at the University of Waterloo, with his 
 team of leading computational neuroscience and AI researchers. ABR focuses 
 on the development and commercialization of technology based on theoretical 
