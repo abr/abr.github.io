@@ -1,5 +1,5 @@
 ---
-title: ABR & Intel Unveil First AI Demonstration Applications for Loihi, Intel's New Neuromoprhic Chip
+title: ABR & Intel Unveil First Wave of AI Demonstration Applications for Loihi, Intel's New Neuromoprhic Chip
 author: Applied Brain Research
 layout: post
 ---
