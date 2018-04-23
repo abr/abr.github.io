@@ -78,7 +78,7 @@ parsing. Nengo was also used to develop the world's largest functional
 brain model, Spaun. 
 
 More information about Nengo, the Neural Engineering Framework, and 
-Spaun can be found at [www.nengo.ai](https://nengo.ai). 
+Spaun can be found at [www.nengo.ai](https://www.nengo.ai). 
 
 
 ### About Applied Brain Research
