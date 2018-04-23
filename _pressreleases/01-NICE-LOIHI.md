@@ -1,5 +1,5 @@
 ---
-title: ABR & Intel Unveil First Wave of AI Demonstration Applications for Loihi, Intel's New Neuromoprhic Chip
+title: ABR & Intel Unveil First Wave of AI Demonstration Applications for Loihi, Intel's New Neuromorphic Chip
 author: Applied Brain Research
 layout: post
 ---
@@ -18,20 +18,20 @@ density and performance for a neuromorphic chip. Learning is supported
 directly on the chip with programmable learning rules. ABR implemented 
 several of ABR’s spiking learning rules, demonstrating supervised 
 learning and reinforcement learning running directly on the Loihi 
-chip to demonstrate at NICE. 
+chip. 
 
 Intel showed the first application ever built, its visual object 
-recognition application for Loihi. ABR then unveiled three, 
+recognition application for Loihi. ABR then unveiled three 
 real-time, online learning demonstration AI applications it 
 created using ABR’s neuromorphic compiler, Nengo, for Loihi. 
 The applications are: (1) a keyword speech recognition app, 
 trained using deep learning and converted to a spiking neural 
 network using ABR’s machine learning to spiking network transfer 
 methods, (2) an expert online reinforcement learning agent 
-visitors could play in a game of tic-tac-toe, (3) a hybrid 
+that visitors could play in a game of tic-tac-toe, (3) a hybrid 
 neuromorphic robotic controller using online non-linear 
 adaptive control that moves the Kinova Jaco2 arm to 
-track a vision system trained with deep learning.  
+track an object detected using a vision system trained with deep learning.  
  
 ABR developed the applications for Intel in the span of the 
 eight weeks preceding the workshop. Intel’s Loihi chip performed 
@@ -56,8 +56,8 @@ software stack to program with Loihi.
 ABR’s Nengo is a neuromorphic compiler for building and simulating 
 large-scale neural models for AI, robotics and neuroscience uses. 
 Nengo models are built once and then can run on any of the backends 
-that Nengo support, including: CPUs, GPUs, MPIs and neuromorphic 
-hardware such as; Loihi, Spinnaker and BrainDrop. Nengo transforms a 
+that Nengo supports, including: CPUs, GPUs, MPI and neuromorphic 
+hardware such as Loihi, Spinnaker and BrainDrop. Nengo transforms a 
 functional description of a neural model to a network of spiking or 
 non-spiking neurons. Nengo provides an extensive framework and set of 
 libraries for building applications, reducing the overhead for users to 
