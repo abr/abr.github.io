@@ -78,7 +78,7 @@ parsing. Nengo was also used to develop the world's largest functional
 brain model, Spaun. 
 
 More information about Nengo, the Neural Engineering Framework, and 
-Spaun can be found at [link](https://nengo.ai). 
+Spaun can be found at [www.nengo.ai](https://nengo.ai). 
 
 
 ### About Applied Brain Research
@@ -91,7 +91,7 @@ to simulate much larger neural networks much faster, paving the
 way for efficient embedded processing and further development of 
 advanced AI computing.
 
-Applied Brain Research (ABR) [link](https://www.appliedbrainresearch.com) is the maker 
+Applied Brain Research (ABR) [www.appliedbrainresearch.com](https://www.appliedbrainresearch.com) is the maker 
 of the leading compiler and operating system for neuromorphic computing, 
 Nengo. ABR also builds applications with Nengo, such as AI vision and 
 robotic controllers, for the next major generation of computer 
