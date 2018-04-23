@@ -1,5 +1,5 @@
 ---
-title: ABR & Intel Unveil First Wave of AI Demonstration Applications for Loihi, Intel's New Neuromorphic Chip
+title: ABR Unveils AI Demonstration Applications for Loihi, Intel's New Neuromorphic Chip
 author: Applied Brain Research
 layout: post
 ---
@@ -7,7 +7,7 @@ layout: post
 **Waterloo, Ontario, Canada - March 1, 2018** - 
 At the Intel Lab's Conference Centre on Intel’s Jones Farm campus just outside 
 of Portland, during the Neuro Inspired Computational Elements (NICE) Workshop, 
-ABR and Intel unveiled the first suite of Intel Loihi AI demonstration 
+ABR unveiled the first suite of Intel Loihi AI demonstration 
 applications. The NICE conference brings together a global group of leading 
 neuromorphic computing scientists, engineers and corporate representatives.
  
@@ -20,7 +20,7 @@ several of ABR’s spiking learning rules, demonstrating supervised
 learning and reinforcement learning running directly on the Loihi 
 chip. 
 
-Intel showed the first application ever built, its visual object 
+Intel showed the first application ever built, a visual object 
 recognition application for Loihi. ABR then unveiled three 
 real-time, online learning demonstration AI applications it 
 created using ABR’s neuromorphic compiler, Nengo, for Loihi. 
@@ -43,7 +43,7 @@ research. ABR is now working on completing the Nengo backend to fully
 support Loihi’s features. Loihi will then have access to the full 
 range of components, networks, and applications already developed on Nengo. 
 
-Intel and ABR ran these applications demonstrating the breadth of uses 
+ABR ran these applications demonstrating the breadth of uses 
 of the Loihi chip, from inference to reinforcement learning to supervised 
 learning, for the NICE attendees. ABR was honoured to be the first 
 pre-launch collaboration on Loihi and is excited to soon offer all 
