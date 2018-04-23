@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ABRDdemonstrates Neuromorphic Adaptive Controller to Prime Minister Justin Trudeau
+title: ABR Ddemonstrates Neuromorphic Adaptive Controller to Prime Minister Justin Trudeau
 author: Peter Suma
 icon: handshake-o
 ---
