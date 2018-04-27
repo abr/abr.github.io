@@ -1,10 +1,11 @@
-﻿---
+---
 title: Applied Brain Research Inc. Demonstrates Leading Edge Neuromorphic AI Stack at Ontario Centres of Excellence Discovery 2018
 author: Applied Brain Research
 layout: post
 ---
 
-**Toronto, Ontario, Canada – April 27, 2018** - In a Canadian first, Applied
+**Toronto, Ontario, Canada – April 27, 2018** -
+In a Canadian first, Applied
 Brain Research Inc. (ABR), and Ontario Centres of Excellence (OCE) are
 pleased to announce that Intel's newest neuromorphic research chip,
 Loihi, will be demonstrated live at this year's Discovery conference. The
@@ -73,16 +74,19 @@ made up of regional and sector-focused organizations and helps Ontario-based
 entrepreneurs rapidly grow their company and create jobs.
 
 **Media Contacts**
-Peter Suma
-Applied Brain Research Inc.
-www.appliedbrainresearch.com
-co-CEO, Chairman
-peter.suma@appliedbrainresearch.com
+
+Peter Suma<br>
+Applied Brain Research Inc.<br>
+www.appliedbrainresearch.com<br>
+co-CEO, Chairman<br>
+peter.suma@appliedbrainresearch.com<br>
 Cell: 416-505-8973
 
-Andrew Robertson
-Ontario Centres of Excellence
-www.oce-ontario.org
-Manager, Media Relations
-t: 416.861.1092 x 1092
+Andrew Robertson<br>
+Ontario Centres of Excellence<br>
+www.oce-ontario.org<br>
+Manager, Media Relations<br>
+t: 416.861.1092 x 1092<br>
 andrew.robertson@oce-ontario.org
+
+\#\#\#
