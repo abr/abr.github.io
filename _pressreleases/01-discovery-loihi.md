@@ -1,4 +1,4 @@
-﻿---
+---
 title: Applied Brain Research Inc. Demonstrates Leading Edge Neuromorphic AI Stack at Ontario Centres of Excellence Discovery 2018
 author: Applied Brain Research
 layout: post
