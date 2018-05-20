@@ -26,14 +26,15 @@ Capital Inc., and prior to that principal at Start Seed Capital. Peter
 started his first company, the award winning SRG Software, while a
 student in computer science at the University of Toronto.
 
-Peter is completing his MASc in Theoretical and Computational
-Neuroscience at the University of Waterloo supervised by Chris. Peter
-holds; an Honours B.Sc. from the University of Toronto; an M.B.A. from
+Peter holds a MASc in Theoretical and Computational
+Neuroscience at the University of Waterloo supervised by Chris where his
+thesis topic was "Biologically Plausible Cortical Hierarchical-Classifier 
+Circuit Extensions in Spiking Neurons". Peter holds; an Honours B.Sc. 
+from the University of Toronto; an M.B.A. from
 the University of Chicago; a P.D.A.M. majoring in Financial
 Engineering from the Schulich School of Business; an ICD.D from the
 Institute of Corporate Directors at the Rotman School of Business and
 an LLM in Securities Law from Osgoode Hall Law School in Toronto.
 
 Peter spends his non-work or study time with his wife and their two
-young children, skiing and playing as much as they can together, as
-well as coaching his son’s winning hockey team.
+young children, skiing and playing as much as they can together.
