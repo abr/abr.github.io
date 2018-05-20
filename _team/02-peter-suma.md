@@ -27,8 +27,8 @@ started his first company, the award winning SRG Software, while a
 student in computer science at the University of Toronto.
 
 Peter holds a MASc in Theoretical and Computational
-Neuroscience at the University of Waterloo supervised by Chris where his
-thesis topic was "Biologically Plausible Cortical Hierarchical-Classifier 
+Neuroscience from the University of Waterloo which was supervised by Dr. Eliasmith. 
+His thesis was on "Biologically Plausible Cortical Hierarchical-Classifier 
 Circuit Extensions in Spiking Neurons". Peter holds; an Honours B.Sc. 
 from the University of Toronto; an M.B.A. from
 the University of Chicago; a P.D.A.M. majoring in Financial
