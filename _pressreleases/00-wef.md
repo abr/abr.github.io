@@ -90,28 +90,29 @@ recipients include Airbnb, Google, Kickstarter, Mozilla, Palantir
 Technologies, Spotify, TransferWise, Twitter, and Wikimedia.
 
 All info on this year's Technology Pioneers can be found here:
-http://wef.ch/techpioneers18
+[wef.ch/techpioneers18](http://wef.ch/techpioneers18)
 
 More information on past winners can be found
 [here](http://www.weforum.org/community/technology-pioneers).
 
 ### About Applied Brain Research:
 ABR is the maker of the world's leading multi-platform compiler for
-building neuromorphic applications, Nengo
-(https://www.nengo.ai). Neuromorphic computing improves the efficiency
+building neuromorphic applications, [Nengo](https://www.nengo.ai).
+Neuromorphic computing improves the efficiency
 of AI algorithms by computing with artificial spiking neurons using
 less power than traditional CPU or GPU hardware. As stepping stones on
 the way to ABR's long range goal to deliver the first truly functional
 service robot control system, ABR has built Reach, the world's first
 neuromorphic adaptive robotic reaching system, and Spaun, the world's
-largest functional brain simulation. (https://appliedbrainresearch.com)
+largest functional brain simulation.
+([appliedbrainresearch.com](https://appliedbrainresearch.com))
 
 ### About World Economic Forum
 The World Economic Forum, committed to improving the state of the
 world, is the International Organization for Public-Private
 Cooperation. The Forum engages the foremost political, business, and
 other leaders of society to shape global, regional, and industry
-agendas. (https://www.weforum.org/)
+agendas. ([www.weforum.org](https://www.weforum.org/))
 
 **Media Contacts**
 
@@ -124,8 +125,5 @@ WEF<br>
 Peter Vanham<br>
 peter.vanham@weforum.org<br>
 +1 646 592 59 02
-
-Related Links<br>
-https://appliedbrainresearch.com
 
 \#\#\#
