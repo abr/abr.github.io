@@ -1,5 +1,5 @@
 ---
-title: Adaptive controllers
+title: Adaptive manipulator
 anchor: control
 img: control.png
 playlist: https://www.youtube.com/embed/muaG2VETgHU?list=PL0Xs4sfQU-Q1MeTNaizzFWYv1Xz3ua7ZA
@@ -9,7 +9,9 @@ pitch: >
   to control a 6-DOF Kinova Jaco<sup>2</sup> robotic arm.
   Provably more effective than PID control,
   and running on neuromorphic hardware,
-  we're opening the door to low-power,
+  we have demonstrated increased accuracy, speed,
+  and orders of magnitude lower-power than using
+  conventional hardware.  This opens the door to efficient,
   adaptive, embedded robotic systems.
 ---
 

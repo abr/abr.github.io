@@ -12,24 +12,43 @@
           </button>
           <a class="navbar-brand" href="/"><img src="{{ site.baseurl }}/img/logo-light-notext.svg"></a>
         </div>
+      
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li {% if page.path == "products.html" %} class="active"{% endif %} class="dropdown">
+              <a href="{{ site.baseurl }}/products" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ site.baseurl }}/products/01-nengo">Nengo</a></li>
+                <li><a href="{{ site.baseurl }}/products/02-board">ABRain Board</a></li>
+                <li><a href="{{ site.baseurl }}/products/03-control">Adaptive Control</a></li>
+              </ul>
+            </li>
+            <li {% if page.path == "services.html" %} class="active"{% endif %} class="dropdown">
+              <a href="{{ site.baseurl }}/products" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ site.baseurl }}/services/01-applications">Neuromorphic Applications</a></li>
+                <li><a href="{{ site.baseurl }}/services/02-backends">Backend Development</a></li>
+                <li><a href="{{ site.baseurl }}/services/03-tools">AI Tool Development</a></li>
+              </ul>
+            </li>   
+            <li{% if page.path == "projects.html" %} class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/projects">Research</a>
+            </li>
+            <li{% if page.path == "press.html" or page.path == "pressrelease.html" %} class="active"{% endif %}>
+              <a href="{{ site.baseurl }}/press">Press</a>
+            </li>
             <li{% if site.posts contains page or page.path == "news.html" %} class="active"{% endif %}>
               <a href="{{ site.baseurl }}/news">News</a>
             </li>
-            {% assign navitems = site.collections | where: "navmenu", "true" %}
-            {% for nav in navitems %}
-            {% capture path %}{{ nav.label }}.html{% endcapture %}
-            <li{% if page.collection == nav.label or page.path == path %} class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/{{ nav.linkname }}">
-                {{ nav.linkname | capitalize }}
-              </a>
-            </li>
-            {% endfor %}
-            <li{% if page.path == "contact.html" %} class="active"{% endif %}>
-              <a href="{{ site.baseurl }}/contact">Contact</a>
-            </li>
-          </ul>
+            <li {% if page.path == "contact.html" or page.path == "culture.html" or page.path == "team.html" %} class="active"{% endif %} class="dropdown">
+              <a href="{{ site.baseurl }}/products" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+                <li><a href="{{ site.baseurl }}/culture">Culture</a></li>
+                <li><a href="{{ site.baseurl }}/team">Team</a></li>
+              </ul>
+            </li>  
+          </ul>          
         </div>
       </div>
     </nav>

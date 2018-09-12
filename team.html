@@ -4,18 +4,22 @@ layout: default
 <div class="container main team">
   {% for person in site.team %}
   <div class="row">
-    <div class="col-md-4 text-center">
-      <img class="center-block img-circle img-responsive" src="{{ site.baseurl }}/img/{{ person.img }}" alt="">
-    </div>
-    <div class="col-md-8">
-      <h2>{{ person.name }} <small>{{ person.job }}</small></h2>
-      <a class="btn btn-default" href="{{ person.homepage }}"> Website</a>
-      <a class="btn btn-default" href="mailto:{{ person.email }}">Email</a>
-      <button class="btn btn-default" data-toggle="collapse" data-target="#{{ person.name | slugify }}">Bio <span class="caret"></span></button>
-      <div class="collapse" id="{{ person.name | slugify }}">
-        {{ person.content }}
+    {% if person.name == "intro" %}
+      {{ person.content }}
+    {% else %}
+      <div class="col-md-4 text-center">
+        <img class="center-block img-circle img-responsive" src="{{ site.baseurl }}/img/{{ person.img }}" alt="">
       </div>
-    </div>
+      <div class="col-md-8">
+        <h2>{{ person.name }} <small>{{ person.job }}</small></h2>
+        <a class="btn btn-default" href="{{ person.homepage }}"> Website</a>
+        <a class="btn btn-default" href="mailto:{{ person.email }}">Email</a>
+        <button class="btn btn-default" data-toggle="collapse" data-target="#{{ person.name | slugify }}">Bio <span class="caret"></span></button>
+        <div class="collapse" id="{{ person.name | slugify }}">
+          {{ person.content }}
+        </div>
+      </div>
+    {% endif %}
   </div>
   {% if forloop.last == false %}
   <hr>

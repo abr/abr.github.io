@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="container main">
+  <div class="row product" id="{{ page.title | slugify }}">
+    <div class="col-md-7">
+      <h2 id="{{ page.anchor }}" class="product-heading">{{ page.title }}</h2>
+      <div class="emphasize-first">
+        {{ page.content }}
+      </div>
+    </div>
+    <div class="col-md-5">
+      {% if page.playlist %}
+      <iframe width="100%" height="300" src="{{ page.playlist }}" frameborder="0" allowfullscreen></iframe>
+      {% else %}
+      <img class="center-block img-circle img-bordered img-responsive" src="{{ site.baseurl }}/img/{{ page.img }}" alt="">
+      {% endif %}
+    </div>
+  </div>
+</div>

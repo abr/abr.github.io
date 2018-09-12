@@ -4,8 +4,8 @@
 
 .navbar-brand > img {
     display: inline;
-    margin-top: -12px;
-    height: 46px;
+    margin-top: -9px;
+    height: 40px;
 }
 
 /* Special class for positioning navbar container into place. */
@@ -50,3 +50,8 @@
         border-radius: 4px;
     }
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }

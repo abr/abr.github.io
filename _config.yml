@@ -18,24 +18,24 @@ collections:
   projects:
     output: false
     linkname: projects
-    navmenu: true
+  services:
+    output: true
+    linkname: services
   culture:
     output: false
     linkname: culture
-    navmenu: true
+  products:
+    output: true
+    linkname: products
   team:
     output: false
     linkname: team
-    navmenu: true
   press:
     output: false
     linkname: press
-    navmenu: true
   pressreleases:
     output: true
     linkname: pressreleases
-    navmenu: false
   partnerships:
     output: false
     linkname: partnerships
-    navmenu: true

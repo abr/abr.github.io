@@ -1,0 +1,29 @@
+hr.product-divider {
+    margin: 20px 0;
+}
+
+.product img {
+    width: 300px;
+}
+
+.product-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+    .product-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .product img, .product iframe {
+        margin-top: 40px;
+    }
+
+    .product-heading {
+        margin-top: 10px;
+    }
+}
