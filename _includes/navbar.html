@@ -30,14 +30,6 @@
             <li{% if site.posts contains page or page.path == "news.html" %} class="active"{% endif %}>
               <a href="{{ site.baseurl }}{% link news.html %}">News</a>
             </li>
-            <li {% if page.path == "contact.html" or page.path == "culture.html" or page.path == "team.html" %} class="active"{% endif %} class="dropdown">
-              <a href="{{ site.baseurl }}/products" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
-                <li><a href="{{ site.baseurl }}/culture">Culture</a></li>
-                <li><a href="{{ site.baseurl }}/team">Team</a></li>
-              </ul>
-            </li>
           </ul>
         </div>
       </div>

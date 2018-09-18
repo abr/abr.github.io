@@ -24,3 +24,25 @@ body {
         font-size: 21px;
     }
 }
+
+footer {
+    margin-top: 30px;
+}
+
+footer ul {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: 20px;
+    padding: 0;
+}
+
+footer ul:first-child {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #eee;
+}
+
+footer p {
+    display: inline-block;
+}
