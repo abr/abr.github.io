@@ -1,9 +1,7 @@
 ---
-layout: product
 title: Nengo
-anchor: nengo
+slug: nengo
 img: nengo.png
-loc: products/01-nengo/
 pitch: >
   Nengo is a suite of software tools
   that we develop and use to build
@@ -23,7 +21,7 @@ Nengo's sweet spot is anything with dynamics and spikes.
 
 Nengo is unique in its ability to put your neural application on
 a wide variety of hardware -- including the latest neuromorphic hardware.
-Compile your model to run on CPUs, GPUs, FPGAs, supercomputers running MPI, 
+Compile your model to run on CPUs, GPUs, FPGAs, supercomputers running MPI,
 the SpiNNaker neuromorphic chip, or the latest Loihi neuromorphic chip from Intel.
 
 The best place to learn more about Nengo is our dedicated [Nengo website](http://nengo.ai).
@@ -42,7 +40,7 @@ action selection, working memory, attractor networks,
 inductive reasoning, path integration,
 and planning with problem solving.
 Nengo was used to create a continuing research project,
-[Spaun]({{ site.baseurl }}/projects/spaun.html),
+[Spaun]({{ site.baseurl }}{% link research.html %}#spaun),
 a model which combines many
 of the previously listed models
 in a single comprehensive whole.  Spaun has been featured

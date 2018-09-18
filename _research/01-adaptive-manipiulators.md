@@ -1,8 +1,7 @@
 ---
-title: Adaptive manipulator
-anchor: control
+title: Adaptive manipulators
+slug: adaptive-manipulators
 img: control.png
-playlist: https://www.youtube.com/embed/muaG2VETgHU?list=PL0Xs4sfQU-Q1MeTNaizzFWYv1Xz3ua7ZA
 pitch: >
   We have implemented nonlinear adaptive control
   with a learning spiking neural network
@@ -10,8 +9,8 @@ pitch: >
   Provably more effective than PID control,
   and running on neuromorphic hardware,
   we have demonstrated increased accuracy, speed,
-  and orders of magnitude lower-power than using
-  conventional hardware.  This opens the door to efficient,
+  and orders of magnitude lower-power than using conventional hardware.
+  This opens the door to efficient,
   adaptive, embedded robotic systems.
 ---
 
@@ -20,6 +19,7 @@ directly controlling the force
 applied by each motor to the robot
 allows for safe, compliant robotic movement.
 
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/muaG2VETgHU?list=PL0Xs4sfQU-Q1MeTNaizzFWYv1Xz3ua7ZA" frameborder="0" allowfullscreen></iframe>
 
 To effectively implement force controllers, however,
 accurate models of the system dynamics are required.

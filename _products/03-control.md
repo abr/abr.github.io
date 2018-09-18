@@ -1,10 +1,7 @@
 ---
-layout: product
 title: Adaptive control
-anchor: adaptive
+slug: adaptive
 img: adaptive.jpg
-loc: products/03-control/
-playlist: 
 pitch: >
   We have developed a patented adaptive control method
   that guarantees improvement over standard PID control.  Not only does
@@ -12,7 +9,7 @@ pitch: >
   on standard hardware, or next generation neuromorphic hardware.
 ---
 
-Our novel controller uses machine learning and artificial intelligence methods to improve standard industrial control.  
+Our novel controller uses machine learning and artificial intelligence methods to improve standard industrial control.
 
 These patented techniques build on decades of research from MIT into efficient
 methods for building robust and adaptive controllers for nonlinear systems.
@@ -28,4 +25,4 @@ If you're not sure that this will work for your application, contact us and we'l
 For pricing and further information, contact us at info@appliedbrainresearch.com.
 
 Resources:
- - Check out some of [our research]({{ site.baseurl }}/projects) using the controller on a robotic arm
+ - Check out some of [our research]({{ site.baseurl }}{% link research.html %}) using the controller on a robotic arm

@@ -1,15 +1,12 @@
 ---
-layout: product
 title: ABRain Board
-anchor: board
+slug: board
 img: fpga-board1.jpg
-loc: products/02-board/
 pitch: >
-  Grab the first and only commercially available reprogrammable neuromorphic hardware.  
-
+  Grab the first and only commercially available reprogrammable neuromorphic hardware.
 ---
 
-ABRain board allows you to *own* and use a piece of the neuromorphic revolution.  
+ABRain board allows you to *own* and use a piece of the neuromorphic revolution.
 
 ABRain board implements a learning, spiking neural network that you can directly program from within [Nengo]({{ site.baseurl }}/products/nengo.html).
 
@@ -25,4 +22,4 @@ Resources:
 - ABRain board [documentation](https://github.com/nengo/nengo-fpga)
 - [ABRain board forum](http://forum.nengo.ai) for online discussion
 - ABRain board introductory [presentation slides (pdf)]({{ site.baseurl }}/docs/2018_06_12-FPGA_intro.pdf)
-- Checkout our [FPGA research]({{ site.baseurl }}/projects/fpga.html)
+- Check out our [FPGA research]({{ site.baseurl }}/{% link research.html %}#fpga)

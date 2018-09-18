@@ -1,9 +1,7 @@
 ---
-layout: service
 title: Nengo backends
-anchor: backends
+slug: backends
 img: backends.jpg
-loc: services/02-backends/
 pitch: >
   Are you developing an AI accelerator that you want to be easy to program?  We've built a wide variety of backends for Nengo that instantly bring a whole software stack to a variety of hardware.
 

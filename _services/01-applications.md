@@ -1,9 +1,7 @@
 ---
-layout: service
 title: Neuromorphic applications
-anchor: applications
+slug: applications
 img: applications.jpg
-loc: services/01-applications/
 pitch: >
   Target the latest, efficient, neuromorphic hardware with a specific application. We'll help you port it or build it from the ground up.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Neuromorphic hardware
-anchor: hardware
+slug: hardware
 img: hardware.jpg
 pitch: >
   We believe brain-inspired hardware

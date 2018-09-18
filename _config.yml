@@ -14,19 +14,25 @@ gist:
 encoding: UTF-8
 permalink: pretty
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      extrajs: []
+
 collections:
-  projects:
+  products:
     output: false
-    linkname: projects
+    linkname: products
+  research:
+    output: false
+    linkname: research
   services:
-    output: true
+    output: false
     linkname: services
   culture:
     output: false
     linkname: culture
-  products:
-    output: true
-    linkname: products
   team:
     output: false
     linkname: team

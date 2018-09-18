@@ -10,8 +10,8 @@ carousel:
       Our goal is to build the best integrated AI systems,
       ultimately resulting in devices that you can work with
       in the real world.
-    url: projects
-    button: Current projects
+    url: products
+    button: Our products
   - title: Inspired by the brain.
     img: brain
     text: >
@@ -29,6 +29,10 @@ carousel:
       and the open data movement.
     url: culture
     button: Our culture
+sections:
+  - products
+  - services
+  - research
 ---
 <div id="index-carousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -59,56 +63,21 @@ carousel:
   </a>
 </div>
 
-<!--This could be a loop unless we want to format things different for different sections-->
+{% for section in page.sections %}
 <div class="container marketing">
   <div class="row">
-    <h2>Products</h2>
-    {% assign blurbs = site.products %}
+    <h2>{{ section | capitalize }}</h2>
+    {% assign blurbs = site[section] %}
     {% for blurb in blurbs limit:3 %}
     <div class="col-lg-4">
-      <a href="{{ site.url }}/{{ blurb.loc }}">
+      <a href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.slug }}">
         <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ blurb.img }}" alt="" width="200">
       </a>
       <h2>{{ blurb.title }}</h2>
       <p>{{ blurb.pitch }}</p>
-      <a class="btn btn-default" href="{{ site.url }}/{{ blurb.loc }}" role="button">Learn more &raquo;</a>
+      <a class="btn btn-default" href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.slug }}" role="button">Learn more &raquo;</a>
     </div>
     {% endfor %}
   </div>
 </div>
-<hr></hr>
-
-<div class="container marketing">
-  <div class="row">
-    <h2>Services</h2>
-    {% assign blurbs = site.services %}
-    {% for blurb in blurbs limit:3 %}
-    <div class="col-lg-4">
-      <a href="{{ site.url }}/{{ blurb.loc }}">
-        <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ blurb.img }}" alt="" width="200">
-      </a>
-      <h2>{{ blurb.title }}</h2>
-      <p>{{ blurb.pitch }}</p>
-      <a class="btn btn-default" href="{{ site.url }}/{{ blurb.loc }}" role="button">Learn more &raquo;</a>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-<hr></hr>
-
-<div class="container marketing">
-  <div class="row">
-    <h2>Research</h2>    
-    {% assign blurbs = site.projects %}
-    {% for blurb in blurbs limit:3 %}
-    <div class="col-lg-4">
-      <a href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.title | slugify }}">
-        <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ blurb.img }}" alt="" width="200">
-      </a>
-      <h2>{{ blurb.title }}</h2>
-      <p>{{ blurb.pitch }}</p>
-      <a class="btn btn-default" href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.title | slugify }}" role="button">Learn more &raquo;</a>
-    </div>
-    {% endfor %}
-  </div>
-</div>
+{% endfor %}

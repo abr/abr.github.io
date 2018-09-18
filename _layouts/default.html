@@ -1,6 +1,6 @@
 ---
-extracss: nil
-extrajs: nil
+extracss: nill
+extrajs: []
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +50,8 @@ extrajs: nil
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    {% for js_name in page.extrajs %}
+    {% assign extrajs = layout.extrajs | concat: page.extrajs %}
+    {% for js_name in extrajs %}
     <script src="{{ site.baseurl }}/js/{{ js_name }}"></script>
     {% endfor %}
   </body>
