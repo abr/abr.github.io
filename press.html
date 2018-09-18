@@ -166,15 +166,28 @@ spaun:
     link: http://voicerussia.com/radio_broadcast/72430379/98099772.html
   - source: Médecine Sciences Amérique
     link: http://www.msamerique.ca/bulletins/spaun-le-premier-cerveau-artificiel-aux-comportements-humains
+
+awards:
+  - title: 2018 World Economic Forum<br>Technology Pioneer
+    link: https://appliedbrainresearch.com/pressreleases/00-wef/
+    img: wef.png
+  - title: 2015 SVIEF<br>Top 30 Startup
+    link: http://www.svief.org/2015/english/cx.php
+    img: svief.png
+  - title: 2015 R&D 100<br>Editor's Choice
+    link: http://www.rdmag.com/articles/2015/11/special-recognition-and-editors-choice-awards-presented-2015-r-d-100-awards-banquet-las-vegas
+    img: RD100.jpg
 ---
 <div class="container main">
-  <div class="row" id="awards">
-    {% assign awards=site.press | where: "type", "award" %}
-    {% for award in awards offset:1 %}
-    <div class="col-md-6 text-center">
-      <img src="{{ site.baseurl }}/img/{{ award.img }}" alt="" style="height: 140px;">
-      <h3><a href="{{ award.link }}">{{ award.title }}</a></h2>
-      <p>{{ award.content }}</p>
+  <div class="row awards">
+    {% for award in page.awards %}
+    <div class="col-md-4 text-center">
+      <div class="img-container">
+        <a href="{{ award.link }}">
+          <img src="{{ site.baseurl }}/img/{{ award.img }}" alt="">
+        </a>
+      </div>
+      <h3><a href="{{ award.link }}">{{ award.title }}</a></h3>
     </div>
     {% endfor %}
   </div>
