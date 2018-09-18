@@ -1,7 +1,7 @@
 ---
 title: Nengo
 slug: nengo
-img: nengo.png
+img: nengo.svg
 pitch: >
   Nengo is a suite of software tools
   that we develop and use to build
