@@ -52,16 +52,31 @@
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     text-align: center;
-}
-
-.marketing h2 {
-    font-weight: normal;
 }
 
 .marketing .col-lg-4 p {
     margin-right: 10px;
     margin-left: 10px;
     text-align: justify;
+}
+
+.marketing h1 {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    line-height: 0.2;
+    margin: 10px 0 60px;
+    text-align: center;
+}
+
+.marketing h1 span {
+    background: #fff;
+    font-size: 36px;
+    padding: 0 12px;
+}
+
+.marketing h2 {
+    font-size: 24px;
+    font-weight: normal;
 }
