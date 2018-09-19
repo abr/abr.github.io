@@ -24,15 +24,19 @@ a wide variety of hardware -- including the latest neuromorphic hardware.
 Compile your model to run on CPUs, GPUs, FPGAs, supercomputers running MPI,
 the SpiNNaker neuromorphic chip, or the latest Loihi neuromorphic chip from Intel.
 
-The best place to learn more about Nengo is our dedicated [Nengo website](http://nengo.ai).
+The best place to learn more about Nengo is
+our dedicated [Nengo website](http://nengo.ai).
 
 Use Nengo to:
- - Build state-of-the-art spiking deep neural networks
- - Put your favorite model on efficient and fast neuromorphic hardware
- - Integrate many *kinds* of network in one model, spiking, non-spiking, deep, recurrent, with or without online learning.
- - Quickly prototype and test a new network using the interactive graphical interface
- - Explore the world of spiking neural networks with hundreds of [examples](https://www.nengo.ai/nengo/examples.html) and [tutorials](???)
 
+- Build state-of-the-art spiking deep neural networks
+- Put your favorite model on efficient and fast neuromorphic hardware
+- Integrate many *kinds* of network in one model:
+  spiking, non-spiking, deep, recurrent, with or without online learning.
+- Quickly prototype and test a new network
+  using the interactive graphical interface
+- Explore the world of spiking neural networks with hundreds of
+  [examples and tutorials](https://www.nengo.ai/nengo/examples.html)
 
 Among other things, Nengo has been used to
 implement motor control, visual attention, serial recall,
@@ -43,12 +47,16 @@ Nengo was used to create a continuing research project,
 [Spaun]({{ site.baseurl }}{% link research.html %}#spaun),
 a model which combines many
 of the previously listed models
-in a single comprehensive whole.  Spaun has been featured
-hundreds of [media stories]({{ site.baseurl }}/press) from around the world.
+in a single comprehensive whole.
+Spaun has been featured in hundreds of
+[media stories]({{ site.baseurl }}/press) from around the world.
 
-Nengo is free for individuals and academic research. For commercial licenses, see our [store].
+Nengo is free for individuals and academic research.
+For commercial licenses, please
+[contact us]({{ site.baseurl }}{% link about-us.html %}).
 
-Resources:
+<!-- TODO: link to the store here -->
+
 - [Example Nengo models](https://www.nengo.ai/nengo/examples.html)
 - [Learn more about Nengo](https://www.nengo.ai/)
 - [Follow Nengo development](https://github.com/nengo)
