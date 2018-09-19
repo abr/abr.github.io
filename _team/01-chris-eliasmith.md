@@ -1,13 +1,12 @@
 ---
 name: Dr. Chris Eliasmith
-job: Co-founder
 img: chris.jpg
 homepage: http://arts.uwaterloo.ca/~celiasmi/
 email: chris.eliasmith@appliedbrainresearch.com
 ---
 
 Chris is the co-inventor of the Neural Engineering Framework (NEF),
-the Neural Engineering Objects (Nengo) software environment, and 
+the Neural Engineering Objects (Nengo) software environment, and
 the Semantic Pointer Architecture, all of which are dedicated to understanding how the brain works. His team has
 developed the Semantic Pointer Architecture Unified Network (Spaun)
 which is the most realistic functional brain simulation yet developed
@@ -41,5 +40,5 @@ and his seminal
 When he is not pushing the boundaries of theoretical neuroscience
 forward or hanging out with his team at the CNRG, Chris spends time
 with his family and occasionally straps on the blades for a game of
-hockey near his home in Waterloo.  He has a [Bacon-Erdos](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Bacon_number) 
+hockey near his home in Waterloo.  He has a [Bacon-Erdos](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Bacon_number)
 number of 8.

@@ -1,13 +1,11 @@
 ---
 layout: null
 ---
-{% include css/culture.css %}
+{% include css/site.css %}
+{% include css/about-us.css %}
 {% include css/index.css %}
 {% include css/navbar.css %}
 {% include css/news.css %}
-{% include css/partnerships.css %}
 {% include css/press.css %}
 {% include css/products.css %}
 {% include css/showcase.css %}
-{% include css/site.css %}
-{% include css/team.css %}

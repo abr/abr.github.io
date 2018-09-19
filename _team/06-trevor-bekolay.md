@@ -1,6 +1,5 @@
 ---
 name: Dr. Trevor Bekolay
-job: Co-founder
 img: trevor.jpg
 homepage: http://www.bekolay.org/
 email: tbekolay@gmail.com

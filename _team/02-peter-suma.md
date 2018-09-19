@@ -1,6 +1,5 @@
 ---
 name: Peter Suma
-job: Co-founder
 img: pete.jpg
 homepage: http://ca.linkedin.com/in/petersuma/
 email: peter.suma@appliedbrainresearch.com
@@ -27,9 +26,9 @@ started his first company, the award winning SRG Software, while a
 student in computer science at the University of Toronto.
 
 Peter holds a MASc in Theoretical and Computational
-Neuroscience from the University of Waterloo which was supervised by Dr. Eliasmith. 
-His thesis was on "Biologically Plausible Cortical Hierarchical-Classifier 
-Circuit Extensions in Spiking Neurons". Peter holds; an Honours B.Sc. 
+Neuroscience from the University of Waterloo which was supervised by Dr. Eliasmith.
+His thesis was on "Biologically Plausible Cortical Hierarchical-Classifier
+Circuit Extensions in Spiking Neurons". Peter holds; an Honours B.Sc.
 from the University of Toronto; an M.B.A. from
 the University of Chicago; a P.D.A.M. majoring in Financial
 Engineering from the Schulich School of Business; an ICD.D from the

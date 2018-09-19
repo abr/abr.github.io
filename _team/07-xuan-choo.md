@@ -1,6 +1,5 @@
 ---
-name: Xuan Choo
-job: Co-founder
+name: Dr. Xuan Choo
 img: xuan.jpg
 homepage: https://sites.google.com/site/fxchoo/
 email: fchoo@uwaterloo.ca

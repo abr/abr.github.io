@@ -1,0 +1,123 @@
+---
+layout: default
+extrajs:
+  - about-us.js
+---
+
+<div class="container main">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <p class="lead">To inquire about our projects, license our software, set up an interview, or for any other purpose, please email <a href="mailto:info@appliedbrainresearch.com">info@appliedbrainresearch.com</a>.</p>
+    </div>
+  </div>
+
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+    <!-- Team panel -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="team-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#team-collapse" aria-expanded="true" aria-controls="team-collapse">
+            Founders
+          </a>
+        </h4>
+      </div>
+
+      <div id="team-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="team-heading">
+        <div class="panel-body team">
+          {% for person in site.team %}
+          <div class="row">
+            {% if person.name == "intro" %}
+              {{ person.content }}
+            {% else %}
+              <div class="col-md-4 text-center">
+                <img class="center-block img-circle img-responsive" src="{{ site.baseurl }}/img/{{ person.img }}" alt="">
+              </div>
+              <div class="col-md-8">
+                <h2>{{ person.name }}</h2>
+                <a class="btn btn-default" href="{{ person.homepage }}"> Website</a>
+                <a class="btn btn-default" href="mailto:{{ person.email }}">Email</a>
+                <button class="btn btn-default" data-toggle="collapse" data-target="#{{ person.name | slugify }}">Bio <span class="caret"></span></button>
+                <div class="collapse" id="{{ person.name | slugify }}">
+                  {{ person.content }}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+          {% if forloop.last == false %}
+          <hr>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Partnerships panel -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="partnerships-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#partnerships-collapse" aria-expanded="true" aria-controls="partnerships-collapse">
+            Partnerships
+          </a>
+        </h4>
+      </div>
+
+      <div id="partnerships-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="partnerships-heading">
+        <div class="panel-body partnerships">
+          {% for partner in site.partnerships %}
+          {% capture evenodd %}{% cycle 'even', 'odd' %}{% endcapture %}
+          <div class="row partner" id="{{ partner.title | slugify }}">
+            <div class="col-md-6 {% if evenodd == 'odd' %} col-md-push-6{% endif %}">
+              <div class="emphasize-first">
+                {{ partner.content }}
+              </div>
+            </div>
+            <div class="col-md-5 {% if evenodd == 'odd' %}col-md-pull-6{% else %}col-md-offset-1{% endif %}">
+              <a href="{{ partner.link }}">
+                <img class="center-block img-responsive" src="{{ site.baseurl }}/img/{{ partner.img }}" alt="{{ partner.title }}">
+              </a>
+            </div>
+          </div>
+          {% if forloop.last == false %}
+          <hr class="partner-divider">
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Culture panel -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="culture-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#culture-collapse" aria-expanded="true" aria-controls="culture-collapse">
+            Culture
+          </a>
+        </h4>
+      </div>
+
+      <div id="culture-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="culture-heading">
+        <div class="panel-body culture">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="center-block" src="{{ site.baseurl }}/img/sticker.svg">
+            </div>
+            <div class="col-md-8">
+              <ol>
+                {% for point in site.culture %}
+                <li>
+                  <h2>{{ point.title }}</h2>
+                  <p>{{ point.content }}</p>
+                </li>
+                {% endfor %}
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

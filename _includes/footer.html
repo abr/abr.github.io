@@ -2,18 +2,15 @@
   <hr class="featurette-divider">
   <footer>
     <div class="row">
-      <div class="col-sm-5">
+      <div class="col-sm-4">
         <p>&copy; 2018 Applied Brain Research, Inc.</p>
       </div>
-      <div class="col-sm-7">
-        <ul>
-          <li><a href="{{ site.baseurl }}{% link team.html %}">Team</a></li>
-          <li><a href="{{ site.baseurl }}{% link culture.html %}">Culture</a></li>
-        </ul>
-        <ul>
-          <li><a href="{{ site.baseurl }}{% link partnerships.html %}">Partnerships</a></li>
-          <li><a href="{{ site.baseurl }}{% link contact.html %}">Contact us</a></li>
-        </ul>
+      <div class="col-sm-4">
+        {% if page.path != "about-us.html" %}
+        <p class="center-block text-center"><a href="{{ site.baseurl }}{% link about-us.html %}">Contact us</a></p>
+        {% endif %}
+      </div>
+      <div class="col-sm-4">
         <p class="pull-right"><a href="#">Back to top</a></p>
       </div>
   </footer>

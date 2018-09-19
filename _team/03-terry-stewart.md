@@ -1,6 +1,5 @@
 ---
 name: Dr. Terry Stewart
-job: Co-founder
 img: terry.jpg
 homepage: https://www.researchgate.net/profile/Terrence_Stewart
 email: terry.stewart@gmail.com
@@ -27,7 +26,7 @@ support large-scale cognitive models. This has involved both
 high-level cognitive architectures (such as ACT-R) and detailed neural
 models (such as the Neural Engineering Framework and Nengo). Of particular
 interest to him are models involving cognitive reasoning, experience-based
-learning, and reinforcement learning. In concert with this, Terry has 
+learning, and reinforcement learning. In concert with this, Terry has
 worked on statistical tools
 for comparing modelling results with empirical results, and he has clarified
 how such
