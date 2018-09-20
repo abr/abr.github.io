@@ -38,4 +38,4 @@ To purchase ABRain board,
 - [ABRain board forum](http://forum.nengo.ai)
 - ABRain board introductory
   [presentation (pdf)]({{ site.baseurl }}/docs/2018_06_12-FPGA_intro.pdf)
-- Our [FPGA research]({{ site.baseurl }}/{% link research.html %}#fpga)
+- Our [FPGA research]({{ site.baseurl }}{% link research.html %}#fpga)
