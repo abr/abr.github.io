@@ -10,7 +10,10 @@ the Neural Engineering Objects (Nengo) software environment, and
 the Semantic Pointer Architecture, all of which are dedicated to understanding how the brain works. His team has
 developed the Semantic Pointer Architecture Unified Network (Spaun)
 which is the most realistic functional brain simulation yet developed
-as of its publication in November, 2012.  He won the prestigious [2015 NSERC Polanyi Award] (http://www.nserc-crsng.gc.ca/Prizes-Prix/Polanyi-Polanyi/Profiles-Profils/Eliasmith-Eliasmith_eng.asp) for his research.
+as of its publication in November, 2012.
+He won the prestigious
+[2015 NSERC Polanyi Award](http://www.nserc-crsng.gc.ca/Prizes-Prix/Polanyi-Polanyi/Profiles-Profils/Eliasmith-Eliasmith_eng.asp)
+for his research.
 
 Chris is the Canada Research Chair in Theoretical Neuroscience. At the
 University of Waterloo Chris is jointly appointed in the Philosophy,
