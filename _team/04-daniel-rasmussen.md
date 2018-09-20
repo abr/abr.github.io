@@ -1,7 +1,7 @@
 ---
 name: Dr. Daniel Rasmussen
 img: dan.jpg
-homepage: http://www.drasmussen.org
+homepage: https://www.drasmussen.ca
 email: daniel.rasmussen@appliedbrainresearch.com
 ---
 
