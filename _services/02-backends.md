@@ -19,7 +19,7 @@ We've parterned with Fortune 500 companies,
 academic labs, and brand new startups.
 
 Building a usable, tested and flexible software stack is a huge challenge.
-Nengo was designed a central goal of
+Nengo was designed with a central goal of
 deploying models on many different hardware platforms.
 Take advantage of a mature environment
 that's been used by thousands of modelers
