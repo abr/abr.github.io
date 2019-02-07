@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1529px" height="952px" viewBox="0 0 1529 952" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>gradient-bottom-red</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="46.2269101%" y1="87.8715191%" x2="52.4010524%" y2="28.5296505%" id="linearGradient-1">
+            <stop stop-color="#D46E7D" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gradient-bottom--copy-2" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M0.56323,138.328235 C0.56323,382.801913 0.56323,504.886078 0.56323,781.013336 C342.429865,577.264086 733.133029,577.264086 1063.5675,680.447146 C1249.46152,738.495316 1401.72108,825.167596 1528.10335,951.530956 C1528.10335,642.797018 1528.10335,376.241789 1528.10335,92.9856362 C725.433673,-47.0289938 204.142342,-26.5271949 0.56323,138.328235 Z" id="Path-2" transform="translate(764.333289, 475.765478) rotate(-180.000000) translate(-764.333289, -475.765478) "></path>
+        </g>
+    </g>
+</svg>
