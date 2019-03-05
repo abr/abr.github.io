@@ -1,5 +1,7 @@
 ---
-name: Dr. Chris Eliasmith
+FirstName: Chris
+LastName: Eliasmith
+title: Chief Member
 img: chris.jpg
 homepage: http://arts.uwaterloo.ca/~celiasmi/
 email: chris.eliasmith@appliedbrainresearch.com
