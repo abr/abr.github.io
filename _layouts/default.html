@@ -1,0 +1,58 @@
+---
+extracss: nill
+extrajs: []
+---
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Advanced Brain Research</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="[Description of the page less than 150 characters]">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="{{ site.baseurl }}/style.css" rel="stylesheet">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+  </head>
+
+	{{ content }}
+
+
+
+
+    <footer class="text-light footer-main">
+      <p class="small text-center mb-0">
+        <a href="{{ site.baseurl }}{% link index.html %}">HOME</a>
+        <a href="{{ site.baseurl }}{% link products.html %}">PRODUCTS</a>
+        <a href="{{ site.baseurl }}{% link services.html %}">SERVICES</a>
+        <a href="{{ site.baseurl }}{% link about.html %}">ABOUT US</a>
+        <a href="{{ site.baseurl }}{% link news.html %}">NEWS</a>
+        <a href="{{ site.baseurl }}{% link contact.html %}">CONTACT</a>
+        <a href="https://nengo.ai">NENGO.AI</a>
+        <a href="privacy.html">PRIVACY</a>
+      </p>
+      <p class="small text-center mb-0">&copy; Applied Brain Research</p>
+    </footer>
+
+    <script>
+
+
+	function setBannerImage(){
+		var imgArray = new Array();
+		imgArray[0] = "1";
+		imgArray[1] = "2";
+		imgArray[2] = "3";
+		var num = Math.floor( Math.random() * imgArray.length );
+		var img = imgArray[num];
+		document.getElementById('jumbotronID').style.backgroundImage = 'url(image/Banner/' + img + '.jpg)';
+	}
+	window.onload = setBannerImage;
+
+      ScrollReveal().reveal('.fade-in', { scale: 0.85, duration: 1000, delay: 250, interval: 50 });
+    </script>
+
+  </body>
+</html>

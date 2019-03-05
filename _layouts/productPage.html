@@ -1,0 +1,175 @@
+---
+layout: default
+---
+
+  <body class="bg-dark theme-blue">
+
+    <header class="fixed-top header-top shadow-sm">
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}"><img src="{{ site.baseurl }}/logo-dark-notext.png" alt="ABR" class="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" id="navbarDropdownProducts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{ site.baseurl }}{% link products.html %}">PRODUCTS</a>
+              <div class="dropdown-menu shadow-lg border-0" aria-labelledby="navbarDropdownProducts">
+                <a class="dropdown-item {% if page.title == 'Nengo' %}active{% endif %}" href="{{ site.baseurl }}{% link product_Nengo.html %}">Nengo</a>
+                <a class="dropdown-item {% if page.title == 'ABRainBoard' %}active{% endif %}" href="{{ site.baseurl }}{% link product_ABRainBoard.html %}">ABRain Board</a>
+                <a class="dropdown-item {% if page.title == 'AdaptiveControl' %}active{% endif %}" href="{{ site.baseurl }}{% link product_AdaptiveControl.html %}">Adaptive Control</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{{ site.baseurl }}{% link products.html %}">All Products</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}{% link services.html %}">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}{% link about.html %}">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }} {% link news.html %}">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }} {% link research.html %}">RESEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}{% link contact.html %}">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-content gradient-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-lg-6 product-header my-5 py-0 py-sm-5">
+            <h1 class="display-4">{{ page.title }}</h1>
+            <p class="lead m-0">{{ page.description }}</p>
+            <div class="title-bar"></div>
+          </div>
+        </div>
+
+
+		{% for products in site.product %}  
+		{% if products.title == page.title %}
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-6 col-xl-7">		
+			{{ products.content }}
+          </div>
+          <div class="col-10 col-lg-4 col-xl-3 fade-in">
+            <img src="{{ site.baseurl }}/image/{{ products.img }}" style="width:100%;height:auto" class="shadow-lg rounded" />
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-10 col-sm-12">
+            <div class="text-center my-5 p-5 bg-primary-20 rounded">
+              <h3 class="mb-0 py-0">{{ products.title }} Features</h3>
+              <div class="row">
+		{% for feature in page.features %}
+                <div class="col-md-3 py-5 fade-in">
+		
+                  <img src="{{ site.baseurl }}/image/{{ products.icon }}" alt="Software" class="mb-4" />
+                  <h5>{{ feature.title }}</h5>
+                </div>
+                {% endfor %}
+              </div>
+             {% if products.title =="Nengo" %} <a href="#" class="btn btn-secondary text-white">Try It Free</a> {% endif %}
+            </div>
+          </div>
+        </div>
+		{% endif %}
+		{% endfor %}
+
+	{% if page.extraInfo %}
+	{% for extra in site.product %}
+	{% if extra.title == "Spaun" %}
+        <div class="row justify-content-center mt-3 mb-5">
+          <div class="col-10">
+            <h3>{{ extra.title }}</h3>
+          </div>
+          <div class="col-10 col-lg-6 col-xl-7">
+            {{ extra.content }}
+          </div>
+          <div class="col-10 col-lg-4 col-xl-3">
+            <ul class="small">
+		{% for link in extra.links %}
+              <li><a href="{{link.url}}">{{ link.description}} &gt;</a></li>
+		{% endfor %}
+            </ul>
+          </div>
+        </div>
+	{% endif %}
+	{% endfor %}
+	
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-3 my-3 my-lg-0 shadow-lg bg-white fade-in">
+              <div class="py-3 px-2 border-bottom border-light">
+                <h4 class="text-center m-0 py-3">Example Models</h4>
+              </div>
+              <div class="px-2 py-4">
+                <p>Explore dozens of examples and tutorials based on the principles of the Neural Engineering Framework.</p>
+                <a class="btn btn-block btn-secondary text-white" href="https://www.nengo.ai/nengo/examples.html">What Nengo Can Do</a>
+              </div>
+          </div>
+          <div class="col-10 col-lg-1"></div>
+          <div class="col-10 col-lg-3 my-3 my-lg-0 shadow-lg bg-white fade-in">
+              <div class="py-3 px-2 border-bottom border-light">
+                <h4 class="text-center m-0 py-3">Follow Us</h4>
+              </div>
+              <div class="px-2 py-4">
+                <p>Start working with Nengo today! Explore the code and follow the project on Github.</p>
+                <a class="btn btn-block btn-secondary text-white" href="https://github.com/nengo">Github</a>
+              </div>
+          </div>
+          <div class="col-10 col-lg-1"></div>
+          <div class="col-10 col-lg-3 my-3 my-lg-0 shadow-lg bg-white fade-in">
+              <div class="py-3 px-2 border-bottom border-light">
+                <h4 class="text-center m-0 py-3">Commercial Licenses</h4>
+              </div>
+              <div class="px-2 py-4">
+                <p>Nengo is free to try for individuals and academic research. To discuss a commercial license, contact us today.</p>
+                <a class="btn btn-block btn-secondary text-white" href="{{ site.baseurl }}{% link contact.html %}">Contact Us</a>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center pt-5">
+          <div class="col-10 pt-5">
+            <h2 class="display-4">NENGO SERVICES</h2>
+            <p class="lead m-0">SOLVE PROBLEMS WITH CUSTOM NENGO SOLUTIONS</p>
+            <div class="title-bar"></div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+	{% for service in site.backends %}
+          <div class="col-5 py-5">
+
+            <h3>{{service.title}}</h3>
+            {{service.content}}
+            <p><a href="{{ site.baseurl }}/{{service.link}}">More about {{service.title}} &gt;</a></p>
+          </div>
+	{% endfor %}
+        </div>
+      </div>
+	{% endif %}
+      <div class="awards">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10 py-5">
+              <h3 class="text-center py-0 my-0">
+<a class="text-dark" href="{{ site.baseurl }}{% link products.html %}">Explore More Products &gt;</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
