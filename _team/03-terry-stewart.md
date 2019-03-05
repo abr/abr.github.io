@@ -1,5 +1,7 @@
 ---
-name: Dr. Terry Stewart
+FirstName: Terry
+LastName: Stewart
+title: 
 img: terry.jpg
 homepage: https://www.researchgate.net/profile/Terrence_Stewart
 email: terry.stewart@gmail.com
