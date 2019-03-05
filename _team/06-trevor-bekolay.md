@@ -1,5 +1,7 @@
 ---
-name: Dr. Trevor Bekolay
+FirstName: Trevor
+LastName: Bekolay
+title: 
 img: trevor.jpg
 homepage: http://www.bekolay.org/
 email: tbekolay@gmail.com
