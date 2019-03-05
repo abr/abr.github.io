@@ -1,5 +1,7 @@
 ---
-name: Dr. Xuan Choo
+FirstName: Xuan
+LastName: Choo
+title: 
 img: xuan.jpg
 homepage: https://sites.google.com/site/fxchoo/
 email: fchoo@uwaterloo.ca
