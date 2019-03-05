@@ -1,5 +1,7 @@
 ---
-name: Dr. Travis DeWolf
+FirstName: Travis
+LastName: DeWolf
+title: 
 img: travis.jpg
 homepage: http://www.studywolf.com
 email: tdewolf@uwaterloo.ca
