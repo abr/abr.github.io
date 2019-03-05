@@ -1,0 +1,69 @@
+---
+layout: default
+
+---  
+
+  <body class="bg-dark theme-blue">
+
+    <header class="fixed-top header-top shadow-sm">
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}"><img src="{{ site.baseurl }}/logo-dark-notext.png" alt="ABR" class="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownProducts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{ site.baseurl }} {% link products.html %}">PRODUCTS</a>
+              <div class="dropdown-menu shadow-lg border-0" aria-labelledby="navbarDropdownProducts">
+                <a class="dropdown-item" href="{{ site.baseurl }}{% link product_Nengo.html %}">Nengo</a>
+                <a class="dropdown-item" href="{{ site.baseurl }}{% link product_ABRainBoard.html %}">ABRain Board</a>
+                <a class="dropdown-item" href="{{ site.baseurl }}{% link product_AdaptiveControl.html %}">Adaptive Control</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item active" href="{{ site.baseurl }}{% link products.html %}">All Products</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}{% link services.html %}">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}{% link about.html %}">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }} {% link news.html %}">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }} {% link research.html %}">RESEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}{% link contact.html %}">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-content gradient-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-10 col-lg-8 col-xl-7 text-center py-5">
+            <h1 class="display-4">PRODUCTS</h1>
+            <p class="lead m-0">Neuromorphic Software, Hardware, and Solutions.</p>
+            <div class="title-bar"></div>
+          </div>
+        </div>
+        <div class="row justify-content-center py-5">
+
+	{% for prod in site.product %}
+	{% if prod.pitch %}
+          <div class="col col-sm-5 mb-5">
+            <h3>{{prod.title}}</h3>
+            <p>{{prod.pitch}} </p>
+            <p><a href="{{ site.baseurl }}/{{ prod.link }}">More about {{prod.title}} &gt;</a></p>
+          </div>
+	{% endif %}
+	{% endfor %}
+
+        </div>
+      </div>
+    </div>
