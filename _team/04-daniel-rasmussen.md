@@ -1,5 +1,7 @@
 ---
-name: Dr. Daniel Rasmussen
+FirstName: Daniel
+LastName: Rasmussen
+title: 
 img: dan.jpg
 homepage: https://www.drasmussen.ca
 email: daniel.rasmussen@appliedbrainresearch.com
