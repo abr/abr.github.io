@@ -1,5 +1,3 @@
-# --- Jekyll configuration
-
 # Github sets these, and we can't change them.
 lsi: false
 safe: true
@@ -8,11 +6,16 @@ incremental: false
 highlighter: rouge
 gist:
   noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 # These we can modify.
-
 encoding: UTF-8
 permalink: pretty
+
+sass:
+  sass_dir: css/bootstrap
 
 defaults:
   - scope:
@@ -21,27 +24,21 @@ defaults:
       extrajs: []
 
 collections:
-  products:
-    output: false
-    linkname: products
-  research:
-    output: false
-    linkname: research
-  services:
-    output: false
-    linkname: services
+  blog:
+    output: true
   culture:
     output: false
-    linkname: culture
+  external:
+    output: false
+  quotes:
+    output: false
+  press:
+    output: true
+  products:
+    output: false
+  releases:
+    output: false
+  services:
+    output: false
   team:
     output: false
-    linkname: team
-  press:
-    output: false
-    linkname: press
-  pressreleases:
-    output: true
-    linkname: pressreleases
-  partnerships:
-    output: false
-    linkname: partnerships

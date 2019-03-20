@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% assign founder = site.data.founders[page.founder] %}
+<div class="main-content gradient-top bio">
+  <div class="container">
+    {% include title-block.html title=founder.name %}
+    <div class="row justify-content-center my-5">
+      <div class="col-10 col-lg-6 col-xl-7">
+        {{ founder.bio | markdownify }}
+      </div>
+      <div class="col-2 col-lg-2 col-xl-2 pt-2">
+          <img
+            src="{{ site.baseurl }}/img/{{ founder.img }}"
+            style="max-height:150px;float:left; margin: 0 1em 1em 0"
+          />
+          <div class="bio-links">
+            <ul>
+              {% for link in founder.links %}
+                <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+              {% endfor %}
+              <li><a href="mailto:{{ founder.email }}">Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

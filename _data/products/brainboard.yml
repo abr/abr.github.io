@@ -1,0 +1,60 @@
+---
+title: Brain Board
+link: brainboard
+img: fpga-board3.png
+tagLine: Own a piece of the neuromorphic revolution
+shortDescription: >
+  These inexpensive boards open neuromorphics up to anyone.
+  Explore and exploit the advantages of neuromorphic computing
+  in the classroom, the innovation lab, or your basement.
+
+featureCtaText: Contact us to purchase
+featureCtaLink: /contact
+features:
+  - title: Onboard learning
+    icon: /img/icon-brain2-red.svg
+  - title: Inexpensive and off-the-shelf
+    icon: /img/icon-board.svg
+  - title: Use with any Nengo model
+    icon: /img/icon-models.svg
+  - title: Easy setup
+    icon: /img/icon-setup.svg
+
+ctas:
+  - title: Documentation
+    description: >
+      Documentation is freely available and frequently updated. Take a
+      look to see how easy it is to get up and running.
+    link: https://www.nengo.ai/nengo-fpga
+    linkText: View the documentation
+  - title: Community
+    description: >
+      Join a growing community of people building Nengo models
+      together.
+    link: http://forum.nengo.ai
+    linkText: Visit the forum
+  - title: Purchase a board
+    description: >
+      We offer complete hardware and software packages, or we can
+      provide software for your hardware.
+    link: /contact
+    linkText: Contact us
+
+research:
+  title: Large-scale Nengo Brain Boards
+  content: >
+    Our small Nengo Brain Boards are just the beginning, developed to
+    be inexpensive and targeting DE-1 and Pynq FPGA boards. To make
+    neuromorphics easy and fast to deploy at scale, we're developing
+    larger and more capable versions with researchers at the
+    University of Waterloo, which target large off-the-shelf Intel and
+    Xilinx FPGAs. This will provide a quick route to get the benefits
+    of neuromorphic computing sooner rather than later.
+
+    This project is still in the early stages, but has already
+    generated promising results, showing significantly better
+    performance for high bandwidth and compute intensive use
+    cases. Given the large scale, we're working with collaborators to
+    develop special communication protocols to move spiking data
+    efficiently on chip.
+---

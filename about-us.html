@@ -1,122 +1,153 @@
 ---
 layout: default
-extrajs:
-  - about-us.js
+
+theme: theme-yellow
+values:
+  - title: Function above all
+    content: >
+      Most importantly, things have to work.
+      We make products that work as we say they work,
+      and are robustly tested.
+      We only include features that make our products better.
+      Similarly, if a business practice
+      or a part of our culture
+      isn't working,
+      then we'll change it.
+  - title: Failure is encouraged
+    content: >
+      Great ideas come from years of trial and error.
+      We take risks and try things that won't end up working.
+      We learn from these failures, most of the time.
+      Sometimes it might take years of accumulated failure to finally succeed.
+  - title: Be open with each other
+    content: >
+      Collaboration is key to our success.
+      We share ideas and problems with one another;
+      every project is a group project.
+  - title: Be open with everyone
+    content: >
+      We value the dissemination of ideas
+      as much as the products we develop
+      based on those ideas.
+      We will share code and develop it in the open.
+      We will publish, teach, and give talks about how we do what we do.
+  - title: Patents, not secrets
+    content: >
+      As an open company,
+      we do need to protect our ideas somehow.
+      We use the patent system
+      as it was originally meant to be used.
+      We want to foster innovation by all in our field,
+      not stifle it.
+  - title: Relax
+    content: >
+      Nothing, including this culture statement,
+      is taken too seriously.
+      We criticize constructively,
+      are Canadianly polite,
+      and recognize each other's value as people and not as workers.
+founders:
+  - chris-eliasmith
+  - peter-suma
+  - terry-stewart
+  - daniel-rasmussen
+  - travis-dewolf
+  - trevor-bekolay
+  - xuan-choo
 ---
 
-<div class="container main">
-  <div class="row">
-    <div class="col-md-offset-2 col-md-8">
-      <p class="lead">To inquire about our projects, license our software, set up an interview, or for any other purpose, please email <a href="mailto:info@appliedbrainresearch.com">info@appliedbrainresearch.com</a>.</p>
-    </div>
-  </div>
-
-  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-    <!-- Team panel -->
-
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="team-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#team-collapse" aria-expanded="true" aria-controls="team-collapse">
-            Founders
-          </a>
-        </h4>
-      </div>
-
-      <div id="team-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="team-heading">
-        <div class="panel-body team">
-          {% for person in site.team %}
-          <div class="row">
-            {% if person.name == "intro" %}
-              {{ person.content }}
-            {% else %}
-              <div class="col-md-4 text-center">
-                <img class="center-block img-circle img-responsive" src="{{ site.baseurl }}/img/{{ person.img }}" alt="">
-              </div>
-              <div class="col-md-8">
-                <h2>{{ person.name }}</h2>
-                <a class="btn btn-default" href="{{ person.homepage }}"> Website</a>
-                <a class="btn btn-default" href="mailto:{{ person.email }}">Email</a>
-                <button class="btn btn-default" data-toggle="collapse" data-target="#{{ person.name | slugify }}">Bio <span class="caret"></span></button>
-                <div class="collapse" id="{{ person.name | slugify }}">
-                  {{ person.content }}
-                </div>
-              </div>
-            {% endif %}
-          </div>
-          {% if forloop.last == false %}
-          <hr>
-          {% endif %}
-          {% endfor %}
-        </div>
+<div class="main-content gradient-top">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-lg-8 col-xl-7 text-center py-5">
+        <h1 class="display-4">About us</h1>
+        <p class="lead m-0">From research to application</p>
+        <div class="title-bar"></div>
       </div>
     </div>
-
-    <!-- Partnerships panel -->
-
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="partnerships-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#partnerships-collapse" aria-expanded="true" aria-controls="partnerships-collapse">
-            Partnerships
+    <div class="row justify-content-center my-5">
+      <div class="col-10 col-lg-6 col-xl-7">
+        <h3>Our story</h3>
+        <p>
+          ABR was spun out of Professor Chris Eliasmith's
+          <a href="http://compneuro.uwaterloo.ca/">
+            Computational Neuroscience Research Group
           </a>
-        </h4>
+          (CNRG) at the University of Waterloo about two years after
+          the Spaun model was published. Just before that, Peter Suma had
+          joined the CNRG to see if their approach to building neural and
+          cognitive models might have commercial applications.
+        </p>
+        <p>
+          A few years earlier, the CNRG had started using their Neural Engineering
+          Framework (NEF) and Semantic Pointer Architecture (SPA) to
+          build models targeting neuromorphic hardware. The
+          combination of advanced algorithms, the ability to run them on
+          the latest hardware, and Pete's extensive business background made
+          ABR a no-brainer. Today ABR is pushing
+          neuromorphic computing as a new platform,
+          demonstrating how to achieve
+          state-of-the-art power, speed, and accuracy across a range
+          of AI applications.
+        </p>
       </div>
-
-      <div id="partnerships-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="partnerships-heading">
-        <div class="panel-body partnerships">
-          {% for partner in site.partnerships %}
-          {% capture evenodd %}{% cycle 'even', 'odd' %}{% endcapture %}
-          <div class="row partner" id="{{ partner.title | slugify }}">
-            <div class="col-md-6 {% if evenodd == 'odd' %} col-md-push-6{% endif %}">
-              <div class="emphasize-first">
-                {{ partner.content }}
-              </div>
-            </div>
-            <div class="col-md-5 {% if evenodd == 'odd' %}col-md-pull-6{% else %}col-md-offset-1{% endif %}">
-              <a href="{{ partner.link }}">
-                <img class="center-block img-responsive" src="{{ site.baseurl }}/img/{{ partner.img }}" alt="{{ partner.title }}">
-              </a>
-            </div>
-          </div>
-          {% if forloop.last == false %}
-          <hr class="partner-divider">
-          {% endif %}
-          {% endfor %}
-        </div>
+    </div>
+    <div class="row justify-content-center my-5">
+      <div class="col-10 col-lg-6 col-xl-7">
+        <h3>Our research</h3>
+        <p>
+          In addition to Spaun, the research team at ABR has made advances in
+          deep spiking networks, spiking and non-spiking adaptive control,
+          recurrent neural networks, on-line learning,
+          spiking and non-spiking hierarchical reinforcement learning and much
+          more. For instance, we have developed new a kind of recurrent neural
+          network that
+          can outperform LSTMs on a variety of tasks, while being fully
+          implementable in spikes. We also built the first applications using
+          Intel's new neuromorphic hardware, Loihi, and demonstrated
+          state-of-the-art power and performance on deep learning and adaptive
+          control applications.
+        </p>
+        <p>
+          As well, we have developed an inexpensive and accessible spiking hardware
+          platform using FPGAs that can introduce new users to the world of
+          neuromorphics. We continue to push the boundaries of cognitive
+          computing on neuromorphic platforms and build ever larger and more
+          functional systems driving new robotic functionality, better and more
+          efficient video and audio processing, and high-speed action-perception
+          applications.
+        </p>
       </div>
     </div>
 
-    <!-- Culture panel -->
-
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="culture-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#culture-collapse" aria-expanded="true" aria-controls="culture-collapse">
-            Culture
-          </a>
-        </h4>
+    <div class="row justify-content-center my-5">
+      <div class="col-10 col-lg-6 col-xl-7">
+        <h3>Our founders</h3>
       </div>
-
-      <div id="culture-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="culture-heading">
-        <div class="panel-body culture">
-          <div class="row">
-            <div class="col-md-4">
-              <img class="center-block" src="{{ site.baseurl }}/img/sticker.svg">
-            </div>
-            <div class="col-md-8">
-              <ol>
-                {% for point in site.culture %}
-                <li>
-                  <h2>{{ point.title }}</h2>
-                  <p>{{ point.content }}</p>
-                </li>
-                {% endfor %}
-              </ol>
-            </div>
+    </div>
+    <div class="row justify-content-center">
+      {% for founder in page.founders %}
+      {% assign person = site.data.founders[founder] %}
+      <div class="col-10 col-sm-5 col-lg-3 mb-4">
+        <div class="person card border-0 rounded-0 shadow-lg">
+          <a href="{{ person.bioLink }}"><div class="person-image" style="background-image: url('/img/{{person.img}}');"></div></a>
+          <div class="card-body">
+            <p class="m-0">
+              <strong>{{ person.name }}</strong>
+            </p>
           </div>
         </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="row justify-content-center my-5">
+      <div class="col-10 col-lg-6 col-xl-7">
+        <h3>Our values</h3>
+        {% for value in page.values %}
+        <h5>{{ forloop.index }}. {{ value.title }}</h5>
+        <p>{{ value.content }}</p>
+        {% endfor %}
       </div>
     </div>
   </div>

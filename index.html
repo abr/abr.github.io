@@ -1,83 +1,158 @@
 ---
 layout: default
-title: Applied Brain Research
-extrajs:
-  - index.js
-carousel:
-  - title: Surprisingly good at AI and robotics
-    img: ai-robotics
-    text: >
-      Our goal is to build the best integrated AI systems,
-      ultimately resulting in devices that you can work with
-      in the real world.
-    url: products
-    button: Our products
-  - title: Inspired by the brain.
-    img: brain
-    text: >
-      The team behind ABR has been building
-      models of the brain for the past decade.
-      Now it's time to apply what we've learned.
-    url: about-us/#team
-    button: Meet the team
-  - title: Open culture
-    img: open
-    text: >
-      We use and are inspired by
-      open source software,
-      open access in science,
-      and the open data movement.
-    url: about-us/#culture
-    button: Our culture
-sections:
-  - products
-  - services
-  - research
+
+awards:
+  - title: 2018 World Economic Forum<br>Technology Pioneer
+    link: https://appliedbrainresearch.com/pressreleases/00-wef/
+    img: wef.png
+  - title: 2015 SVIEF<br>Top 30 Startup
+    link: http://www.svief.org/2015/english/cx.php
+    img: svief.png
+  - title: 2015 R&D 100<br>Editor's Choice
+    link: http://www.rdmag.com/articles/2015/11/special-recognition-and-editors-choice-awards-presented-2015-r-d-100-awards-banquet-las-vegas
+    img: RD100.jpg
 ---
-<div id="index-carousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#index-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#index-carousel" data-slide-to="1"></li>
-    <li data-target="#index-carousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    {% for item in page.carousel %}
-    <div class="item {{ item.img }}{% if forloop.index0 == 0 %} active{% endif %}">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>{{ item.title }}</h1>
-          <p>{{ item.text }}</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ site.baseurl }}/{{ item.url }}" role="button">{{ item.button }}</a></p>
+
+<div class="jumbotron jumbotron-fluid p-0 mb-0" style="background-image: url(/img/brain.jpg)">
+  <div class="container-fluid text-center">
+    <h1 class="display-4 text-white">Inspired by the human brain</h1>
+    <p class="lead m-0">Integrated AI systems for real-world applications</p>
+  </div>
+</div>
+
+<div class="main-content gradient-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-lg-8 col-xl-7 text-center py-5">
+        <img src="/img/icon-brain.svg" alt="Neural" class="mt-2 mb-4" />
+        <h3>Oh, you want to know what we actually <strong>do</strong>?</h3>
+        <p class="text-justify">
+          At ABR we develop a new kind of AI that exploits spiking in
+          neural networks. Our algorithms and the hardware we use
+          ranges from the conventional (CPUs, GPUs, deep networks,
+          ANNs) to the unconventional (spiking ASICs, FPGAs, adaptive
+          controllers, SNNs). We have deep expertise in using
+          neuromorphic hardware and software to solve AI problems. We
+          have developed a software platform, Nengo, that flexibly
+          combines all these methods to get you the lowest power,
+          fastest speeds, and highest accuracy.
+        </p>
+        <p><a class="btn btn-secondary text-white" href="{{ site.baseurl }}{% link about-us.html %}">Our story</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="text-center shadow-lg p-5 bg-white">
+          <h3 class="mb-0 py-0">Want to see some <strong>stuff</strong> we make?</h3>
+          <div class="row wanna-see">
+            <a href="{{ site.baseurl }}{% link products/nengo.md %}" class="col-md-4 py-5 fade-in wanna-see-card">
+              <img src="/img/icon-software.svg" alt="Software" class="mb-4" />
+              <h5>Nengo</h5>
+              <p class="wanna-see-card-content">
+                Our flagship suite of software tools to build and simulate large-scale neural systems.
+              </p>
+              <p>Try it out &gt;</p>
+            </a>
+            <a href="{{ site.baseurl }}{% link products/brainboard.md %}"  class="col-md-4 py-5 fade-in wanna-see-card">
+              <img src="/img/icon-board.svg" alt="Board" class="mb-4" />
+              <h5>Brain Board</h5>
+              <p class="wanna-see-card-content">
+                The first and only commercially-available reprogrammable neuromorphic hardware.
+              </p>
+              <p>See purchase options &gt;</p>
+            </a>
+            <a href="{{ site.baseurl }}{% link products/adaptivecontrol.md %}"  class="col-md-4 py-5 fade-in wanna-see-card">
+              <img src="/img/icon-method.svg" alt="Method" class="mb-4" />
+              <h5>Adaptive Control</h5>
+              <p class="wanna-see-card-content">
+                Our patented adaptive control method to improve standard industrial control.
+              </p>
+              <p>Tell me more &gt;</p>
+            </a>
+          </div>
+          <a href="{{ site.baseurl }}{% link products.html %}" class="btn btn-secondary text-white">Explore all products</a>
         </div>
       </div>
     </div>
-    {% endfor %}
-  </div>
-  <a class="left carousel-control" href="#index-carousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#index-carousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-lg-8 text-justify py-5">
 
-{% for section in page.sections %}
-<div class="container marketing">
-  <div class="row">
-    <h1><span>{{ section | capitalize }}</span></h1>
-    {% assign blurbs = site[section] %}
-    {% for blurb in blurbs limit:3 %}
-    <div class="col-lg-4">
-      <a href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.slug }}">
-        <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ blurb.img }}" alt="" width="200">
-      </a>
-      <h2>{{ blurb.title }}</h2>
-      <p>{{ blurb.pitch }}</p>
-      <a class="btn btn-default" href="{{ site.baseurl }}/{{blurb.collection}}/#{{ blurb.slug }}" role="button">Learn more &raquo;</a>
+        <div id="carouselTestimonials" class="testimonials carousel slide" data-ride="carousel">
+          <div class="carousel-inner text-center">
+            {% for quote in site.quotes %}
+            <div class="carousel-item{% if forloop.first %} active{% endif %}">
+              <div class="d-flex h-100 align-items-center justify-content-center">
+                <a  href="{{ quote.link }}" class="blockquote">
+                  {{ quote.content }}
+                  <footer class="blockquote-footer">{{ quote.source }}
+                    <cite title="{{ quote.title }}">{{ quote.title }}</cite>
+                  </footer>
+                </a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselTestimonials" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
     </div>
-    {% endfor %}
+  </div>
+  <div class="awards">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-lg-6 py-5">
+
+          <h3 class="text-center mb-5">Awards &amp; Accolades</h3>
+
+          <div id="carouselAwards" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              {% for award in page.awards %}
+              <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                <div class="row">
+                  <div class="col-lg-6 text-right awards-col">
+                    <img src="/img/{{ award.img }}" />
+                  </div>
+                  <div class="col-lg-6 text-left awards-col">
+                    <a href="{{ award.link }}">{{ award.title }}</a>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#carouselAwards" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselAwards" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-lg-8 col-xl-7">
+        <h3 class="pt-5 text-center">So, how can we <strong>help?</strong></h3>
+        <p class="mb-0 py-0 text-center">
+          Check out the rest of our site if you're looking for our
+          <a href="{{ site.baseurl }}{% link about-us.html %}">company history</a>,
+          <a href="{{ site.baseurl }}{% link products.html %}">products</a>,
+          <a href="{{ site.baseurl }}{% link services.html %}">services</a>,
+          or <a href="{{ site.baseurl }}{% link news.html %}">recent news</a>.
+        </p>
+      </div>
+    </div>
+    {% include contact.html %}
   </div>
 </div>
-{% endfor %}

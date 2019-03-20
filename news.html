@@ -1,31 +1,103 @@
 ---
 layout: default
+theme: theme-green
+
+title: News
 ---
-<div class="container main news">
-  <div class="row">
-    <div class="col-md-8">
-      <div class="timeline">
-        {% for post in site.posts %}
-        <div class="timeline-block">
-          <div class="timeline-icon{% if post.icon %} timeline-icon-hide-border{% endif %}">
-            {% if post.icon %}
-            <i class="fa fa-{{ post.icon }}" aria-hidden="true"></i>
+<div class="main-content gradient-top">
+  <div class="container">
+    {% include title-block.html title=page.title %}
+    <div class="row justify-content-center py-5">
+      <div class="col col-sm-7 mb-5">
+        <div class="pb-4">
+          <button class="btn btn-primary text-white" data-id="all" onclick="changeFilter(this);">All</button>
+          <button class="btn btn-primary text-white" data-id="press" onclick="changeFilter(this);">Press releases</button>
+          <button class="btn btn-primary text-white" data-id="blog" onclick="changeFilter(this);">Blog posts</button>
+          <button class="btn btn-primary text-white" data-id="external" onclick="changeFilter(this);">External link</button>
+        </div>
+        {% assign posts = site.blog | concat: site.external | concat: site.press | sort: "date" | reverse %}
+        {% for post in posts %}
+        <div class="mb-5 {{ post.collection }}">
+          <h4><a href="{{ post.external_url | default: post.url }}">
+              {{ post.title }}
+          </a></h4>
+          <p class="mb-1">
+            {% if post.collection == "blog" %}
+              <span class="badge bg-red text-white">Blog post</span>
+            {% elsif post.collection == "external" %}
+              <span class="badge bg-purple text-white">External</span>
+            {% elsif post.collection == "press" %}
+              <span class="badge bg-primary text-white">Press release</span>
             {% endif %}
-          </div>
-          <div class="timeline-date">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </div>
-          <div class="timeline-content">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </div>
+            {{ post.date | date: "%b %d, %Y" }}{% if post.author %}, {{ post.author }}{% endif %}
+          </p>
         </div>
         {% endfor %}
       </div>
+
+      <div class="col col-sm-3 mb-5">
+        <h5>Latest releases</h5>
+        <ul class="list-group mb-5">
+          {% for release in site.releases %}
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="{{ release.external_url }}">{{ release.name }}</a>
+              <a href="{{ release.versions[0].external_url }}" class="badge bg-light text-dark">
+                {{ release.versions[0].version }}
+              </a>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-dark">
+                {{ release.latest | date: "%b %d, %Y" }}
+              </small>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <h5>All releases</h5>
+
+        <ul class="list-group mb-5">
+          {% for release in site.releases %}
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="{{ release.external_url }}">{{ release.name }}</a>
+            </div>
+            <div class="row">
+              <div class="col-12 justify-content-between align-items-center">
+                {% for version in release.versions %}
+                <a href="{{ version.external_url }}" class="badge bg-light text-dark">
+                  {{ version.version }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <div class="border rounded">
+          <a class="twitter-timeline mt-5" data-height="600" href="https://twitter.com/abr_inc?ref_src=twsrc%5Etfw">Twitter Feed</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+      </div>
     </div>
-    <div class="col-md-4">
-      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/abr_inc" data-widget-id="730104444638081024">Tweets by @abr_inc</a>
-      <script type="text/javascript">
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-      </script>
   </div>
 </div>
+
+<script>
+  const changeFilter = (btn) => {
+    const all = ['press', 'blog', 'external'];
+    const selectedFilter = btn.getAttribute('data-id');
+
+    all.forEach(filter => {
+      if (filter === selectedFilter || selectedFilter == "all") {
+        $(`.${filter}`).show();
+      } else {
+        $(`.${filter}`).hide();
+      }
+
+    });
+  };
+</script>
