@@ -1,0 +1,86 @@
+---
+title: NBEL and ABR Announce Partnership to Distribute ABR's Neural Computing Board in Israel
+author: Applied Brain Research
+layout: post
+---
+
+**Toronto, Ontario, Canada – Apr. 2, 2019** –
+NBEL Innovation Workshops LTD is thrilled to announce
+a new partnership with Applied Brain Research Inc (ABR).
+ABR is based in Canada, and is one of the
+world's leading neuromorphic engineering companies. ABR is
+revolutionizing computing by providing computational solutions based
+on the architecture of the brain.
+
+ABR's FPGA neuromorphic compute board, ABRain board, and
+ABR's neuromorphic application development software tool-set,
+are able to run real-time neural networks quickly and efficiently.
+
+NBEL Innovation Workshops, housed in Biohouse at the
+Hadassah Medical Center in Jerusalem, is ABR's exclusive distributor
+for the ABRain board in Israel.
+
+This exciting new interface between neuroscience, computer science,
+and electrical engineering is anticipated to revolutionize
+the way we do computer vision, robotics and computerized cognitive tasks.
+
+"We are very excited to be working closely with Dr. Tsur and his
+team at NBEL. Their depth of expertise in neuromorphic computing
+hardware and algorithms makes them the ideal partner to help
+the researchers and companies in Israel looking to be first-movers
+in capitalizing on the advances and power of neuromorphic computing,"
+said Peter Suma, co-CEO of ABR.
+
+"At NBEL, we are thrilled to be part of this exciting endeavor
+with ABR and look forward to working with our Israeli customers
+to deliver cutting-edge neural research and commercial
+computational platforms like the ABRain board," said
+Dr. Elishai Ezra Tsur, CEO of NBEL Innovation Workshops.
+
+**About Applied Brain Research Inc. (ABR)**
+
+ABR is the maker of the [Nengo](http://nengo.ai/)
+neuromorphic software development suite
+which includes the world's leading multi-platform,
+visual neuromorphic software compiler, runtime
+and spiking deep learning platform.
+Using [ABR's neuromorphic tools](https://appliedbrainresearch.com/products/),
+the team at ABR has built
+[Spaun](https://appliedbrainresearch.com/research/#spaun),
+the world's largest functional brain model
+and builds real-time, full-loop AI
+"[brains](https://appliedbrainresearch.com/services/)"
+for customers in the military, self-driving car,
+ioT and smartphone markets.
+([www.appliedbrainresearch.com](http://www.appliedbrainresearch.com/))
+
+**About NBEL Innovation Workshops (NBEL)**
+
+NBEL Innovation Workshops provides expertise
+in the various fields of computer aided optimized
+design of circuits and systems, including mathematical modelling,
+embedded computing, control systems, neuromorphic engineering
+and microfluidics. NBEL workshops also provides state of the art
+educational experiences, for individuals as well as groups,
+in all areas of Brain-inspired Technologies, Bioengineering,
+Robotics and Vision Processing.
+Located in Hadassah Medical Center, Biohouse, Jerusalem
+and led by Dr. Elishai Ezra Tsur.
+
+**Media Contacts**
+
+Peter Suma<br>
+co-CEO<br>
+Applied Brain Research Inc.<br>
+https://www.appliedbrainresearch.com<br>
+peter.suma@appliedbrainresearch.com<br>
++1-416-505-8973
+
+Dr. Elishai Ezra Tsur<br>
+CEO<br>
+NBEL Innovation Workshops<br>
+http://nbel-lab.com/workshops<br>
+elishai@nbel-lab.com<br>
++972-(0)2-6751297
+
+\#\#\#
