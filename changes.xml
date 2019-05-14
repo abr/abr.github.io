@@ -1,0 +1,17 @@
+---
+---
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Applied Brain Research Website Change Log</title>
+    <link>http://appliedbrainresearch.com</link>
+    <description>Describes the changes made to Applied Brain Research website</description>
+    {% for change in site.changes %}
+    <item>
+      <title>{{ change.title }}</title>
+      <link>{{ change.link }}</link>
+      <description>{{ change.content }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
