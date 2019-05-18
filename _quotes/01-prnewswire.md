@@ -3,6 +3,7 @@ title: Neuromorphic computing market growth potentially worth $272.9 million by 
 source: PR Newswire
 link: http://news.sys-con.com/node/3919556
 ---
+
 **Major players** operating in the
 neuromorphic computing market include
 IBM Corp.(U.S.), HP Corp. (U.S.), Samsung Electronics Ltd. (South Korea),

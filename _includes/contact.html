@@ -1,20 +1,43 @@
 <a name="contact-us" class="anchor"></a>
-<form accept-charset="UTF-8" action="https://usebasin.com/f/109d3824d3af" method="POST" class="py-5">
+<form
+  accept-charset="UTF-8"
+  action="https://usebasin.com/f/109d3824d3af"
+  method="POST"
+  class="py-5"
+>
   <div class="row justify-content-center">
     <div class="col-sm-10 col-md-5 col-xl-4">
       <div class="form-group fade-in">
         <label for="contactName">Name</label>
-        <input type="text" class="form-control" id="contactName" name="contactName" placeholder="First Last">
+        <input
+          type="text"
+          class="form-control"
+          id="contactName"
+          name="contactName"
+          placeholder="First Last"
+        />
       </div>
       <div class="form-group fade-in">
         <label for="contactPhone">Phone</label>
-        <input type="tel" class="form-control" id="contactPhone" name="contactPhone" placeholder="(123) 456-7890">
+        <input
+          type="tel"
+          class="form-control"
+          id="contactPhone"
+          name="contactPhone"
+          placeholder="(123) 456-7890"
+        />
       </div>
     </div>
     <div class="col-sm-10 col-md-5 col-xl-4">
       <div class="form-group fade-in">
         <label for="contactEmail">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="name@example.com"
+        />
       </div>
       <div class="form-group fade-in">
         <label for="contactSubject">Subject</label>
@@ -22,19 +45,15 @@
           <option>General question</option>
           <option>Partnership</option>
           <option>Media inquiry</option>
-          {% capture product_names %}
-            {% for product in site.data.products %}
-              {{ product[0] }}
-            {% endfor %}
-          {% endcapture %}
-          {% assign product_names = product_names | split: " " | sort %}
-          {% for product_name in product_names %}
-            <option value="{{ product_name }}">
-              {{ site.data.products[product_name].title }}
-            </option>
-          {% endfor %}
-          {% for service in site.services %}
-            <option value="{{ service.pageId }}">{{ service.title }}</option>
+          {% capture product_names %} {% for product in site.data.products %} {{
+          product[0] }} {% endfor %} {% endcapture %} {% assign product_names =
+          product_names | split: " " | sort %} {% for product_name in
+          product_names %}
+          <option value="{{ product_name }}">
+            {{ site.data.products[product_name].title }}
+          </option>
+          {% endfor %} {% for service in site.services %}
+          <option value="{{ service.pageId }}">{{ service.title }}</option>
           {% endfor %}
         </select>
       </div>
@@ -44,13 +63,24 @@
     <div class="col-sm-10 col-md-10 col-xl-8">
       <div class="form-group fade-in">
         <label for="contactMessage">Message</label>
-        <textarea class="form-control" id="contactMessage" name="contactMessage" rows="3"></textarea>
+        <textarea
+          class="form-control"
+          id="contactMessage"
+          name="contactMessage"
+          rows="3"
+        ></textarea>
       </div>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-8 text-center consent">
-      <input type="checkbox" id="consent" name="consent" value="Consent Given" class="mr-1 mb-1" />
+      <input
+        type="checkbox"
+        id="consent"
+        name="consent"
+        value="Consent Given"
+        class="mr-1 mb-1"
+      />
       <label for="consent">
         I consent to the use of my personal data in accordance with the
         <a href="{{ site.baseurl }}{% link privacy.md %}">ABR privacy policy</a>
@@ -59,34 +89,41 @@
   </div>
   <div class="row justify-content-center">
     <div class="col-8 text-center fade-in">
-      <input type="submit" name="submit" id="submit" disabled class="btn btn-secondary text-white" value="Send message" />
+      <input
+        type="submit"
+        name="submit"
+        id="submit"
+        disabled
+        class="btn btn-secondary text-white"
+        value="Send message"
+      />
     </div>
   </div>
 </form>
 <script type="text/javascript">
   /**
-  * Will change the subject on the contact form
-  */
-  const changeSubject = (subjectParam) => {
-    const select = document.getElementById('contactSubject');
+   * Will change the subject on the contact form
+   */
+  const changeSubject = subjectParam => {
+    const select = document.getElementById("contactSubject");
     subjectSelect = select.value = subjectParam;
-  }
+  };
 
   const urlParams = new URLSearchParams(window.location.search);
-  const subjectParam = urlParams.get('subject');
+  const subjectParam = urlParams.get("subject");
 
-  if(subjectParam) {
+  if (subjectParam) {
     changeSubject(subjectParam);
   }
 
   /**
-  * Listens for consent change and will disable submit when not consentinh
-  */
+   * Listens for consent change and will disable submit when not consentinh
+   */
 
-  const checkbox = document.getElementById('consent');
-  const submitButton = document.getElementById('submit');
+  const checkbox = document.getElementById("consent");
+  const submitButton = document.getElementById("submit");
 
-  checkbox.addEventListener('change', function() {
+  checkbox.addEventListener("change", function() {
     submit.disabled = !this.checked;
   });
 </script>

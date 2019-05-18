@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% assign product = site.data.products[page.product] %}
 <div class="main-content gradient-top">
   <div class="container">
@@ -87,22 +88,23 @@ layout: default
       <div class="row justify-content-center">
         <div class="col-10">
           <div class="row">
-          {% for service in product.services %}
+            {% for service in product.services %}
             <div class="col-5 py-5">
               <h3>{{ service.title }}</h3>
               <p>{{ service.description }}</p>
               <p>
-                <a href="{{ service.link }}">More about {{ service.title }} &gt;</a>
+                <a href="{{ service.link }}"
+                  >More about {{ service.title }} &gt;</a
+                >
               </p>
             </div>
-          {% endfor %}
+            {% endfor %}
           </div>
         </div>
       </div>
     </div>
-    {% endif %}
-    {% if product.research %}
-    {% assign research = product.research %}
+    {% endif %} {% if product.research %} {% assign research = product.research
+    %}
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-10 pt-5">

@@ -3,6 +3,7 @@ layout: product
 theme: theme-blue
 product: nengo
 ---
+
 Nengo is a complete neural simulator,
 running models with deep learning, online learning, static weights,
 simple linear neurons, complex spiking neurons,

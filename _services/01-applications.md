@@ -7,6 +7,7 @@ pitch: >
   with a specific application.
   We'll help you port it or build it from the ground up.
 ---
+
 We've built our reputation on developing
 proof-of-concept applications
 of neuromorphic technology.

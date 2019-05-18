@@ -1,8 +1,8 @@
 ---
 layout: news
 title: >
-    ABR Unveils AI Demonstration Applications for Loihi,
-    Intel's New Neuromorphic Chip
+  ABR Unveils AI Demonstration Applications for Loihi,
+  Intel's New Neuromorphic Chip
 author: Applied Brain Research
 ---
 
@@ -52,7 +52,6 @@ pre-launch collaboration on Loihi and is excited to soon offer all
 of our collective research and commercial partners the full Nengo
 software stack to program with Loihi.
 
-
 ### About Nengo
 
 ABR’s Nengo is a neuromorphic compiler for building and simulating
@@ -82,7 +81,6 @@ brain model, Spaun.
 More information about Nengo, the Neural Engineering Framework, and
 Spaun can be found at [www.nengo.ai](https://www.nengo.ai).
 
-
 ### About Applied Brain Research
 
 Neural networks have become a necessary tool for advanced computing
@@ -107,7 +105,6 @@ on the development and commercialization of technology based on theoretical
 neuroscience research, providing the neural development and simulation package,
 Nengo, as well as neuromorphic solutions to vision, robotics, and
 cognitive tasks.
-
 
 **Company Contact**
 

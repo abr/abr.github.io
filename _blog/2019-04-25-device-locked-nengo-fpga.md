@@ -11,13 +11,13 @@ IP from unauthorized distribution. Many standard methods to protect FPGA
 designs, known as bitstreams, rely on control of the physical device.
 They work by preloading secret encryption keys or locking out access to read or
 configure certain parts of a device. In our case, however, our distribution
-model is more of the *bring-your-own-board flavour*, which makes such standard
+model is more of the _bring-your-own-board flavour_, which makes such standard
 protection methods infeasible.
 
 Instead, we lock our bitstreams to a specific device using a read-only, unique
 identifier that Xilinx calls the Device DNA. Before Nengo FPGA begins execution
 on the FPGA we check this Device DNA and compare it to a reference value
-compiled into the bitstream itself. With this *DNA-lock*, if we find a valid
+compiled into the bitstream itself. With this _DNA-lock_, if we find a valid
 DNA then it's business as usual, but a mismatch raises an error. So even if our
 bitstreams are replicated and distributed, without an authorized DNA they won't
 be of much use.

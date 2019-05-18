@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "prettier": "prettier"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

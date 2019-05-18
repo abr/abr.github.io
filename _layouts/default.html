@@ -1,53 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Applied Brain Research</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="Applied Brain Research (ABR) is the maker of the leading compiler and operating system for neuromorphic computing, Nengo.">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Applied Brain Research (ABR) is the maker of the leading compiler and operating system for neuromorphic computing, Nengo."
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+    <link rel="icon" href="/favicon.ico" />
   </head>
 
   <body class="bg-dark {{ page.theme }}">
-
     <header class="fixed-top header-top shadow-sm">
       <nav class="navbar navbar-expand-md navbar-light bg-white">
         <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}">
-          <img src="/img/logo-blue-notext.svg" alt="Applied Brain Research" class="logo" />
+          <img
+            src="/img/logo-blue-notext.svg"
+            alt="Applied Brain Research"
+            class="logo"
+          />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-collapse"
+          aria-controls="navbar-collapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbar-dropdown-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Products</a>
-              <div class="dropdown-menu shadow-lg border-0" aria-labelledby="navbar-dropdown-products">
-                <a class="dropdown-item" href="{{ site.baseurl }}{% link products/nengo.md %}">Nengo</a>
-                <a class="dropdown-item" href="{{ site.baseurl }}{% link products/brainboard.md %}">Brain Board</a>
-                <a class="dropdown-item" href="{{ site.baseurl }}{% link products/adaptivecontrol.md %}">Adaptive Control</a>
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbar-dropdown-products"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                >Products</a
+              >
+              <div
+                class="dropdown-menu shadow-lg border-0"
+                aria-labelledby="navbar-dropdown-products"
+              >
+                <a
+                  class="dropdown-item"
+                  href="{{ site.baseurl }}{% link products/nengo.md %}"
+                  >Nengo</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="{{ site.baseurl }}{% link products/brainboard.md %}"
+                  >Brain Board</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="{{ site.baseurl }}{% link products/adaptivecontrol.md %}"
+                  >Adaptive Control</a
+                >
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{{ site.baseurl }}{% link products.html %}">All Products</a>
+                <a
+                  class="dropdown-item"
+                  href="{{ site.baseurl }}{% link products.html %}"
+                  >All Products</a
+                >
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}{% link services.html %}">Services</a>
+              <a
+                class="nav-link"
+                href="{{ site.baseurl }}{% link services.html %}"
+                >Services</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}{% link news.html %}">News</a>
+              <a class="nav-link" href="{{ site.baseurl }}{% link news.html %}"
+                >News</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}{% link about-us.html %}">About us</a>
+              <a
+                class="nav-link"
+                href="{{ site.baseurl }}{% link about-us.html %}"
+                >About us</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}{% link contact.html %}">Contact</a>
+              <a
+                class="nav-link"
+                href="{{ site.baseurl }}{% link contact.html %}"
+                >Contact</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}{% link careers.html %}">Careers</a>
+              <a
+                class="nav-link"
+                href="{{ site.baseurl }}{% link careers.html %}"
+                >Careers</a
+              >
             </li>
           </ul>
         </div>
@@ -72,8 +142,12 @@
     </footer>
 
     <script>
-      ScrollReveal().reveal('.fade-in', { scale: 0.85, duration: 1000, delay: 250, interval: 50 });
+      ScrollReveal().reveal(".fade-in", {
+        scale: 0.85,
+        duration: 1000,
+        delay: 250,
+        interval: 50
+      });
     </script>
-
-    </body>
-  </html>
+  </body>
+</html>
