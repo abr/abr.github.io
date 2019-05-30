@@ -19,5 +19,5 @@ most laptops in terms of both speed and efficiency.
 
 Start by running one of the many demos
 that come with the board out of the box:
-adaptive controllers, visual classifiers,
-voice recognizers, and many more.
+visual classifiers, adaptive controllers,
+reinforcement learning, and more!
