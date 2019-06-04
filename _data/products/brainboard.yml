@@ -13,7 +13,7 @@ featureCtaLink: /contact
 features:
   - title: Onboard learning
     icon: /img/icon-brain2-red.svg
-  - title: Inexpensive and off-the-shelf
+  - title: Inexpensive and <br /> off-the-shelf
     icon: /img/icon-board.svg
   - title: Use with any Nengo model
     icon: /img/icon-models.svg
@@ -33,10 +33,10 @@ ctas:
       together.
     link: http://forum.nengo.ai
     linkText: Visit the forum
-  - title: Purchase a board
+  - title: Purchase a license
     description: >
-      We offer complete hardware and software packages, or we can
-      provide software for your hardware.
+      We offer complete hardware and software integration with
+      a bring-your-own-board model.
     link: /contact
     linkText: Contact us
 
@@ -51,10 +51,13 @@ research:
     Xilinx FPGAs. This will provide a quick route to get the benefits
     of neuromorphic computing sooner rather than later.
 
-    This project is still in the early stages, but has already
-    generated promising results, showing significantly better
-    performance for high bandwidth and compute intensive use
-    cases. Given the large scale, we're working with collaborators to
+    Given the large scale, we're working with collaborators to
     develop special communication protocols to move spiking data
-    efficiently on chip.
+    efficiently on chip. This project is still in the early stages,
+    but has already generated promising results, showing significantly
+    better performance for high bandwidth and compute intensive use
+    cases. Take a look at
+    [this conference paper](http://compneuro.uwaterloo.ca/publications/morcos2018.html)
+    for more information about the design and performance of our
+    early Pynq implementation of Nengo Brain Board.
 ---
