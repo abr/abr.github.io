@@ -44,20 +44,28 @@ research:
   title: Large-scale Nengo Brain Boards
   content: >
     Our small Nengo Brain Boards are just the beginning, developed to
-    be inexpensive and targeting DE-1 and Pynq FPGA boards. To make
-    neuromorphics easy and fast to deploy at scale, we're developing
-    larger and more capable versions with researchers at the
-    University of Waterloo, which target large off-the-shelf Intel and
-    Xilinx FPGAs. This will provide a quick route to get the benefits
-    of neuromorphic computing sooner rather than later.
-
-    Given the large scale, we're working with collaborators to
-    develop special communication protocols to move spiking data
-    efficiently on chip. This project is still in the early stages,
-    but has already generated promising results, showing significantly
-    better performance for high bandwidth and compute intensive use
-    cases. Take a look at
+    be inexpensive and targeting DE1-SoC and PYNQ-Z1 FPGA boards. These
+    initial proof-of-concept Brain Boards offer encouraging results and
+    motivate us to actively continue development! Take a look at
     [this conference paper](http://compneuro.uwaterloo.ca/publications/morcos2018.html)
     for more information about the design and performance of our
-    early Pynq implementation of Nengo Brain Board.
+    early PYNQ implementation of Nengo Brain Board.
+    See also, the [paper presentation](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18.pdf)
+    and [talk](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18_talk.mp4)
+    for further explanations.
+
+
+    To make neuromorphics easy and fast to deploy at scale, beyond our currently
+    available Nengo Brain Boards, we're developing larger and more capable
+    versions with researchers at the University of Waterloo, which target larger
+    off-the-shelf Intel and Xilinx FPGAs. This will provide a quick route to get
+    the benefits of neuromorphic computing sooner rather than later.
+
+    Given the large scale and increasing complexity, we're working with
+    collaborators to develop special communication protocols to move spiking
+    data efficiently on chip. This project is still in the early stages,
+    but has already generated promising results, showing significantly
+    better performance for high bandwidth and compute intensive use
+    cases.
 ---
+
