@@ -60,4 +60,6 @@ research:
     [this conference paper](http://compneuro.uwaterloo.ca/publications/morcos2018.html)
     for more information about the design and performance of our
     early Pynq implementation of Nengo Brain Board.
+    See also, the [paper presentation](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18.pdf)
+    and [talk](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18_talk.mp4).
 ---
