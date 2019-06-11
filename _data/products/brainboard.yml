@@ -51,7 +51,7 @@ research:
     for more information about the design and performance of our
     early PYNQ implementation of Nengo Brain Board.
     See also, the [paper presentation](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18.pdf)
-    and [talk](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18_talk.mp4).
+    and [talk](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18_talk.mp4)
     for further explanations.
 
 
@@ -68,3 +68,4 @@ research:
     better performance for high bandwidth and compute intensive use
     cases.
 ---
+
