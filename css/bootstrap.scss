@@ -62,6 +62,10 @@ header.header-top {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .navbar-nav {
+    background-color: white;
+  }
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
@@ -324,6 +328,10 @@ h5 img.nengo {
   background: theme-color("primary");
   display: inline-block;
   margin-top: 2rem;
+}
+
+.btn-feature-cta {
+  white-space: normal !important;
 }
 
 .cta-image {
