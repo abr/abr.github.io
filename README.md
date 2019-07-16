@@ -53,7 +53,8 @@ then you also have to install NodeJS.
 On Debian and Debian-derivatives,
 this can be done with `sudo apt-get install nodejs`.
 For more details and install instructions on other platforms,
-see the [NodeJS install guilde](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
+see the [NodeJS install guilde](
+https://nodejs.org/en/download/package-manager/).
 
 When Github pages updates, run
 
