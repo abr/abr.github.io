@@ -3,15 +3,15 @@ layout: product
 theme: theme-blue
 product: nengo
 ---
-Nengo is a complete neural simulator,
-running models with deep learning, online learning, static weights,
-simple linear neurons, complex spiking neurons,
+Nengo is a complete *brain builder*. In other words, Nengo allows you
+to develop and run models with deep learning, online learning,
+static weights, simple linear neurons, complex spiking neurons,
 and everything in-between.
 
 You can use Nengo to implement pretty much anything: DNNs, CNNs,
 attractor networks, adaptive motor controllers, SLAM networks,
 cognitive systems, you name it. It's used in industry and academia
-to develop state-of-the-art neural networks.
+to develop state-of-the-art neural networks -- to build brains.
 
 Nengo is unique in its ability to put your neural application on
 a wide variety of hardware -- including the latest neuromorphic hardware.

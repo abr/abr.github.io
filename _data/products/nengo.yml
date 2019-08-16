@@ -63,6 +63,7 @@ research:
     single comprehensive whole. It can see, write, reason, and follow
     simple commands. Spaun has been featured in hundreds of media
     stories from around the world. Right now we consider it research,
+    based on the book "How to Build a Brain,"
     but it hints at the power and flexibility of Nengo.
   links:
     - url: https://xchoo.github.io/spaun2.0/press.html
