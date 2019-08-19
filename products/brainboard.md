@@ -6,6 +6,7 @@ product: brainboard
 
 The Nengo Brain Board implements a learning, spiking neural network
 that you can directly program from within Nengo.
+Use Nengo to build brains in hardware.
 
 These inexpensive boards open neuromorphics up to anyone.
 Explore and exploit the advantages of neuromorphic computing
