@@ -1,8 +1,10 @@
 ---
 name: Nengo Bones
 external_url: https://www.nengo.ai/nengo-bones/
-latest: 2019-08-08
+latest: 2019-09-03
 versions:
+  - version: 0.5.0
+    external_url: https://github.com/nengo/nengo-bones/releases/tag/v0.5.0
   - version: 0.4.2
     external_url: https://github.com/nengo/nengo-bones/releases/tag/v0.4.2
   - version: 0.4.1
