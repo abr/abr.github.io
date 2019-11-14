@@ -2,7 +2,7 @@
 title: Nengo
 link: nengo
 img: nengo2.svg
-tagLine: Build large-scale neural systems
+tagLine: Build brains
 shortDescription: >
   Nengo is a suite of software tools for building and simulating
   large-scale brain models. Nengo is our secret sauce, developed
@@ -23,8 +23,8 @@ features:
 ctas:
   - title: Example models
     description: >
-      Explore dozens of examples and tutorials based on the principles
-      of the Neural Engineering Framework.
+      Explore dozens of examples and tutorials made with the
+      Nengo brain creator.
     link: https://www.nengo.ai/nengo/examples.html
     linkText: See what Nengo can do
   - title: Open development

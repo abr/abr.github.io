@@ -3,7 +3,7 @@ layout: product
 theme: theme-blue
 product: nengo
 ---
-Nengo is a complete *brain builder*. In other words, Nengo allows you
+Nengo is a complete *brain maker*. In other words, Nengo allows you
 to develop and run models with deep learning, online learning,
 static weights, simple linear neurons, complex spiking neurons,
 and everything in-between.
