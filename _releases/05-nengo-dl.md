@@ -1,16 +1,18 @@
 ---
 name: NengoDL
 external_url: https://www.nengo.ai/nengo-dl/
-latest: 2019-10-02
+latest: 2019-11-22
 versions:
+  - version: 2.2.2
+    external_url: https://github.com/nengo/nengo-dl/releases/tag/v2.2.2
   - version: 2.2.1
     external_url: https://forum.nengo.ai/t/nengodl-2-2-1-released/957
   - version: 2.2.0
     external_url: https://forum.nengo.ai/t/nengodl-2-2-0-released/887
   - version: 2.1.1
-    external_url: https://forum.nengo.ai/t/nengodl-2-2-0-released/887
+    external_url: https://github.com/nengo/nengo-dl/releases/tag/v2.1.1
   - version: 2.1.0
-    external_url: https://forum.nengo.ai/t/nengodl-2-2-0-released/887
+    external_url: https://github.com/nengo/nengo-dl/releases/tag/v2.1.0
   - version: 2.0.0
     external_url: https://forum.nengo.ai/t/nengodl-2-0-0-released/692
   - version: 1.2.0
