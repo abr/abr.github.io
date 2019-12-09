@@ -46,14 +46,6 @@ values:
       We criticize constructively,
       are Canadianly polite,
       and recognize each other's value as people and not as workers.
-founders:
-  - chris-eliasmith
-  - peter-suma
-  - terry-stewart
-  - daniel-rasmussen
-  - travis-dewolf
-  - trevor-bekolay
-  - xuan-choo
 ---
 
 <div class="main-content gradient-top">
@@ -126,18 +118,22 @@ founders:
       </div>
     </div>
     <div class="row justify-content-center">
-      {% for founder in page.founders %}
-      {% assign person = site.data.founders[founder] %}
+      {% assign about_us = site.collections | where: 'label', 'about-us' | first %}
+      {% for ordered in about_us.order %}
+      {% for person in site.about-us %}
+      {% if person.path contains ordered %}
       <div class="col-10 col-sm-5 col-lg-3 mb-4">
         <div class="person card border-0 rounded-0 shadow-lg">
-          <a href="{{ person.bioLink }}"><div class="person-image" style="background-image: url('/img/{{person.img}}');"></div></a>
+          <a href="{{ person.url }}"><div class="person-image" style="background-image: url('/img/{{ person.img }}');"></div></a>
           <div class="card-body">
             <p class="m-0">
-              <strong>{{ person.name }}</strong>
+              <strong>{{ person.fullname }}</strong>
             </p>
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
       {% endfor %}
     </div>
 

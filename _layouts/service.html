@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<div class="main-content gradient-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 col-lg-7 product-header my-5 py-0 py-sm-5">
+        <h1 class="display-4">{{ page.title }}</h1>
+        <p class="lead m-0">{{ page.tagline }}</p>
+        <div class="title-bar"></div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-10 col-lg-6 col-xl-7">
+        {{ content }}
+      </div>
+      {% if page.links %}
+      <div class="col-10 col-lg-4 col-xl-3">
+        <h5>Learn more</h5>
+        <ul class="service-links">
+          {% for link in page.links %}
+          <li><a href="{{ link.external_url }}">{{ link.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% else %}
+      <div class="col-10 col-lg-4 col-xl-3 fade-in">
+        <img
+          src="/img/{{ page.img }}"
+          style="width:100%;height:auto"
+          class="shadow-lg rounded"
+        />
+      </div>
+      {% endif %}
+    </div>
+    {% assign subject = page.path | remove: '_services/' | remove: '.md' %}
+    {% include contact.html subject=subject %}
+  </div>
+
+  <div class="awards">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-10 py-5">
+          <h3 class="text-center py-0 my-0">
+            <a
+              class="text-dark"
+              href="{{ site.baseurl }}{% link services.html %}"
+              >Explore more services &gt;</a
+            >
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

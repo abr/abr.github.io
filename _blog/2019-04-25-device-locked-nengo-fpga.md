@@ -5,7 +5,7 @@ author: Ben Morcos
 ---
 
 ABR's Nengo FPGA project recently matured to the point of being a commercial
-product [for sale online]({{ site.baseurl }}{% link products/brainboard.md %}).
+product [for sale online]({{ site.baseurl }}{% link _products/brainboard.md %}).
 As part of commercialization, we had to address the issue of how to protect our
 IP from unauthorized distribution. Many standard methods to protect FPGA
 designs, known as bitstreams, rely on control of the physical device.
@@ -56,5 +56,5 @@ The Zynq AXI DNA IP block, along with source code and an example implementation,
 is publicly available [on GitHub](https://github.com/abr/zynq-axi-dna).
 
 For more information about Nengo FPGA check out the
-[Brain Board]({{ site.baseurl }}{% link products/brainboard.md %}) section of
+[Brain Board]({{ site.baseurl }}{% link _products/brainboard.md %}) section of
 our website or [get in touch]({{ site.baseurl }}{% link contact.html %})!

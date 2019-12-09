@@ -1,30 +1,8 @@
 ---
-layout: default
+layout: list-all
 theme: theme-red
 
+items: services
 title: Services
 subTitle: Solve problems with custom Nengo solutions
 ---
-
-<div class="main-content gradient-top">
-  <div class="container">
-    {% include title-block.html title=page.title subTitle=page.subTitle %}
-    {% for service in site.services %}
-    <a name="{{ service.pageId }}" class="anchor"></a>
-    <div class="row justify-content-center my-5">
-      <div class="col-2 col-lg-2 col-xl-2 pt-2">
-        <img
-          src="/img/{{ service.img }}"
-          style="width:100%;height:auto"
-          class="shadow-lg rounded"
-        />
-      </div>
-      <div class="col-10 col-lg-6 col-xl-7">
-        <h3>{{ service.title }}</h3>
-        {{ service.content }}
-      </div>
-    </div>
-    {% endfor %}
-    {% include contact.html %}
-  </div>
-</div>

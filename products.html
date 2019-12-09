@@ -1,34 +1,7 @@
 ---
-layout: default
+layout: list-all
+
+items: products
 title: Products
 subTitle: Neuromorphic software, hardware, and algorithms
-productNames:
-  - nengo
-  - brainboard
-  - adaptivecontrol
 ---
-
-<div class="main-content gradient-top">
-  <div class="container products-list">
-    {% include title-block.html title=page.title subTitle=page.subTitle %}
-    {% for productName in page.productNames %}
-    {% assign product = site.data.products[productName] %}
-    <a href="{{ site.baseurl }}/products/{{ product.link }}" class="row justify-content-center my-5">
-      <div class="col-2 col-lg-2 col-xl-2 pt-2">
-          <img
-            src="{{ site.baseurl }}/img/{{ product.img }}"
-            style="width:100%;height:auto"
-            class="shadow-lg rounded"
-          />
-      </div>
-      <div class="col-10 col-lg-6 col-xl-7">
-        <h3>{{ product.title }}</h3>
-        <div class="product-content">
-          {{ product.shortDescription | markdownify}}
-        </div>
-      </div>
-    </a>
-    {% endfor %}
-    {% include contact.html %}
-  </div>
-</div>

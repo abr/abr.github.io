@@ -24,6 +24,16 @@ defaults:
       extrajs: []
 
 collections:
+  about-us:
+    output: true
+    order:
+      - eliasmith.md
+      - suma.md
+      - stewart.md
+      - rasmussen.md
+      - dewolf.md
+      - bekolay.md
+      - choo.md
   blog:
     output: true
   culture:
@@ -32,13 +42,40 @@ collections:
     output: false
   quotes:
     output: false
+    order:
+      - trudeau.md
+      - prnewswire.md
+      - wired.md
+      - nature.md
+      - neurogrid.md
+      - natgeo.md
   press:
     output: true
   products:
-    output: false
+    output: true
+    order:
+      - nengo.md
+      - brainboard.md
+      - adaptivecontrol.md
   releases:
     output: false
+    order:
+      - nengo.md
+      - nengo-extras.md
+      - nengo-gui.md
+      - nengo-dl.md
+      - nengo-bones.md
+      - nengo-spa.md
+      - nengo-loihi.md
+      - nengo-ocl.md
+      - nengo-sphinx-theme.md
+      - pytest-allclose
+      - pytest-plt
+      - pytest-rng
   services:
-    output: false
-  team:
-    output: false
+    output: true
+    order:
+      - applications.md
+      - lmu.md
+      - backends.md
+      - tools.md

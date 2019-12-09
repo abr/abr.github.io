@@ -22,19 +22,25 @@
           <option>General question</option>
           <option>Partnership</option>
           <option>Media inquiry</option>
-          {% capture product_names %}
-            {% for product in site.data.products %}
-              {{ product[0] }}
-            {% endfor %}
-          {% endcapture %}
-          {% assign product_names = product_names | split: " " | sort %}
-          {% for product_name in product_names %}
-            <option value="{{ product_name }}">
-              {{ site.data.products[product_name].title }}
-            </option>
+          {% assign products = site.collections | where: 'label', 'products' | first %}
+          {% for ordered in products.order %}
+          {% for product in site.products %}
+          {% if product.path contains ordered %}
+          <option value="{{ product.path | remove: '_products/' | remove: '.md' }}">
+            {{ product.title }}
+          </option>
+          {% endif %}
           {% endfor %}
+          {% endfor %}
+          {% assign services = site.collections | where: 'label', 'services' | first %}
+          {% for ordered in services.order %}
           {% for service in site.services %}
-            <option value="{{ service.pageId }}">{{ service.title }}</option>
+          {% if service.path contains ordered %}
+          <option value="{{ service.path | remove: '_services/' | remove: '.md' }}">
+            {{ service.title }}
+          </option>
+          {% endif %}
+          {% endfor %}
           {% endfor %}
         </select>
       </div>
@@ -79,8 +85,12 @@
     changeSubject(subjectParam);
   }
 
+  {% if include.subject %}
+  changeSubject("{{ include.subject }}");
+  {% endif %}
+
   /**
-  * Listens for consent change and will disable submit when not consentinh
+  * Listens for consent change and will disable submit when not consenting
   */
 
   const checkbox = document.getElementById('consent');

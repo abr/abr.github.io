@@ -297,9 +297,9 @@ h5 img.nengo {
   }
 }
 
-/* Products page */
+/* Products / services pages */
 
-.products-list {
+.list-all {
   & a {
 
     &:hover {
@@ -316,7 +316,12 @@ h5 img.nengo {
   }
 }
 
-/* Product Page / Internal */
+/* Product / service pages */
+
+ul.service-links {
+  padding-left: 0;
+}
+
 .product-header {
   padding-top: 10rem;
   padding-bottom: 14rem;
@@ -478,7 +483,7 @@ h5 img.nengo {
   position: relative;
 
   label {
-    color: lighten(theme-color("dark"),25%);
+    color: lighten(theme-color("dark"),5%);
     font-size: 0.9rem;
     font-weight: normal;
     position: absolute;
@@ -494,6 +499,11 @@ h5 img.nengo {
 
   .custom-select {
     height: calc(2.25rem + 1.75rem); // 2.25rem + padding-top
+  }
+
+  ::placeholder {
+    color: lighten(theme-color("dark"),45%);
+    opacity: 1;
   }
 }
 

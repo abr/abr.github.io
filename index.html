@@ -45,7 +45,7 @@ awards:
         <div class="text-center shadow-lg p-5 bg-white">
           <h3 class="mb-0 py-0">Want to see some <strong>stuff</strong> we make?</h3>
           <div class="row wanna-see">
-            <a href="{{ site.baseurl }}{% link products/nengo.md %}" class="col-md-4 py-5 fade-in wanna-see-card">
+            <a href="{{ site.baseurl }}{% link _products/nengo.md %}" class="col-md-4 py-5 fade-in wanna-see-card">
               <img src="/img/icon-software.svg" alt="Software" class="mb-4" />
               <h5>Nengo</h5>
               <p class="wanna-see-card-content">
@@ -53,7 +53,7 @@ awards:
               </p>
               <p>Try it out &gt;</p>
             </a>
-            <a href="{{ site.baseurl }}{% link products/brainboard.md %}"  class="col-md-4 py-5 fade-in wanna-see-card">
+            <a href="{{ site.baseurl }}{% link _products/brainboard.md %}"  class="col-md-4 py-5 fade-in wanna-see-card">
               <img src="/img/icon-board.svg" alt="Board" class="mb-4" />
               <h5>Brain Board</h5>
               <p class="wanna-see-card-content">
@@ -61,7 +61,7 @@ awards:
               </p>
               <p>See purchase options &gt;</p>
             </a>
-            <a href="{{ site.baseurl }}{% link products/adaptivecontrol.md %}"  class="col-md-4 py-5 fade-in wanna-see-card">
+            <a href="{{ site.baseurl }}{% link _products/adaptivecontrol.md %}"  class="col-md-4 py-5 fade-in wanna-see-card">
               <img src="/img/icon-method.svg" alt="Method" class="mb-4" />
               <h5>Adaptive Control</h5>
               <p class="wanna-see-card-content">
@@ -79,7 +79,10 @@ awards:
 
         <div id="carouselTestimonials" class="testimonials carousel slide" data-ride="carousel">
           <div class="carousel-inner text-center">
+            {% assign quotes = site.collections | where: 'label', 'quotes' | first %}
+            {% for ordered in quotes.order %}
             {% for quote in site.quotes %}
+            {% if quote.path contains ordered %}
             <div class="carousel-item{% if forloop.first %} active{% endif %}">
               <div class="d-flex h-100 align-items-center justify-content-center">
                 <a  href="{{ quote.link }}" class="blockquote">
@@ -90,6 +93,8 @@ awards:
                 </a>
               </div>
             </div>
+            {% endif %}
+            {% endfor %}
             {% endfor %}
           </div>
           <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">

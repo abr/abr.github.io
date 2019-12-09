@@ -1,25 +1,30 @@
 ---
+layout: product
+theme: theme-purple
+
 title: Adaptive control
-link: adaptivecontrol
 img: control.png
-tagLine: Better industrial and robotic control
-shortDescription: >
+tagline: Better industrial and robotic control
+
+pitch: >
   We have developed and patented an adaptive control method that
   guarantees improvement over standard PID control. Not only does this
   algorithm introduce robust self-tuning, it can be run efficiently on
   standard hardware or next generation neuromorphic hardware.
 
-featureCtaText: Contact us for more information
-featureCtaLink: /contact
-features:
-  - title: Online learning
-    icon: /img/icon-online-learning.svg
-  - title: Self-tuning controller
-    icon: /img/icon-brain2-purple.svg
-  - title: Neuromorphic or conventional
-    icon: /img/icon-method.svg
-  - title: Guaranteed convergence
-    icon: /img/icon-convergence.svg
+feature:
+  cta:
+    text: Contact us for more information
+    link: /contact/?subject=adaptivecontrol
+  features:
+    - title: Online learning
+      icon: /img/icon-online-learning.svg
+    - title: Self-tuning controller
+      icon: /img/icon-brain2-purple.svg
+    - title: Neuromorphic or conventional
+      icon: /img/icon-method.svg
+    - title: Guaranteed convergence
+      icon: /img/icon-convergence.svg
 
 ctas:
   - title: Demonstration
@@ -40,19 +45,20 @@ ctas:
       If you're not sure this will work for your application, contact
       us and we'll help you decide. We can work closely with you to
       apply the controller to your application.
-    link: /contact
+    link: /contact/?subject=adaptivecontrol
     linkText: Contact us
 
-serviceTitle: Services
-serviceSubtitle: An adaptive controller for your problem
-services:
-  - title: Neuromorphic applications
-    description: >
-      Let us help with your control problems by developing
-      neuromorphic applications for you. We've built our reputation on
-      developing proof-of-concept applications of neuromorphic
-      technology.
-    link: /services/#custom-neuromorphic-applications
+service:
+  title: Services
+  subtitle: An adaptive controller for your problem
+  services:
+    - title: Neuromorphic applications
+      description: >
+        Let us help with your control problems by developing
+        neuromorphic applications for you. We've built our reputation on
+        developing proof-of-concept applications of neuromorphic
+        technology.
+      link: /services/#custom-neuromorphic-applications
 
 research:
   title: Robotic Arm
@@ -76,3 +82,30 @@ research:
     in real-time, showcasing the utility of low-power, adaptive,
     embedded robotic systems.
 ---
+
+Our novel controller uses machine learning
+and artificial intelligence methods
+to improve standard industrial control, including robotics.
+
+These patented techniques build on
+decades of research from MIT
+into efficient methods for building robust adaptive controllers
+for nonlinear systems.
+
+Regardless of whether you're using
+position, force, or any other control target,
+our addition of a neural network into the controller
+is mathematically guaranteed
+to improve the control outcome
+compared to even a well-tuned PID controller.
+
+If desired, the controller
+can continue to adapt while in use
+to account for unknown or expected deviations
+from original tuning conditions,
+whether that's because of wear and tear on the plant,
+or a change in environmental dynamics.
+
+Best of all, we can implement
+the entire controller on state-of-the-art, efficient neuromorphic hardware
+(or standard hardware, if you already have it).

@@ -1,7 +1,8 @@
 ---
-title: New neuromorphic tools
-slug: tools
-pageId: neuromorphic-tools
+layout: service
+
+title: Neuromorphic tools
+tagline: Internal tooling for next-gen AI
 img: tools.jpg
 pitch: >
   Need a specialized software tool
@@ -23,6 +24,4 @@ and integrating a variety of physical and neural simulators.
 
 Planning and building such tools
 is too complex a process to cover
-on a website --
-<a href="#contact-us" onclick="changeSubject('{{ page.pageId }}')">contact us</a>
-and we'll arrange a time to chat.
+on a website -- contact us and we'll arrange a time to chat.

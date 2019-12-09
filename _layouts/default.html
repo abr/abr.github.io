@@ -36,15 +36,33 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbar-dropdown-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Products</a>
               <div class="dropdown-menu shadow-lg border-0" aria-labelledby="navbar-dropdown-products">
-                <a class="dropdown-item" href="{{ site.baseurl }}{% link products/nengo.md %}">Nengo</a>
-                <a class="dropdown-item" href="{{ site.baseurl }}{% link products/brainboard.md %}">Brain Board</a>
-                <a class="dropdown-item" href="{{ site.baseurl }}{% link products/adaptivecontrol.md %}">Adaptive Control</a>
+
+                {% assign products = site.collections | where: 'label', 'products' | first %}
+                {% for ordered in products.order %}
+                {% for product in site.products %}
+                {% if product.path contains ordered %}
+                <a class="dropdown-item" href="{{ product.url }}">{{ product.title }}</a>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{{ site.baseurl }}{% link products.html %}">All Products</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}{% link services.html %}">Services</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbar-dropdown-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Services</a>
+              <div class="dropdown-menu shadow-lg border-0" aria-labelledby="navbar-dropdown-services">
+                {% assign services = site.collections | where: 'label', 'services' | first %}
+                {% for ordered in services.order %}
+                {% for service in site.services %}
+                {% if service.path contains ordered %}
+                <a class="dropdown-item" href="{{ service.url }}">{{ service.title }}</a>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{{ site.baseurl }}{% link services.html %}">All Services</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ site.baseurl }}{% link news.html %}">News</a>

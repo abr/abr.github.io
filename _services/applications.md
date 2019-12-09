@@ -1,12 +1,15 @@
 ---
-title: Custom neuromorphic applications
-pageId: custom-neuromorphic-applications
+layout: service
+
+title: Custom apps
+tagline: Neuromorphic applications for your business
 img: applications.jpg
 pitch: >
   Target the latest, efficient, neuromorphic hardware
   with a specific application.
   We'll help you port it or build it from the ground up.
 ---
+
 We've built our reputation on developing
 proof-of-concept applications
 of neuromorphic technology.
@@ -25,5 +28,4 @@ all common application areas and methods.
 Challenge us with a new one -- we love challenges.
 
 Every project is different,
-so <a href="#contact-us" onclick="changeSubject('{{ page.pageId }}')">contact us</a>
-for an introductory call.
+so contact us for an introductory call.

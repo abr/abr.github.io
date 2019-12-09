@@ -68,4 +68,4 @@ in the robotics markets.
 – [Justin Trudeau, Prime Minister of Canada](https://twitter.com/JustinTrudeau/status/862818434836557825)
 
 To learn more about Reach and our work on adaptive control,
-see [the adaptive control page]({{ site.baseurl }}{% link products/adaptivecontrol.md %}).
+see [the adaptive control page]({{ site.baseurl }}{% link _products/adaptivecontrol.md %}).

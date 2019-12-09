@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-{% assign product = site.data.products[page.product] %}
 <div class="main-content gradient-top">
   <div class="container">
     <div class="row">
       <div class="col-10 col-lg-7 product-header my-5 py-0 py-sm-5">
-        <h1 class="display-4">{{ product.title }}</h1>
-        <p class="lead m-0">{{ product.tagLine }}</p>
+        <h1 class="display-4">{{ page.title }}</h1>
+        <p class="lead m-0">{{ page.tagline }}</p>
         <div class="title-bar"></div>
       </div>
     </div>
@@ -18,7 +17,7 @@ layout: default
       </div>
       <div class="col-10 col-lg-4 col-xl-3 fade-in">
         <img
-          src="/img/{{ product.img }}"
+          src="/img/{{ page.img }}"
           style="width:100%;height:auto"
           class="shadow-lg rounded"
         />
@@ -28,9 +27,9 @@ layout: default
     <div class="row justify-content-center">
       <div class="col-10 col-sm-12">
         <div class="text-center my-5 p-5 bg-primary-20 rounded">
-          <h3 class="mb-0 py-0">{{ product.title }} Features</h3>
+          <h3 class="mb-0 py-0">{{ page.title }} features</h3>
           <div class="row">
-            {% for feature in product.features %}
+            {% for feature in page.feature.features %}
             <div class="col-md-3 py-5 fade-in">
               <img
                 src="{{ feature.icon }}"
@@ -42,16 +41,16 @@ layout: default
             {% endfor %}
           </div>
           <a
-            href="{{ product.featureCtaLink }}"
+            href="{{ page.feature.cta.link }}"
             class="btn btn-secondary btn-feature-cta text-white"
-            >{{ product.featureCtaText }}</a
+            >{{ page.feature.cta.text }}</a
           >
         </div>
       </div>
     </div>
 
     <div class="row justify-content-center">
-      {% for cta in product.ctas %} {% if forloop.first == false %}
+      {% for cta in page.ctas %} {% if forloop.first == false %}
       <div class="col-10 col-lg-1"></div>
       {% endif %}
       <div
@@ -75,19 +74,19 @@ layout: default
       </div>
       {% endfor %}
     </div>
-    {% if product.services %}
+    {% if page.service.services %}
     <div class="container">
       <div class="row justify-content-center pt-5">
         <div class="col-10 pt-5">
-          <h2 class="display-4">{{ product.serviceTitle }}</h2>
-          <p class="lead m-0">{{ product.serviceSubtitle }}</p>
+          <h2 class="display-4">{{ page.service.title }}</h2>
+          <p class="lead m-0">{{ page.service.subtitle }}</p>
           <div class="title-bar"></div>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-10">
           <div class="row">
-          {% for service in product.services %}
+          {% for service in page.service.services %}
             <div class="col-5 py-5">
               <h3>{{ service.title }}</h3>
               <p>{{ service.description }}</p>
@@ -101,8 +100,8 @@ layout: default
       </div>
     </div>
     {% endif %}
-    {% if product.research %}
-    {% assign research = product.research %}
+    {% if page.research %}
+    {% assign research = page.research %}
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-10 pt-5">

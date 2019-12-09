@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="main-content gradient-top">
+  <div class="container list-all">
+    {% include title-block.html title=page.title subTitle=page.subTitle %}
+    {% assign items = site.collections | where: 'label', page.items | first %}
+    {% for ordered in items.order %}
+    {% for item in site[page.items] %}
+    {% if item.path contains ordered %}
+    <a href="{{ item.url }}" class="row justify-content-center my-5">
+      <div class="col-2 col-lg-2 col-xl-2 pt-2">
+        <img
+          src="{{ site.baseurl }}/img/{{ item.img }}"
+          style="width:100%;height:auto"
+          class="shadow-lg rounded"
+        />
+      </div>
+      <div class="col-10 col-lg-6 col-xl-7">
+        <h3>{{ item.title }}</h3>
+        <div>
+          {{ item.pitch | markdownify }}
+        </div>
+      </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    {% include contact.html %}
+  </div>
+</div>

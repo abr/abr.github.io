@@ -1,7 +1,8 @@
 ---
-title: A Nengo backend for your hardware
-pageId: nengo-backends
-slug: backends
+layout: service
+
+title: Nengo backends
+tagline: Unlock your hardware's potential
 img: backends.jpg
 pitch: >
   Are you developing an AI accelerator
@@ -27,5 +28,4 @@ that's been used by thousands of modelers
 and has years of in-the-field testing.
 
 We'd be happy to discuss details.
-<a href="#contact-us" onclick="changeSubject('{{ page.pageId }}')">Contact us</a>
-to set up a meeting.
+Contact us to set up a meeting.

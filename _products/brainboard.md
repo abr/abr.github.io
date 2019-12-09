@@ -1,24 +1,29 @@
 ---
+layout: product
+theme: theme-red
+
 title: Brain Board
-link: brainboard
 img: fpga-board3.png
-tagLine: Own a piece of the neuromorphic revolution
-shortDescription: >
+tagline: Own a piece of the neuromorphic revolution
+
+pitch: >
   These inexpensive boards open neuromorphics up to anyone.
   Explore and exploit the advantages of neuromorphic computing
   in the classroom, the innovation lab, or your basement.
 
-featureCtaText: Contact us with questions
-featureCtaLink: /contact
-features:
-  - title: Onboard learning
-    icon: /img/icon-brain2-red.svg
-  - title: Inexpensive and <br /> off-the-shelf
-    icon: /img/icon-board.svg
-  - title: Use with any Nengo model
-    icon: /img/icon-models.svg
-  - title: Easy setup
-    icon: /img/icon-setup.svg
+feature:
+  cta:
+    text: Contact us with questions
+    link: /contact/?subject=brainboard
+  features:
+    - title: Onboard learning
+      icon: /img/icon-brain2-red.svg
+    - title: Inexpensive and <br /> off-the-shelf
+      icon: /img/icon-board.svg
+    - title: Use with any Nengo model
+      icon: /img/icon-models.svg
+    - title: Easy setup
+      icon: /img/icon-setup.svg
 
 ctas:
   - title: Documentation
@@ -54,7 +59,6 @@ research:
     and [talk](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18_talk.mp4)
     for further explanations.
 
-
     To make neuromorphics easy and fast to deploy at scale, beyond our currently
     available Nengo Brain Boards, we're developing larger and more capable
     versions with researchers at the University of Waterloo, which target larger
@@ -69,3 +73,21 @@ research:
     cases.
 ---
 
+The Nengo Brain Board implements a learning, spiking neural network
+that you can directly program from within Nengo.
+Use Nengo to build brains in hardware.
+
+These inexpensive boards open neuromorphics up to anyone.
+Explore and exploit the advantages of neuromorphic computing
+in the classroom, the innovation lab, or your basement.
+
+Use Nengo's friendly graphical interface
+to run parts of your standard Nengo model
+on power-efficient and fast neuromorphic hardware.
+These self-contained boards outperform
+most laptops in terms of both speed and efficiency.
+
+Start by running one of the many demos
+that come with the board out of the box:
+visual classifiers, adaptive controllers,
+reinforcement learning, and more!

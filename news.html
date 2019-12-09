@@ -38,7 +38,10 @@ title: News
       <div class="col-md-3 col-sm-10 mb-5">
         <h5>Latest releases</h5>
         <ul class="list-group mb-5">
+          {% assign releases = site.collections | where: 'label', 'releases' | first %}
+          {% for ordered in releases.order %}
           {% for release in site.releases %}
+          {% if release.path contains ordered %}
           <li class="list-group-item">
             <div class="d-flex justify-content-between align-items-center">
               <a href="{{ release.external_url }}">{{ release.name }}</a>
@@ -52,13 +55,17 @@ title: News
               </small>
             </div>
           </li>
+          {% endif %}
+          {% endfor %}
           {% endfor %}
         </ul>
 
         <h5>All releases</h5>
 
         <ul class="list-group mb-5">
+          {% for ordered in releases.order %}
           {% for release in site.releases %}
+          {% if release.path contains ordered %}
           <li class="list-group-item">
             <div class="d-flex justify-content-between align-items-center">
               <a href="{{ release.external_url }}">{{ release.name }}</a>
@@ -73,6 +80,8 @@ title: News
               </div>
             </div>
           </li>
+          {% endif %}
+          {% endfor %}
           {% endfor %}
         </ul>
 
