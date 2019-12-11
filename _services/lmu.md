@@ -2,10 +2,10 @@
 layout: service
 
 title: Upgrade from LSTMs
-tagline: Solve temporal problems more accurately and efficiently with LMUs
+tagline: Solve time series problems more accurately and efficiently with LMUs
 img: lmu.png
 pitch: >
-  Are you having trouble solving a temporal problem,
+  Are you having trouble solving a time series problem,
   or your LSTM solution isn't cutting it?
   Need to deploy in a situation with a low power budget?
   We'll help you apply LMUs to solve it better and more efficiently.
@@ -28,7 +28,7 @@ links:
 ---
 
 Long short-term memories (LSTMs) have been called the most commercially
-valuable AI algorithm every invented
+valuable AI algorithm ever invented
 ([Bloomberg](https://www.bloomberg.com/news/features/2018-05-15/google-amazon-and-facebook-owe-j-rgen-schmidhuber-a-fortune)),
 having been deployed in many speech, vision and text analysis systems.
 **But LSTMs fall apart when tasked with learning temporal dependencies
@@ -46,11 +46,11 @@ for massive power savings.
 Using LMUs, we have obtained the best-known results on the
 permuted sequential MNIST task, a difficult RNN benchmark.
 
-Do you have a temporal problem you're currently solving with an LSTM?
+Do you have a time series problem you're currently solving with an LSTM?
 
-Have a temporal problem that you haven't been able to solve yet?
+Have a time series problem that you haven't been able to solve yet?
 
-Do you need to solve a temporal problem in an edge or IoT device?
+Do you need to solve a time series problem in an edge or IoT device?
 
 Take a look at our
 [published](https://papers.nips.cc/paper/9689-legendre-memory-units-continuous-time-representation-in-recurrent-neural-networks.pdf)
