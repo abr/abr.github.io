@@ -1,8 +1,12 @@
 ---
 name: NengoDL
 external_url: https://www.nengo.ai/nengo-dl/
-latest: 2019-12-17
+latest: 2020-04-02
 versions:
+  - version: 3.2.0
+    external_url: https://forum.nengo.ai/t/nengodl-3-2-0-released/1128
+  - version: 3.1.0
+    external_url: https://forum.nengo.ai/t/nengodl-3-1-0-released/1100
   - version: 3.0.0
     external_url: https://forum.nengo.ai/t/nengodl-3-0-0-released/1033
   - version: 2.2.2
