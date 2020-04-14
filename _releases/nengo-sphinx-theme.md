@@ -1,8 +1,10 @@
 ---
 name: Nengo Sphinx Theme
 external_url: https://www.nengo.ai/nengo-sphinx-theme/
-latest: 2020-03-19
+latest: 2020-04-14
 versions:
+  - version: 1.2.2
+    external_url: https://github.com/nengo/nengo-sphinx-theme/releases/tag/v1.2.2
   - version: 1.2.1
     external_url: https://github.com/nengo/nengo-sphinx-theme/releases/tag/v1.2.1
   - version: 1.2.0
