@@ -608,3 +608,35 @@ body.theme-purple {
 .sr .load-hidden {
   visibility: hidden;
 }
+
+
+/* Shopify Store */
+
+.shopify-product-group {
+  margin-bottom: 40px;
+
+  .shopify-products {
+    width: 100%;
+
+    td, th {
+      border-color: #cccccc;
+      border-width: 1px;
+      border-style: solid;
+    }
+    th {
+      color: theme-color("primary");
+      padding: 3px 5px;
+    }
+    td {
+      padding: 10px;
+    }
+<<<<<<< HEAD
+
+    .pricing-note {
+      color: theme-color("dark");
+      font-size: 11px;
+    }
+=======
+>>>>>>> 17de564... Adding Shopify Store
+  }
+}
