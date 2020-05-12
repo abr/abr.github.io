@@ -608,3 +608,25 @@ body.theme-purple {
 .sr .load-hidden {
   visibility: hidden;
 }
+
+
+/* Store */
+
+.shopify-products {
+  width: 100%;
+
+  td, th {
+    border: 1px solid black;
+  }
+  th {
+    text-align: center;
+  }
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .shopify-product, .shopify-variant, .shopify-single-product {
+    margin: 0 auto;
+  }
+}

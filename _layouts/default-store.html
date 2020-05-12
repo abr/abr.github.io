@@ -10,6 +10,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-41658423-3');
   </script>
+  <script src="http://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script>
   <script src="/js/shopify.js"></script>
   <title>Applied Brain Research</title>
   <meta charset="utf-8">
@@ -91,21 +92,6 @@
       </div>
     </nav>
   </header>
-  <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
-      if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-          ShopifyBuyInit();
-        } else {
-          loadScript();
-        }
-      } else {
-        loadScript();
-      }
-    })();
-    /*]]>*/
-  </script>
 
   {{ content }}
 
@@ -126,8 +112,8 @@
 
   <script>
     ScrollReveal().reveal('.fade-in', { scale: 0.85, duration: 1000, delay: 250, interval: 50 });
+    ShopifyBuyInit();
   </script>
-
-</body>
+  </body>
 
 </html>
