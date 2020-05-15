@@ -79,3 +79,8 @@ collections:
       - lmu.md
       - backends.md
       - tools.md
+  store:
+    output: true
+    order:
+      - fpga.md
+      - summer-school.md
