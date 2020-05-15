@@ -695,3 +695,70 @@ body.theme-purple {
 .sr .load-hidden {
   visibility: hidden;
 }
+
+/* Shopify Store */
+
+html.no-scroll {
+  overflow-y: scroll;
+}
+
+body.no-scroll {
+  overflow: visible;
+  position: fixed;
+  width: 100%;
+}
+
+.shopify-support-group {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 65px);
+  justify-content: space-around;
+
+  p, ul {
+    margin-bottom: 0.5em;
+  }
+}
+
+.shopify-product-group {
+  margin-bottom: 40px;
+
+  a.btn {
+    border-radius: 2px !important;
+    box-shadow: none !important;
+  }
+
+  p, ul {
+    font-size: 14px;
+  }
+
+  ul {
+    padding-left: 1em;
+  }
+
+  .shopify-products {
+    width: 100%;
+
+    td,
+    th {
+      border-color: #cccccc;
+      border-width: 1px;
+      border-style: solid;
+    }
+    th {
+      color: theme-color("primary");
+      padding: 3px 5px;
+      text-align: center;
+    }
+    td {
+      padding: 10px;
+    }
+  }
+
+  .shopify-support {
+    margin-bottom: 3px;
+  }
+
+  .shopify-support:last-child {
+    margin-bottom: 0;
+  }
+}

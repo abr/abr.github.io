@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Google Tag Manager -->
@@ -15,6 +15,9 @@
       })(window, document, "script", "dataLayer", "GTM-KWCR2HN");
     </script>
     <!-- End Google Tag Manager -->
+    {% for js in page.extrajs %}
+    <script src="{{ js }}"></script>
+    {% endfor %}
 
     <title>Applied Brain Research</title>
     <meta charset="utf-8">
@@ -81,6 +84,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ site.baseurl }}{% link careers.html %}">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}{% link store.html %}">Store</a>
             </li>
           </ul>
         </div>

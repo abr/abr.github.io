@@ -1,0 +1,226 @@
+---
+layout: default
+extrajs:
+  - /js/shopify.js
+
+theme: theme-yellow
+
+products:
+  - title: Bundles
+    items:
+      - name: Nengo developer bundle
+        id: 4437114978347
+        commercialId: 31697978687531
+        academicId: 31697978720299
+
+      - name: Nengo backends bundle
+        id: 4437115732011
+        commercialId: 31697984946219
+        academicId: 31697984978987
+
+      - name: Nengo complete bundle
+        id: 4437117337643
+        commercialId: 31697989697579
+        academicId: 31697989730347
+
+  - title: General
+    items:
+      - name: NengoCore + NengoExtras
+        id: 4436279001131
+        commercialId: 31697913085995
+        academicId: 31697913118763
+
+      - name: NengoDL
+        id: 4436640038955
+        commercialId: 31697950834731
+        academicId: 31697950867499
+
+      - name: KerasSpiking + PyTorchSpiking
+        id: 4800760774699
+        commercialId: 32874854023211
+        academicId: 32874854055979
+
+      - name: NengoSPA
+        id: 4437086830635
+        commercialId: 31697965482027
+        academicId: 31697965514795
+
+      - name: NengoGUI
+        id: 4437089058859
+        commercialId: 31697952669739
+        academicId: 31697952702507
+
+  - title: Backends
+    items:
+      - name: NengoOCL
+        id: 4437090992171
+        commercialId: 31697925177387
+        academicId: 31697925210155
+
+      - name: NengoFPGA for Intel DE1-SoC
+        id: 4437094105131
+        commercialId: 31697854038059
+        academicId: 31697854070827
+
+      - name: NengoFPGA for Xilinx PYNQ-Z1
+        id: 4450087174187
+        commercialId: 31740826091563
+        academicId: 31740826124331
+
+      - name: NengoLoihi
+        id: 4437091418155
+        commercialId: 31697956306987
+        academicId: 31697956339755
+
+  - title: Algorithms
+    items:
+      - name: Legendre Memory Units
+        id: 4437120909355
+        commercialId: 31698004607019
+        academicId: 31698004639787
+
+support:
+  - name: Free community support
+    intro: >
+      The ABR support team constantly monitors the Nengo forum,
+      and will respond to questions about any of our products.
+      Questions and answers are open to everyone in the community.
+    features:
+      - Always free
+      - Always available
+      - User-friendly searchable archive
+    btns:
+      - text: Visit the forum
+        url: https://forum.nengo.ai/
+
+  - name: Talk to our support team
+    intro: >
+      If your question is more complex or cannot be asked publicly,
+      you can talk to a member of the ABR support team one-on-one.
+      Each support ticket includes:
+    features:
+      - Initial contact within 24 hours
+      - Service via voice or email
+    btns:
+      - text: 1 ticket
+        id: 4437144633387
+      - text: 5 tickets
+        id: 4465741332523
+      - text: 10 tickets
+        id: 4465742381099
+
+  - name: Enterprise-level support
+    intro: >
+      For complex deployments and mission-critical models,
+      develop an ongoing relationship with the ABR support team.
+    features:
+      - Single point-of-contact for continuity across incidents
+      - Flexible pricing based on your business needs
+    btns:
+      - text: Contact sales
+        url: mailto:sales@appliedbrainresearch.com?subject=Enterprise-level support inquiry
+---
+
+<script type="text/javascript">
+  /*<![CDATA[*/
+  (function () {
+    if (window.ShopifyBuy) {
+      if (window.ShopifyBuy.UI) {
+        ShopifyBuyInit();
+      } else {
+        loadScript();
+      }
+    } else {
+      loadScript();
+    }
+  })();
+  /*]]>*/
+</script>
+
+<div class="main-content gradient-top">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-lg-8 col-xl-7 text-center py-5">
+        <h1 class="display-4">Store</h1>
+        <p class="lead m-0">From research to application</p>
+        <div class="title-bar"></div>
+      </div>
+    </div>
+
+    {% for group in page.products %}
+    <div class="shopify-product-group">
+      <h2>{{ group.title }}</h2>
+      <table class="shopify-products">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Commercial use (per year)</th>
+            <th>Academic and personal use (one-time)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in group.items %}
+          <tr>
+            <td>
+              <div
+                class="shopify-product"
+                data-productid="{{ item.id }}"
+                data-productname="{{ item.name }}"
+              ></div>
+            </td>
+            <td>
+              <span
+                class="shopify-variant shopify-product-{{ item.id }}"
+                data-variantId="{{ item.commercialId }}"
+              ></span>
+            </td>
+            <td>
+              <div
+                class="shopify-variant shopify-product-{{ item.id }}"
+                data-variantId="{{ item.academicId }}"
+              ></div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endfor %}
+
+    <div class="shopify-product-group">
+      <div class="row justify-content-center">
+        {% for item in page.support %} {% if forloop.first == false %}
+        <div class="col-10 col-lg-1"></div>
+        {% endif %}
+        <div class="col-10 col-lg-3 my-3 my-lg-0 shadow-lg bg-white">
+          <div class="py-1 px-2 border-bottom border-light">
+            <h5 class="text-center m-0 py-3">{{ item.name }}</h5>
+          </div>
+          <div class="py-3 px-2 shopify-support-group">
+            <p>{{ item.intro }}</p>
+            <ul>
+              {% for feature in item.features %}
+              <li>{{ feature }}</li>
+              {% endfor %}
+            </ul>
+            {% for btn in item.btns %} {% if btn.id %}
+            <div
+              class="shopify-support shopify-support-{{ btn.id }}"
+              data-supportid="{{ btn.id }}"
+              data-supportname="{{ btn.text }}"
+            ></div>
+            {% else %}
+            <a
+              class="btn btn-block btn-secondary text-white"
+              target="_blank"
+              href="{{ btn.url }}"
+              >{{ btn.text }}</a
+            >
+            {% endif %} {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
