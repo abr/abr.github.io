@@ -31,8 +31,15 @@ backends:
   commercialId: 31697925177387
   academicId: 31697925210155
 
-- name: NengoFPGA
+- name: "NengoFPGA: Intel DE1-SoC Implementation"
   id: 4437094105131
+  commercialId: 31697854038059
+  academicId: 31697854070827
+
+- name: "NengoFPGA: Xilinx PYNQ-Z1 Implementation"
+  id: 4450087174187
+  commercialId: 31740826091563
+  academicId: 31740826124331
 
 - name: NengoLoihi
   id: 4437091418155
@@ -91,6 +98,121 @@ support:
       </div>
     </div>
     <div>
+
+      <div class="shopify-product-group">
+        <h2>Bundles</h2>
+        <table class='shopify-products'>
+          <thead>
+            <tr>
+              <th>
+                Product
+              </th>
+              <th>
+                Commercial Use (Per Year)
+              </th>
+              <th>
+                Academic & Personal Use (One Time)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+
+            {% for bundle in page.bundles %}
+            <tr>
+              <td>
+                  <div class="shopify-product"
+                  data-productid="{{ bundle.id }}" data-productname="{{ bundle.name }}"></div>
+              </td>
+              <td>
+                  <span class="shopify-variant shopify-product-{{ bundle.id }}"
+                  data-variantId="{{ bundle.commercialId }}"></span>
+              </td>
+              <td>
+                  <div class="shopify-variant shopify-product-{{ bundle.id }}"
+                  data-variantId="{{ bundle.academicId }}"></div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="shopify-product-group">
+        <h2>General</h2>
+        <table class='shopify-products'>
+          <thead>
+            <tr>
+              <th>
+                Product
+              </th>
+              <th>
+                Commercial Use (Per Year)
+              </th>
+              <th>
+                Academic & Personal Use (One Time)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for product in page.products %}
+            <tr>
+              <td>
+                  <div class="shopify-product"
+                  data-productid="{{ product.id }}" data-productname="{{ product.name }}"></div>
+              </td>
+              <td>
+                  <span class="shopify-variant shopify-product-{{product.id}}"
+                  data-variantId="{{ product.commercialId }}"></span>
+              </td>
+              <td>
+                  <div class="shopify-variant shopify-product-{{product.id}}"
+                  data-variantId="{{ product.academicId }}"></div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="shopify-product-group">
+        <h2>Backends</h2>
+        <table class='shopify-products'>
+          <thead>
+            <tr>
+              <th>
+                Product
+              </th>
+              <th>
+                Commercial Use (Per Year)
+              </th>
+              <th>
+                Academic & Personal Use (One Time)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+              {% for backend in page.backends %}
+            <tr>
+              <td>
+                  <div class="shopify-product"
+                  data-productid="{{ backend.id }}" data-productname="{{ backend.name }}"></div>
+              </td>
+              <td>
+                  <span class="shopify-variant shopify-product-{{ backend.id }}"
+                  data-variantId="{{ backend.commercialId }}"></span>
+              </td>
+              <td>
+                  <div class="shopify-variant shopify-product-{{ backend.id }}"
+                  data-variantId="{{ backend.academicId }}"></div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+      </table>
+    </div>
+
+    <div class="shopify-product-group">
+      <h2>Algorithms</h2>
       <table class='shopify-products'>
         <thead>
           <tr>
@@ -106,69 +228,6 @@ support:
           </tr>
         </thead>
         <tbody>
-          {% for product in page.products %}
-          <tr>
-            <td>
-                <div class="shopify-product"
-                data-productid="{{ product.id }}" data-productname="{{ product.name }}"></div>
-            </td>
-            <td>
-                <span class="shopify-variant shopify-product-{{product.id}}"
-                data-variantId="{{ product.commercialId }}"></span>
-            </td>
-            <td>
-                <div class="shopify-variant shopify-product-{{product.id}}"
-                data-variantId="{{ product.academicId }}"></div>
-            </td>
-          </tr>
-          {% endfor %}
-          <tr>
-            <td colspan="3">
-              Backends
-            </td>
-          </tr>
-          {% for backend in page.backends %}
-          <tr>
-            <td>
-                <div class="shopify-product"
-                data-productid="{{ backend.id }}" data-productname="{{ backend.name }}"></div>
-            </td>
-            <td>
-                <span class="shopify-variant shopify-product-{{ backend.id }}"
-                data-variantId="{{ backend.commercialId }}"></span>
-            </td>
-            <td>
-                <div class="shopify-variant shopify-product-{{ backend.id }}"
-                data-variantId="{{ backend.academicId }}"></div>
-            </td>
-          </tr>
-          {% endfor %}
-          <tr>
-            <td colspan="3">
-              Bundles
-            </td>
-          </tr>
-          {% for bundle in page.bundles %}
-          <tr>
-            <td>
-                <div class="shopify-product"
-                data-productid="{{ bundle.id }}" data-productname="{{ bundle.name }}"></div>
-            </td>
-            <td>
-                <span class="shopify-variant shopify-product-{{ bundle.id }}"
-                data-variantId="{{ bundle.commercialId }}"></span>
-            </td>
-            <td>
-                <div class="shopify-variant shopify-product-{{ bundle.id }}"
-                data-variantId="{{ bundle.academicId }}"></div>
-            </td>
-          </tr>
-          {% endfor %}
-          <tr>
-            <td colspan="3">
-              Algorithms
-            </td>
-          </tr>
           {% for algorithm in page.algorithms %}
           <tr>
             <td>
@@ -185,18 +244,31 @@ support:
             </td>
           </tr>
           {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="shopify-product-group">
+      <h2>Support</h2>
+      <table class='shopify-products'>
+        <thead>
           <tr>
-            <td colspan="3">
-              Support
-            </td>
+            <th>
+              Product
+            </th>
+            <th>
+              Price
+            </th>
           </tr>
+        </thead>
+        <tbody>
           {% for support in page.support %}
           <tr>
             <td>
               <div class="shopify-product"
               data-productid="{{ support.id }}" data-productname="{{ support.name }}"></div>
             </td>
-            <td colspan="2">
+            <td>
               <div class="shopify-single-product shopify-single-product-{{ support.id }}"
               data-productId="{{ support.id }}"></div>
           </td>
@@ -205,4 +277,5 @@ support:
         </tbody>
       </table>
     </div>
+  </div>
 </div>

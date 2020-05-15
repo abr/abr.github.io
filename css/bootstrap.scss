@@ -610,23 +610,25 @@ body.theme-purple {
 }
 
 
-/* Store */
+/* Shopify Store */
 
-.shopify-products {
-  width: 100%;
+.shopify-product-group {
+  margin-bottom: 40px;
 
-  td, th {
-    border: 1px solid black;
-  }
-  th {
-    text-align: center;
-  }
-  td {
-    padding: 10px;
-    text-align: center;
-  }
+  .shopify-products {
+    width: 100%;
 
-  .shopify-product, .shopify-variant, .shopify-single-product {
-    margin: 0 auto;
+    td, th {
+      border-color: #cccccc;
+      border-width: 1px;
+      border-style: solid;
+    }
+    th {
+      color: theme-color("primary");
+      padding: 3px 5px;
+    }
+    td {
+      padding: 10px;
+    }
   }
 }
