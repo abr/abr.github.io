@@ -180,9 +180,12 @@ const GENERALOPTIONS = {
         "font-family": "Roboto, sans-serif",
         "font-weight": "bold",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "color": "#ffffff",
 =======
 >>>>>>> 17de564... Adding Shopify Store
+=======
+>>>>>>> 17de564679648c8de9fc6b870ea611c995aca048
         ":hover": {
           "background-color": "#7da477"
         },
