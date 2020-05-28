@@ -1,93 +1,112 @@
 ---
-layout: default-store
+layout: default
+extrajs:
+  - /js/shopify.js
 
 theme: theme-yellow
 
 products:
-- name: Nengo Core + Extras
-  id: 4436279001131
-  commercialId: 31697913085995
-  academicId: 31697913118763
+  - title: Bundles
+    items:
+      - name: Nengo Developer Bundle
+        id: 4437114978347
+        commercialId: 31697978687531
+        academicId: 31697978720299
 
-- name: NengoDL
-  id: 4436640038955
-  commercialId: 31697950834731
-  academicId: 31697950867499
+      - name: Nengo Backends Bundle
+        id: 4437115732011
+        commercialId: 31697984946219
+        academicId: 31697984978987
 
-- name: NengoSPA
-  id: 4437086830635
-  commercialId: 31697965482027
-  academicId: 31697965514795
+      - name: Nengo Complete Bundle
+        id: 4437117337643
+        commercialId: 31697989697579
+        academicId: 31697989730347
 
-- name: NengoGUI
-  id: 4437089058859
-  commercialId: 31697952669739
-  academicId: 31697952702507
+  - title: General
+    items:
+      - name: Nengo Core + Extras
+        id: 4436279001131
+        commercialId: 31697913085995
+        academicId: 31697913118763
 
+      - name: NengoDL
+        id: 4436640038955
+        commercialId: 31697950834731
+        academicId: 31697950867499
 
-backends:
-- name: NengoOCL (OpenCL)
-  id: 4437090992171
-  commercialId: 31697925177387
-  academicId: 31697925210155
+      - name: NengoSPA
+        id: 4437086830635
+        commercialId: 31697965482027
+        academicId: 31697965514795
 
-- name: "NengoFPGA: Intel DE1-SoC Implementation"
-  id: 4437094105131
-  commercialId: 31697854038059
-  academicId: 31697854070827
+      - name: NengoGUI
+        id: 4437089058859
+        commercialId: 31697952669739
+        academicId: 31697952702507
 
-- name: "NengoFPGA: Xilinx PYNQ-Z1 Implementation"
-  id: 4450087174187
-  commercialId: 31740826091563
-  academicId: 31740826124331
+  - title: Backends
+    items:
+      - name: NengoOCL (OpenCL)
+        id: 4437090992171
+        commercialId: 31697925177387
+        academicId: 31697925210155
 
-- name: NengoLoihi
-  id: 4437091418155
-  commercialId: 31697956306987
-  academicId: 31697956339755
+      - name: "NengoFPGA: Intel DE1-SoC Implementation"
+        id: 4437094105131
+        commercialId: 31697854038059
+        academicId: 31697854070827
 
+      - name: "NengoFPGA: Xilinx PYNQ-Z1 Implementation"
+        id: 4450087174187
+        commercialId: 31740826091563
+        academicId: 31740826124331
 
-bundles:
-- name: Nengo Developer Bundle
-  id: 4437114978347
-  commercialId: 31697978687531
-  academicId: 31697978720299
+      - name: NengoLoihi
+        id: 4437091418155
+        commercialId: 31697956306987
+        academicId: 31697956339755
 
-- name: Nengo Backends Bundle
-  id: 4437115732011
-  commercialId: 31697984946219
-  academicId: 31697984978987
-
-- name: Nengo Complete Bundle
-  id: 4437117337643
-  commercialId: 31697989697579
-  academicId: 31697989730347
-
-
-algorithms:
-- name: Legendre Memory Units
-  id: 4437120909355
-  commercialId: 31698004607019
-  academicId: 31698004639787
-
+  - title: Algorithms
+    items:
+      - name: Legendre Memory Units
+        id: 4437120909355
+        commercialId: 31698004607019
+        academicId: 31698004639787
 
 support:
-- name: Nengo Online Community Support
-  id: 1590748676155
+  - name: Nengo Online Community Support
+    id: 1590748676155
 
-- name: Nengo Single User Enterprise Level Support
-  id: 1536202637371
+  - name: Nengo Single User Enterprise Level Support
+    id: 1536202637371
 
-- name: Nengo Single User Individual Level Support
-  id: 4437144633387
+  - name: Nengo Single User Individual Level Support
+    id: 4437144633387
 
-- name: "NengoFPGA: Intel DE1-SoC License"
-  id: 1590688645179
+  - name: "NengoFPGA: Intel DE1-SoC License"
+    id: 1590688645179
 
-- name: "NengoFPGA: Xilinx PYNQ License"
-  id: 1590692610107
-
+  - name: "NengoFPGA: Xilinx PYNQ License"
+    id: 1590692610107
 ---
+
+<script type="text/javascript">
+  /*<![CDATA[*/
+  (function() {
+    if (window.ShopifyBuy) {
+      if (window.ShopifyBuy.UI) {
+        ShopifyBuyInit();
+      } else {
+        loadScript();
+      }
+    } else {
+      loadScript();
+    }
+  })();
+  /*]]>*/
+</script>
+
 <div class="main-content gradient-top">
   <div class="container">
     <div class="row justify-content-center">
@@ -98,184 +117,86 @@ support:
       </div>
     </div>
     <div>
-
+      {% for group in page.products %}
       <div class="shopify-product-group">
-        <h2>Bundles</h2>
-        <table class='shopify-products'>
+        <h2>{{ group.title }}</h2>
+        <table class="shopify-products">
           <thead>
             <tr>
               <th>
                 Product
               </th>
               <th>
-                Commercial Use (Per Year)
+                Commercial use (per year)
               </th>
               <th>
-                Academic & Personal Use (One Time)
+                Academic and personal use (one-time)
               </th>
             </tr>
           </thead>
           <tbody>
-
-            {% for bundle in page.bundles %}
+            {% for item in group.items %}
             <tr>
               <td>
-                  <div class="shopify-product"
-                  data-productid="{{ bundle.id }}" data-productname="{{ bundle.name }}"></div>
+                <div
+                  class="shopify-product"
+                  data-productid="{{ item.id }}"
+                  data-productname="{{ item.name }}"
+                ></div>
               </td>
               <td>
-                  <span class="shopify-variant shopify-product-{{ bundle.id }}"
-                  data-variantId="{{ bundle.commercialId }}"></span>
+                <span
+                  class="shopify-variant shopify-product-{{ item.id }}"
+                  data-variantId="{{ item.commercialId }}"
+                ></span>
               </td>
               <td>
-                  <div class="shopify-variant shopify-product-{{ bundle.id }}"
-                  data-variantId="{{ bundle.academicId }}"></div>
+                <div
+                  class="shopify-variant shopify-product-{{ item.id }}"
+                  data-variantId="{{ item.academicId }}"
+                ></div>
               </td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
+      {% endfor %}
 
       <div class="shopify-product-group">
-        <h2>General</h2>
-        <table class='shopify-products'>
+        <h2>Support</h2>
+        <table class="shopify-products">
           <thead>
             <tr>
               <th>
                 Product
               </th>
               <th>
-                Commercial Use (Per Year)
-              </th>
-              <th>
-                Academic & Personal Use (One Time)
+                Price
               </th>
             </tr>
           </thead>
           <tbody>
-            {% for product in page.products %}
+            {% for item in page.support %}
             <tr>
               <td>
-                  <div class="shopify-product"
-                  data-productid="{{ product.id }}" data-productname="{{ product.name }}"></div>
+                <div
+                  class="shopify-product"
+                  data-productid="{{ item.id }}"
+                  data-productname="{{ item.name }}"
+                ></div>
               </td>
               <td>
-                  <span class="shopify-variant shopify-product-{{product.id}}"
-                  data-variantId="{{ product.commercialId }}"></span>
-              </td>
-              <td>
-                  <div class="shopify-variant shopify-product-{{product.id}}"
-                  data-variantId="{{ product.academicId }}"></div>
+                <div
+                  class="shopify-single-product shopify-single-product-{{ item.id }}"
+                  data-productId="{{ item.id }}"
+                ></div>
               </td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
-
-      <div class="shopify-product-group">
-        <h2>Backends</h2>
-        <table class='shopify-products'>
-          <thead>
-            <tr>
-              <th>
-                Product
-              </th>
-              <th>
-                Commercial Use (Per Year)
-              </th>
-              <th>
-                Academic & Personal Use (One Time)
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-              {% for backend in page.backends %}
-            <tr>
-              <td>
-                  <div class="shopify-product"
-                  data-productid="{{ backend.id }}" data-productname="{{ backend.name }}"></div>
-              </td>
-              <td>
-                  <span class="shopify-variant shopify-product-{{ backend.id }}"
-                  data-variantId="{{ backend.commercialId }}"></span>
-              </td>
-              <td>
-                  <div class="shopify-variant shopify-product-{{ backend.id }}"
-                  data-variantId="{{ backend.academicId }}"></div>
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-      </table>
-    </div>
-
-    <div class="shopify-product-group">
-      <h2>Algorithms</h2>
-      <table class='shopify-products'>
-        <thead>
-          <tr>
-            <th>
-              Product
-            </th>
-            <th>
-              Commercial Use (Per Year)
-            </th>
-            <th>
-              Academic & Personal Use (One Time)
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for algorithm in page.algorithms %}
-          <tr>
-            <td>
-              <div class="shopify-product"
-              data-productid="{{ algorithm.id }}" data-productname="{{ algorithm.name }}"></div>
-            </td>
-            <td>
-                <span class="shopify-variant shopify-product-{{ algorithm.id }}"
-                data-variantId="{{ algorithm.commercialId }}"></span>
-            </td>
-            <td>
-                <div class="shopify-variant shopify-product-{{ algorithm.id }}"
-                data-variantId="{{ algorithm.academicId }}"></div>
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-
-    <div class="shopify-product-group">
-      <h2>Support</h2>
-      <table class='shopify-products'>
-        <thead>
-          <tr>
-            <th>
-              Product
-            </th>
-            <th>
-              Price
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for support in page.support %}
-          <tr>
-            <td>
-              <div class="shopify-product"
-              data-productid="{{ support.id }}" data-productname="{{ support.name }}"></div>
-            </td>
-            <td>
-              <div class="shopify-single-product shopify-single-product-{{ support.id }}"
-              data-productId="{{ support.id }}"></div>
-          </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
     </div>
   </div>
 </div>

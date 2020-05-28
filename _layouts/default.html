@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -9,6 +9,9 @@
       gtag('js', new Date());
       gtag('config', 'UA-41658423-3');
     </script>
+    {% for js in page.extrajs %}
+    <script src="{{ js }}"></script>
+    {% endfor %}
 
     <title>Applied Brain Research</title>
     <meta charset="utf-8">

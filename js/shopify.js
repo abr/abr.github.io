@@ -104,11 +104,11 @@ const VIEWPRODUCT = {
       color: "#8bb684",
       padding: "0",
       ":hover": {
-        "background-color": "#ffffff",
+        "background-color": "transparent",
       },
-      "background-color": "#ffffff",
+      "background-color": "transparent",
       ":focus": {
-        "background-color": "#ffffff",
+        "background-color": "transparent",
       },
       "border-radius": "2px",
     },
@@ -121,6 +121,7 @@ const VIEWPRODUCT = {
     options: false,
   },
   googleFonts: ["Roboto"],
+  width: "800px",
 };
 
 const ADDPRODUCT = {
@@ -163,7 +164,6 @@ const ADDPRODUCT = {
       "padding-bottom": "3px",
     },
   },
-  layout: "horizontal",
   contents: {
     img: false,
     title: false,
@@ -173,6 +173,7 @@ const ADDPRODUCT = {
     button: false,
   },
   googleFonts: ["Roboto"],
+  width: "800px",
 };
 
 const GENERALOPTIONS = {
@@ -185,21 +186,21 @@ const GENERALOPTIONS = {
       },
     },
   },
+  modal: {
+    styles: {
+      modal: {
+        "max-width": "500px",
+      },
+    },
+  },
   modalProduct: {
     contents: {
       img: false,
-      imgWithCarousel: true,
       button: false,
       buttonWithQuantity: true,
     },
+    layout: "vertical",
     styles: {
-      product: {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px",
-        },
-      },
       button: {
         "font-family": "Roboto, sans-serif",
         "font-weight": "bold",
@@ -216,7 +217,7 @@ const GENERALOPTIONS = {
     },
     googleFonts: ["Roboto"],
     text: {
-      button: "View Product",
+      button: "Add to cart",
     },
   },
   cart: {
