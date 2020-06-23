@@ -34,6 +34,7 @@ const ShopifyBuyInit = () => {
           id: productNode.dataset.productid,
           variantId: variantNode.dataset.variantid,
           node: variantNode,
+          options: ADDPRODUCT,
         });
       }
 
@@ -46,6 +47,7 @@ const ShopifyBuyInit = () => {
           ui,
           id: productNode.dataset.productid,
           node: singleProductNode[0],
+          options: ADDPRODUCT,
         });
       }
 
@@ -53,8 +55,20 @@ const ShopifyBuyInit = () => {
         ui,
         id: productNode.dataset.productid,
         node: productNode,
-        isViewProduct: true,
+        options: VIEWPRODUCT,
         text: productNode.dataset.productname,
+      });
+    }
+
+    const supportNodes = document.getElementsByClassName("shopify-support");
+    for (let i = 0; i < supportNodes.length; i++) {
+      const supportNode = supportNodes[i];
+      generateComponent({
+        ui,
+        id: supportNode.dataset.supportid,
+        node: supportNode,
+        text: supportNode.dataset.supportname,
+        options: SUPPORTPRODUCT,
       });
     }
   });
@@ -65,10 +79,9 @@ const generateComponent = ({
   variantId,
   id,
   node,
-  isViewProduct,
+  options,
   text = "Add",
 }) => {
-  const options = isViewProduct ? VIEWPRODUCT : ADDPRODUCT;
   ui.createComponent("product", {
     id,
     variantId,
@@ -83,6 +96,8 @@ const generateComponent = ({
     },
   });
 };
+
+let _scrollY; // Used on openModal and closeModal
 
 const VIEWPRODUCT = {
   styles: {
@@ -109,6 +124,7 @@ const VIEWPRODUCT = {
       "background-color": "transparent",
       ":focus": {
         "background-color": "transparent",
+        outline: "none",
       },
       "border-radius": "2px",
     },
@@ -119,6 +135,14 @@ const VIEWPRODUCT = {
     title: false,
     price: false,
     options: false,
+  },
+  events: {
+    openModal: () => {
+      _scrollY = window.scrollY;
+      document.body.style.top = `-${_scrollY}px`;
+      document.documentElement.classList.add("no-scroll");
+      document.body.classList.add("no-scroll");
+    },
   },
   googleFonts: ["Roboto"],
   width: "800px",
@@ -155,6 +179,7 @@ const ADDPRODUCT = {
       "background-color": "#8bb684",
       ":focus": {
         "background-color": "#7da477",
+        outline: "none",
       },
       "border-radius": "2px",
       padding: "3px 10px",
@@ -162,6 +187,9 @@ const ADDPRODUCT = {
     quantityInput: {
       "padding-top": "3px",
       "padding-bottom": "3px",
+      ":focus": {
+        outline: "none",
+      },
     },
   },
   contents: {
@@ -171,6 +199,62 @@ const ADDPRODUCT = {
     options: false,
     buttonWithQuantity: true,
     button: false,
+  },
+  googleFonts: ["Roboto"],
+  width: "800px",
+};
+
+const SUPPORTPRODUCT = {
+  layout: "horizontal",
+  styles: {
+    price: {
+      "font-size": "13px",
+    },
+    prices: {
+      display: "flex",
+      "flex-direction": "column",
+      float: "left",
+      height: "100%",
+      "justify-content": "center",
+      "margin-bottom": "0",
+      "text-align": "right",
+      padding: "3px 10px 3px 0",
+      width: "50%",
+    },
+    buttonWrapper: {
+      "margin-top": "0",
+    },
+    button: {
+      "font-family": "Roboto, sans-serif",
+      "font-weight": "bold",
+      ":hover": {
+        "background-color": "#7da477",
+      },
+      "background-color": "#8bb684",
+      ":focus": {
+        "background-color": "#7da477",
+        outline: "none",
+      },
+      "border-radius": "2px",
+      height: "42px",
+      padding: "3px 10px",
+      width: "50%",
+    },
+    quantityInput: {
+      "padding-top": "3px",
+      "padding-bottom": "3px",
+      ":focus": {
+        outline: "none",
+      },
+    },
+  },
+  contents: {
+    img: false,
+    title: false,
+    price: true,
+    options: false,
+    buttonWithQuantity: false,
+    button: true,
   },
   googleFonts: ["Roboto"],
   width: "800px",
@@ -190,6 +274,18 @@ const GENERALOPTIONS = {
     styles: {
       modal: {
         "max-width": "500px",
+      },
+      overlay: {
+        "overflow-y": "hidden",
+      },
+    },
+    events: {
+      closeModal: () => {
+        document.documentElement.classList.remove("no-scroll");
+        document.body.classList.remove("no-scroll");
+        document.body.style.top = null;
+        // Firing this immediately doesn't work
+        window.requestAnimationFrame(() => window.scrollTo(0, _scrollY));
       },
     },
   },

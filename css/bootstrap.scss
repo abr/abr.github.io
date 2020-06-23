@@ -26,7 +26,7 @@ $theme-colors: (
   "purple": rgb(126, 104, 147),
   /* #7e6893 */ "info": rgb(36, 170, 170),
   /* #24AAAA */ "light": rgb(238, 241, 242),
-  /* #eef1f2 */ "dark": rgb(79, 91, 98) /* #4f5b62 */
+  /* #eef1f2 */ "dark": rgb(79, 91, 98) /* #4f5b62 */,
 );
 
 $enable-shadows: false; /* Disable shadows on elements - add manually using "shadow-" classes on elements */
@@ -675,8 +675,42 @@ body.theme-purple {
 
 /* Shopify Store */
 
+html.no-scroll {
+  overflow-y: scroll;
+}
+
+body.no-scroll {
+  overflow: visible;
+  position: fixed;
+  width: 100%;
+}
+
+.shopify-support-group {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 65px);
+  justify-content: space-around;
+
+  p, ul {
+    margin-bottom: 0.5em;
+  }
+}
+
 .shopify-product-group {
   margin-bottom: 40px;
+
+  a.btn {
+    border-radius: 2px !important;
+    box-shadow: none !important;
+  }
+
+  p, ul {
+    font-size: 14px;
+  }
+
+  ul {
+    padding-left: 1em;
+  }
 
   .shopify-products {
     width: 100%;
@@ -695,5 +729,13 @@ body.theme-purple {
     td {
       padding: 10px;
     }
+  }
+
+  .shopify-support {
+    margin-bottom: 3px;
+  }
+
+  .shopify-support:last-child {
+    margin-bottom: 0;
   }
 }
