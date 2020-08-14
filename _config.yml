@@ -61,17 +61,18 @@ collections:
     output: false
     order:
       - nengo.md
+      - nengo-bones.md
+      - nengo-dl.md
       - nengo-extras.md
       - nengo-gui.md
-      - nengo-dl.md
-      - nengo-bones.md
-      - nengo-spa.md
       - nengo-loihi.md
       - nengo-ocl.md
+      - nengo-spa.md
       - nengo-sphinx-theme.md
       - pytest-allclose
       - pytest-plt
       - pytest-rng
+      - keras-spiking.md
   services:
     output: true
     order:
