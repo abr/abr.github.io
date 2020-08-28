@@ -1,5 +1,5 @@
 ---
-name: Nengo Bones
+name: NengoBones
 external_url: https://www.nengo.ai/nengo-bones/
 latest: 2020-04-13
 versions:

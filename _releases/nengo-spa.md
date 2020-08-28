@@ -1,5 +1,5 @@
 ---
-name: Nengo SPA
+name: NengoSPA
 external_url: https://www.nengo.ai/nengo-spa/
 latest: 2020-06-23
 versions:

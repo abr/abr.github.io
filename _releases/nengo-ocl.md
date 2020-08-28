@@ -1,5 +1,5 @@
 ---
-name: Nengo OpenCL
+name: NengoOCL
 external_url: https://github.com/nengo/nengo-ocl
 latest: 2018-07-04
 versions:

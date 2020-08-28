@@ -1,5 +1,5 @@
 ---
-name: Keras Spiking
+name: KerasSpiking
 external_url: https://www.nengo.ai/keras-spiking/
 latest: 2020-08-14
 versions:

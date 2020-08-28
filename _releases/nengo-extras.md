@@ -1,5 +1,5 @@
 ---
-name: Nengo extras
+name: NengoExtras
 external_url: https://www.nengo.ai/nengo-extras/
 latest: 2019-11-15
 versions:

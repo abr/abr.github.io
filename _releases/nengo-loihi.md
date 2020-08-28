@@ -1,5 +1,5 @@
 ---
-name: Nengo Loihi
+name: NengoLoihi
 external_url: https://www.nengo.ai/nengo-loihi/
 latest: 2019-11-25
 versions:
