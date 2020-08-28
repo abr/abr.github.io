@@ -1,6 +1,6 @@
 ---
 name: NengoOCL
-external_url: https://github.com/nengo/nengo-ocl
+external_url: https://labs.nengo.ai/nengo-ocl
 latest: 2018-07-04
 versions:
   - version: 1.4.0
