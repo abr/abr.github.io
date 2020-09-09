@@ -73,6 +73,7 @@ collections:
       - pytest-plt
       - pytest-rng
       - keras-spiking.md
+      - pytorch-spiking.md
   services:
     output: true
     order:
