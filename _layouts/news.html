@@ -5,14 +5,26 @@ layout: default
 <div class="main-content gradient-top">
   <div class="container news">
     <div class="col-10 col-lg-10 col-xl-10 text-center py-5 news-title">
-      <h1 class="display-6">{{ page.title }}</h3>
-      <p class="lead m-0">{{ page.date | date: "%b %d, %Y" }}{% if page.author %}, {{ page.author }}{% endif %}</p>
+      <h1 class="display-6">{{ page.title }}</h1>
+      <p class="m-0">
+        {% if page.collection == "blog" %}
+        <span class="badge bg-red text-white">Blog post</span>
+        {% elsif page.collection == "external" %}
+        <span class="badge bg-purple text-white">External</span>
+        {% elsif page.collection == "papers" %}
+        <span class="badge bg-dark text-white">Research</span>
+        {% elsif page.collection == "press" %}
+        <span class="badge bg-primary text-white">Press release</span>
+        {% endif %}
+        <small>
+          posted {{ page.date | date: "%b %d, %Y" }}{% if page.author %} by {{
+          page.author }}{% endif %}
+        </small>
+      </p>
       <div class="title-bar"></div>
     </div>
     <div class="row justify-content-center my-5">
-      <div class="col-10 col-lg-10 col-xl-10">
-        {{ content }}
-      </div>
+      <div class="col-10 col-lg-10 col-xl-10">{{ content }}</div>
     </div>
   </div>
 </div>

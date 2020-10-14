@@ -49,6 +49,8 @@ collections:
       - nature.md
       - neurogrid.md
       - natgeo.md
+  papers:
+    output: true
   press:
     output: true
   products:

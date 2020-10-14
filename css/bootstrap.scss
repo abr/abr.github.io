@@ -350,7 +350,11 @@ ul.service-links {
 
 /* News */
 
-.blog, .external, .press {
+.news-filter button {
+  font-size: 75%;
+}
+
+.blog, .external, .papers, .press, .news {
   .badge {
     text-transform: uppercase;
   }
@@ -361,6 +365,21 @@ ul.service-links {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.paperlink, .prlink {
+  font-size: x-large;
+}
+.paperlink:before, .prlink:before {
+    content: "";
+    display: block;
+    background: url("../img/icon-documentation.svg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 0 6px 0 0;
 }
 
 

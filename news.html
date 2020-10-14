@@ -9,27 +9,40 @@ title: News
     {% include title-block.html title=page.title %}
     <div class="row justify-content-center py-5">
       <div class="col col-md-7 col-sm-10 mb-5">
-        <div class="pb-4">
+        <div class="pb-4 news-filter">
           <button class="btn btn-primary text-white" data-id="all" onclick="changeFilter(this);">All</button>
           <button class="btn btn-primary text-white" data-id="press" onclick="changeFilter(this);">Press releases</button>
+          <button class="btn btn-primary text-white" data-id="papers" onclick="changeFilter(this);">Research</button>
           <button class="btn btn-primary text-white" data-id="blog" onclick="changeFilter(this);">Blog posts</button>
-          <button class="btn btn-primary text-white" data-id="external" onclick="changeFilter(this);">External link</button>
+          <button class="btn btn-primary text-white" data-id="external" onclick="changeFilter(this);">External links</button>
         </div>
-        {% assign posts = site.blog | concat: site.external | concat: site.press | sort: "date" | reverse %}
+        {% assign posts = site.blog
+           | concat: site.external
+           | concat: site.press
+           | concat: site.papers
+           | sort: "date"
+           | reverse
+        %}
         {% for post in posts %}
         <div class="mb-5 {{ post.collection }}">
-          <h4><a href="{{ post.external_url | default: post.url }}">
+          <h4>
+            <a href="{{ post.external_url | default: post.url }}">
               {{ post.title }}
-          </a></h4>
+            </a>
+          </h4>
           <p class="mb-1">
             {% if post.collection == "blog" %}
               <span class="badge bg-red text-white">Blog post</span>
             {% elsif post.collection == "external" %}
               <span class="badge bg-purple text-white">External</span>
+            {% elsif post.collection == "papers" %}
+              <span class="badge bg-dark text-white">Research</span>
             {% elsif post.collection == "press" %}
               <span class="badge bg-primary text-white">Press release</span>
             {% endif %}
-            {{ post.date | date: "%b %d, %Y" }}{% if post.author %}, {{ post.author }}{% endif %}
+            <small>
+              posted {{ post.date | date: "%b %d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}
+            </small>
           </p>
         </div>
         {% endfor %}
@@ -97,7 +110,7 @@ title: News
 
 <script>
   const changeFilter = (btn) => {
-    const all = ['press', 'blog', 'external'];
+    const all = ['papers', 'press', 'blog', 'external'];
     const selectedFilter = btn.getAttribute('data-id');
 
     all.forEach(filter => {
