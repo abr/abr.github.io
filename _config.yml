@@ -69,11 +69,12 @@ collections:
       - nengo-ocl.md
       - nengo-spa.md
       - nengo-sphinx-theme.md
-      - pytest-allclose
-      - pytest-plt
-      - pytest-rng
+      - keras-lmu.md
       - keras-spiking.md
       - pytorch-spiking.md
+      - pytest-allclose.md
+      - pytest-plt.md
+      - pytest-rng.md
   services:
     output: true
     order:
