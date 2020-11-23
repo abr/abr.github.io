@@ -1,8 +1,10 @@
 ---
 name: NengoOCL
 external_url: https://labs.nengo.ai/nengo-ocl
-latest: 2020-09-04
+latest: 2020-11-23
 versions:
+  - version: 2.1.0
+    external_url: https://forum.nengo.ai/t/nengoocl-2-1-0-released/1479
   - version: 2.0.0
     external_url: https://forum.nengo.ai/t/nengoocl-2-0-0-released/1378
   - version: 1.4.0
