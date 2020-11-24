@@ -1,8 +1,10 @@
 ---
 name: NengoGUI
 external_url: https://github.com/nengo/nengo-gui
-latest: 2020-03-03
+latest: 2020-11-24
 versions:
+  - version: 0.4.7
+    external_url: https://github.com/nengo/nengo-gui/releases/tag/v0.4.7
   - version: 0.4.6
     external_url: https://github.com/nengo/nengo-gui/releases/tag/v0.4.6
   - version: 0.4.5
