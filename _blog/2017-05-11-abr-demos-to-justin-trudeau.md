@@ -45,7 +45,7 @@ under the supervision of Dr. Eliasmith
 at the University of Waterloo's Centre for Theoretical Neuroscience,
 and has since been extended and patented by ABR.
 The original research was
-[published in November, 2016](http://rspb.royalsocietypublishing.org/content/283/1843/20162134),
+[published in November, 2016](https://royalsocietypublishing.org/doi/full/10.1098/rspb.2016.2134),
 and Reach is now being advanced
 to increase its tool manipulation abilities
 for use in commercial applications.

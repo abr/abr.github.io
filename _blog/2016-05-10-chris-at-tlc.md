@@ -6,7 +6,7 @@ author: Trevor Bekolay
 
 <p class="lead">
   ABR co-CEO Chris Eliasmith will be talking at this year's
-  <a href="https://techleadership.ca">Tech Leadership Conference</a>
+  Tech Leadership Conference
   in Kitchener-Waterloo on May 12, 2016.
 </p>
 
