@@ -1,8 +1,10 @@
 ---
 name: NengoLoihi
 external_url: https://www.nengo.ai/nengo-loihi/
-latest: 2019-11-25
+latest: 2021-01-21
 versions:
+  - version: 1.0.0
+    external_url: https://forum.nengo.ai/t/nengoloihi-v1-0-0-released/1568
   - version: 0.10.0
     external_url: https://forum.nengo.ai/t/nengo-loihi-0-10-0-released/1011
   - version: 0.9.0
