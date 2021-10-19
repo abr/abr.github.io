@@ -1,29 +1,32 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700|Rajdhani:700');
+
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700|Rajdhani:700");
 
 /* Theme Overrides */
 $body-bg: #ffffff;
 $body-color: #111111;
-$link-color: rgb(139,182,132);
-$link-hover-color: lighten(rgb(139,182,132),10%);
-$font-family-sans-serif: "IBM Plex Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
-$font-family-header: "Rajdhani", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+$link-color: rgb(139, 182, 132);
+$link-hover-color: lighten(rgb(139, 182, 132), 10%);
+$font-family-sans-serif: "IBM Plex Sans", -apple-system, system-ui,
+  BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-header: "Rajdhani", -apple-system, system-ui, BlinkMacSystemFont,
+  "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
 
 $theme-colors: (
-  "primary": rgb(120,186,176), /* #78bab0 */
-  "secondary": rgb(139,182,132), /* #8bb684 */
-  "success": rgb(139,182,132),
-  "danger": rgb(212,110,125), /* #d46e7d */
-  "warning": rgb(249,214,134), /* #f9d686 */
-  "blue": rgb(120,186,176),
-  "green": rgb(139,182,132),
-  "red": rgb(212,110,125),
-  "yellow": rgb(249,214,134),
-  "purple": rgb(126,104,147), /* #7e6893 */
-  "info": rgb(36,170,170), /* #24AAAA */
-  "light": rgb(238,241,242), /* #eef1f2 */
-  "dark": rgb(79,91,98) /* #4f5b62 */
+  "primary": rgb(120, 186, 176),
+  /* #78bab0 */ "secondary": rgb(139, 182, 132),
+  /* #8bb684 */ "success": rgb(139, 182, 132),
+  "danger": rgb(212, 110, 125),
+  /* #d46e7d */ "warning": rgb(249, 214, 134),
+  /* #f9d686 */ "blue": rgb(120, 186, 176),
+  "green": rgb(139, 182, 132),
+  "red": rgb(212, 110, 125),
+  "yellow": rgb(249, 214, 134),
+  "purple": rgb(126, 104, 147),
+  /* #7e6893 */ "info": rgb(36, 170, 170),
+  /* #24AAAA */ "light": rgb(238, 241, 242),
+  /* #eef1f2 */ "dark": rgb(79, 91, 98) /* #4f5b62 */,
 );
 
 $enable-shadows: false; /* Disable shadows on elements - add manually using "shadow-" classes on elements */
@@ -68,8 +71,9 @@ header.header-top {
   }
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
-  background: rgba(theme-color("primary"),0.33);
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: rgba(theme-color("primary"), 0.33);
 }
 
 /* Main Content */
@@ -93,7 +97,11 @@ header.header-top {
   position: relative;
 
   > .container-fluid {
-    background: radial-gradient(circle, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.5) 50%);
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
     background-position: center;
     padding: 10rem 0;
   }
@@ -107,7 +115,7 @@ header.header-top {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('../img/circuitry.svg') no-repeat center;
+    background: url("../img/circuitry.svg") no-repeat center;
     background-size: cover;
     z-index: 1;
     opacity: 0.2;
@@ -178,7 +186,8 @@ header.header-top {
 .btn {
   font-weight: 600 !important;
   border-radius: 2px !important;
-  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.15), inset 0 1px 0 0 rgba(255,255,255,0.25) !important;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.25) !important;
   padding: 0.5rem 1.25rem !important;
 }
 
@@ -190,7 +199,7 @@ a {
 a.anchor {
   display: block;
   position: relative;
-  top: -($header-height+20);
+  top: -($header-height + 20);
   visibility: hidden;
 }
 
@@ -202,7 +211,6 @@ h5 img.nengo {
 
 .wanna-see {
   & a {
-
     p {
       &.wanna-see-card-content {
         color: theme-color(dark);
@@ -226,7 +234,7 @@ h5 img.nengo {
 
 /* Setting a fixed height to prevent slides from bouncing the page around. Set to the height of the biggest slide. */
 .testimonials {
-  .carousel-item{
+  .carousel-item {
     height: 328px;
   }
 
@@ -269,7 +277,6 @@ h5 img.nengo {
     text-align: right;
     margin-top: 1rem;
   }
-
 }
 
 .carousel {
@@ -282,7 +289,7 @@ h5 img.nengo {
 }
 
 .awards {
-  background: rgba(theme-color("primary"),0.33);
+  background: rgba(theme-color("primary"), 0.33);
   .carousel-item {
     height: 110px;
     img {
@@ -301,11 +308,10 @@ h5 img.nengo {
 
 .list-all {
   & a {
-
     &:hover {
       text-decoration: none !important;
 
-    & h3 {
+      & h3 {
         text-decoration: underline;
       }
     }
@@ -354,7 +360,11 @@ ul.service-links {
   font-size: 75%;
 }
 
-.blog, .external, .papers, .press, .news {
+.blog,
+.external,
+.papers,
+.press,
+.news {
   .badge {
     text-transform: uppercase;
   }
@@ -367,25 +377,25 @@ ul.service-links {
   }
 }
 
-.paperlink, .prlink {
+.paperlink,
+.prlink {
   font-size: x-large;
 }
-.paperlink:before, .prlink:before {
-    content: "";
-    display: block;
-    background: url("../img/icon-documentation.svg");
-    background-repeat: no-repeat;
-    background-size: 32px;
-    width: 32px;
-    height: 32px;
-    float: left;
-    margin: 0 6px 0 0;
+.paperlink:before,
+.prlink:before {
+  content: "";
+  display: block;
+  background: url("../img/icon-documentation.svg");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin: 0 6px 0 0;
 }
-
 
 /* About Us */
 .person {
-
   &-image {
     width: 100%;
     height: 250px;
@@ -416,10 +426,22 @@ ul.service-links {
   color: theme-color("dark") !important;
   line-height: 1.5 !important;
 
-  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
     color: theme-color("dark") !important;
     font-weight: 600 !important;
-    em, strong {
+    em,
+    strong {
       color: theme-color("secondary") !important;
       font-weight: 600 !important;
     }
@@ -433,7 +455,8 @@ ul.service-links {
     color: theme-color("primary") !important;
   }
 
-  .btn-primary, a.btn-primary {
+  .btn-primary,
+  a.btn-primary {
     background: theme-color("primary") !important;
     border-color: theme-color("primary") !important;
     line-height: 1.5 !important;
@@ -443,7 +466,8 @@ ul.service-links {
   }
 
   .job-list {
-    .job-desc, .job-title {
+    .job-desc,
+    .job-title {
       color: theme-color("dark") !important;
     }
 
@@ -459,7 +483,6 @@ ul.service-links {
   }
 
   .job-details {
-
     &-content.content {
       margin-bottom: 44px;
     }
@@ -489,7 +512,7 @@ ul.service-links {
 
 .consent {
   label {
-    color: lighten(theme-color("dark"),25%);
+    color: lighten(theme-color("dark"), 25%);
     font-size: 0.9rem;
     font-weight: normal;
   }
@@ -509,17 +532,20 @@ ul.service-links {
   position: relative;
 
   label {
-    color: lighten(theme-color("dark"),5%);
+    color: lighten(theme-color("dark"), 5%);
     font-size: 0.9rem;
     font-weight: normal;
     position: absolute;
     top: 0;
     left: 0;
     padding-left: 0.75rem;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
 
-  input, select, .custom-select, textarea {
+  input,
+  select,
+  .custom-select,
+  textarea {
     padding-top: 2rem;
   }
 
@@ -528,7 +554,7 @@ ul.service-links {
   }
 
   ::placeholder {
-    color: lighten(theme-color("dark"),45%);
+    color: lighten(theme-color("dark"), 45%);
     opacity: 1;
   }
 }
@@ -544,11 +570,11 @@ footer.footer-main {
 
   p {
     font-weight: 600;
-    color: lighten(theme-color("dark"),25%);
+    color: lighten(theme-color("dark"), 25%);
     margin: 1rem 0;
 
     a {
-      color: lighten(theme-color("dark"),25%);
+      color: lighten(theme-color("dark"), 25%);
       letter-spacing: 2px;
       margin: 0 1rem;
       text-transform: uppercase;
@@ -557,7 +583,13 @@ footer.footer-main {
 }
 
 /* Headers */
-h1, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+h1,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
   font-family: $font-family-header;
   letter-spacing: 3px;
 }
@@ -572,10 +604,28 @@ h1 {
   text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
   color: theme-color("dark");
   font-weight: 600;
-  em, strong {
+  em,
+  strong {
     color: theme-color("secondary");
     font-weight: 600;
   }
@@ -613,15 +663,33 @@ body.theme-purple {
 }
 
 /* Utility */
-.bg-primary-10 { background-color: rgba(theme-color("primary"),0.1); }
-.bg-primary-20 { background-color: rgba(theme-color("primary"),0.2); }
-.bg-primary-30 { background-color: rgba(theme-color("primary"),0.3); }
-.bg-primary-40 { background-color: rgba(theme-color("primary"),0.4); }
-.bg-primary-50 { background-color: rgba(theme-color("primary"),0.5); }
-.bg-primary-60 { background-color: rgba(theme-color("primary"),0.6); }
-.bg-primary-70 { background-color: rgba(theme-color("primary"),0.7); }
-.bg-primary-80 { background-color: rgba(theme-color("primary"),0.8); }
-.bg-primary-90 { background-color: rgba(theme-color("primary"),0.9); }
+.bg-primary-10 {
+  background-color: rgba(theme-color("primary"), 0.1);
+}
+.bg-primary-20 {
+  background-color: rgba(theme-color("primary"), 0.2);
+}
+.bg-primary-30 {
+  background-color: rgba(theme-color("primary"), 0.3);
+}
+.bg-primary-40 {
+  background-color: rgba(theme-color("primary"), 0.4);
+}
+.bg-primary-50 {
+  background-color: rgba(theme-color("primary"), 0.5);
+}
+.bg-primary-60 {
+  background-color: rgba(theme-color("primary"), 0.6);
+}
+.bg-primary-70 {
+  background-color: rgba(theme-color("primary"), 0.7);
+}
+.bg-primary-80 {
+  background-color: rgba(theme-color("primary"), 0.8);
+}
+.bg-primary-90 {
+  background-color: rgba(theme-color("primary"), 0.9);
+}
 
 /* ScrollReveal */
 .sr .load-hidden {
