@@ -14,7 +14,7 @@ pitch: >
 feature:
   cta:
     text: Try it free
-    link: https://nengo.ai
+    link: https://www.nengo.ai
   features:
     - title: Easy-to-use GUI
       icon: /img/icon-gui.svg
@@ -40,10 +40,10 @@ ctas:
     linkText: Follow us on Github
   - title: Commercial licenses
     description: >
-      Nengo is free to try for individuals and academic research. To
-      discuss a commercial license, contact us today.
-    link: /contact/?subject=nengo
-    linkText: Contact us
+      Nengo is free to try for individuals and academic research.
+      Commercial licenses are available for purchase.
+    link: /store/
+    linkText: Visit the store
 
 service:
   title: Services
@@ -98,5 +98,6 @@ the latest Loihi neuromorphic chip from Intel,
 or research neuromorphic chips like SpiNNaker.
 
 Nengo is free for individuals and academic research.
-For commercial licenses, please
-[contact us]({{ site.baseurl }}{% link contact.html %}/?subject=nengo).
+To register non-commercial licenses
+or to purchase commercial licenses, please
+[visit the store]({{ site.baseurl }}{% link store.html %}).

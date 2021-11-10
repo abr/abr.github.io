@@ -42,8 +42,8 @@ ctas:
     description: >
       We offer complete hardware and software integration with
       a bring-your-own-board model.
-    link: https://applied-brain-research-inc.myshopify.com/collections/nengo-fpga
-    linkText: Purchase online
+    link: /store/
+    linkText: Visit the store
 
 research:
   title: Large-scale Nengo Brain Boards
