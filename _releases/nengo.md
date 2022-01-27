@@ -1,8 +1,10 @@
 ---
 name: Nengo core
 external_url: https://www.nengo.ai/nengo/
-latest: 2020-11-17
+latest: 2022-01-27
 versions:
+  - version: 3.2.0
+    external_url: https://forum.nengo.ai/t/nengo-3-2-0-released/2048
   - version: 3.1.0
     external_url: https://forum.nengo.ai/t/nengo-3-1-0-released/1465
   - version: 3.0.0
