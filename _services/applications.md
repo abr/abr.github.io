@@ -1,7 +1,7 @@
 ---
 layout: service
 
-title: Custom apps
+title: Neuromorphic apps
 tagline: Neuromorphic applications for your business
 img: applications.jpg
 pitch: >

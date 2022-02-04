@@ -2,8 +2,8 @@ Applied Brain Research Inc. webpage
 ===================================
 
 This repository contains code and sources files
-to generate [ABR's static website](http://www.appliedbrainresearch.com/).
-It's generated with the [Jekyll](http://jekyllrb.com/)
+to generate [ABR's static website](https://www.appliedbrainresearch.com/).
+It's generated with the [Jekyll](https://jekyllrb.com/)
 static website generator.
 
 Github will build this website on each push.

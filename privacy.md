@@ -12,8 +12,8 @@ purposes.
 References to ABR products in this statement include ABR services,
 websites, apps, software, servers and devices. Our products include
 ABR Nengo, ABR Nengo Brain Boards, and the ABR websites including
-[www.appliedbrainresearch.com](http://www.appliedbrainresearch.com),
-[www.nengo.ai](http://www.nengo.ai) and other electronic services such
+[www.appliedbrainresearch.com](https://www.appliedbrainresearch.com),
+[www.nengo.ai](https://www.nengo.ai) and other electronic services such
 as our customer support application, our electronic file repositories,
 as well as other ABR products and services that display this
 statement.

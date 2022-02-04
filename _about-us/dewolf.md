@@ -6,7 +6,7 @@ img: travis.jpg
 email: travis.dewolf@appliedbrainresearch.com
 links:
   - text: Website
-    url: http://www.studywolf.com
+    url: https://www.studywolf.com
 ---
 
 Travis' research focuses on studying the brain's motor control

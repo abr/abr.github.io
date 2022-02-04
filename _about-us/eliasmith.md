@@ -16,7 +16,7 @@ understanding how the brain works. His team has developed the
 Semantic Pointer Architecture Unified Network (Spaun) which is the
 most realistic functional brain simulation yet developed.  He won
 the prestigious [2015 NSERC Polanyi Award](
-http://www.nserc-crsng.gc.ca/Prizes-Prix/Polanyi-Polanyi/Profiles-Profils/Eliasmith-Eliasmith_eng.asp)
+https://www.nserc-crsng.gc.ca/Prizes-Prix/Polanyi-Polanyi/Profiles-Profils/Eliasmith-Eliasmith_eng.asp)
 for his research.
 
 Chris is the Canada Research Chair in Theoretical Neuroscience. At
@@ -26,11 +26,12 @@ being cross-appointed to the Computer Science department. Chris has
 supervised students in each of these departments as well as in
 Biology and Psychology.
 
-Chris is the director of the [Centre for Theoretical Neuroscience (CTN)](
-http://ctn.uwaterloo.ca/) at the University of Waterloo. The
-Centre brings together researchers across many faculties as diverse
-as math, engineering, arts and science who are interested in
-computational and theoretical models of neural systems.
+Chris is the director of the [Centre for Theoretical Neuroscience
+(CTN)](https://uwaterloo.ca/centre-for-theoretical-neuroscience/) at
+the University of Waterloo. The Centre brings together researchers
+across many faculties as diverse as math, engineering, arts and
+science who are interested in computational and theoretical models of
+neural systems.
 
 The [Computational Neuroscience Research Group (CNRG)](
 http://compneuro.uwaterloo.ca/) is Chris' research lab which

@@ -6,7 +6,7 @@ img: pete.jpg
 email: peter.suma@appliedbrainresearch.com
 links:
   - text: Website
-    link: http://ca.linkedin.com/in/petersuma/
+    link: https://ca.linkedin.com/in/petersuma/
 ---
 
 Peter's love of understanding brains began at the University of

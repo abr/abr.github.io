@@ -710,12 +710,23 @@ body.no-scroll {
 
 .shopify-support-group {
   display: flex;
-  flex-direction: column;
   height: calc(100% - 65px);
+  flex-direction: column;
   justify-content: space-around;
 
   p, ul {
     margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .shopify-support-container .col-lg-3 {
+    flex-basis: 29%;
+    max-width: 29%;
+
+    &.offset-lg-1 {
+      margin-left: 3%;
+    }
   }
 }
 
@@ -760,5 +771,42 @@ body.no-scroll {
 
   .shopify-support:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  img.img-left, img.img-right {
+    display: block;
+    margin: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  img.img-left {
+    float: left;
+    margin: 20px 20px 20px -200px;
+  }
+
+  img.img-right {
+    float: right;
+    margin: 20px -200px 20px 20px;
+  }
+}
+
+.store-cta p {
+  font-size: 1rem;
+}
+
+.disclaimers {
+  margin-bottom: 2em;
+
+  a {
+    color: theme-color(dark);
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.2;
   }
 }

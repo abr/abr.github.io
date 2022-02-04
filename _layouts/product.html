@@ -1,33 +1,35 @@
 ---
 layout: default
 ---
+
 <div class="main-content gradient-top">
   <div class="container">
     <div class="row">
       <div class="col-10 col-lg-7 product-header my-5 py-0 py-sm-5">
-        <h1 class="display-4">{{ page.title }}</h1>
+        <h1 class="display-4">
+          {% if page.altTitle %}{{ page.altTitle }}{% else %}{{ page.title }}{% endif %}
+        </h1>
         <p class="lead m-0">{{ page.tagline }}</p>
         <div class="title-bar"></div>
       </div>
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-10 col-lg-6 col-xl-7">
-        {{ content }}
-      </div>
+      <div class="col-10 col-lg-6 col-xl-7">{{ content }}</div>
+      {% if page.hideimg != true %}
       <div class="col-10 col-lg-4 col-xl-3 fade-in">
         <img
           src="/img/{{ page.img }}"
-          style="width:100%;height:auto"
+          style="width:100%; height:auto;"
           class="shadow-lg rounded"
         />
       </div>
+      {% endif %}
     </div>
 
     <div class="row justify-content-center">
       <div class="col-10 col-sm-12">
         <div class="text-center my-5 p-5 bg-primary-20 rounded">
-          <h3 class="mb-0 py-0">{{ page.title }} features</h3>
           <div class="row">
             {% for feature in page.feature.features %}
             <div class="col-md-3 py-5 fade-in">
@@ -53,16 +55,12 @@ layout: default
       {% for cta in page.ctas %} {% if forloop.first == false %}
       <div class="col-10 col-lg-1"></div>
       {% endif %}
-      <div
-        class="col-10 col-lg-3 my-3 my-lg-0 shadow-lg bg-white fade-in product-box"
-      >
+      <div class="col-10 col-lg-3 my-3 my-lg-0 shadow-lg bg-white fade-in product-box">
         <div class="py-3 px-2 border-bottom border-light">
           <h4 class="text-center m-0 py-3">{{ cta.title }}</h4>
         </div>
         <div class="px-2 py-4">
-          <p>
-            {{ cta.description }}
-          </p>
+          <p>{{ cta.description }}</p>
           <div class="fixed-bottom p-4">
             <a
               class="btn btn-block btn-secondary text-white"
@@ -86,7 +84,7 @@ layout: default
       <div class="row justify-content-center">
         <div class="col-10">
           <div class="row">
-          {% for service in page.service.services %}
+            {% for service in page.service.services %}
             <div class="col-5 py-5">
               <h3>{{ service.title }}</h3>
               <p>{{ service.description }}</p>
@@ -94,7 +92,7 @@ layout: default
                 <a href="{{ service.link }}">More about {{ service.title }} &gt;</a>
               </p>
             </div>
-          {% endfor %}
+            {% endfor %}
           </div>
         </div>
       </div>

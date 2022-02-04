@@ -91,7 +91,7 @@ temporal windows of information (Voelker, 2019).
   full-loop AI "[brains](https://appliedbrainresearch.com/services/)"
   for customers in the military, self-driving car,
   IoT and smartphone markets.
-  ([www.appliedbrainresearch.com](http://www.appliedbrainresearch.com/))
+  ([www.appliedbrainresearch.com](https://www.appliedbrainresearch.com/))
 
 ### Media contacts
 

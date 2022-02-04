@@ -7,18 +7,18 @@ img: fpga-board3.png
 tagline: Own a piece of the neuromorphic revolution
 
 pitch: >
-  These inexpensive boards open neuromorphics up to anyone.
+  Running Nengo on inexpensive FGPA boards opens neuromorphics up to anyone.
   Explore and exploit the advantages of neuromorphic computing
   in the classroom, the innovation lab, or your basement.
 
 feature:
   cta:
-    text: Contact us with questions
-    link: /contact/?subject=brainboard
+    text: Purchase bitstreams
+    link: /store/
   features:
     - title: Onboard learning
       icon: /img/icon-brain2-red.svg
-    - title: Inexpensive and <br /> off-the-shelf
+    - title: Bring your own board
       icon: /img/icon-board.svg
     - title: Use with any Nengo model
       icon: /img/icon-models.svg
@@ -36,12 +36,12 @@ ctas:
     description: >
       Join a growing community of people building Nengo models
       together.
-    link: http://forum.nengo.ai
+    link: https://forum.nengo.ai
     linkText: Visit the forum
-  - title: Purchase a license
+  - title: Commercial licenses
     description: >
-      We offer complete hardware and software integration with
-      a bring-your-own-board model.
+      We offer a full software suite to integrate with
+      your inexpensive off-the-shelf FPGAs.
     link: /store/
     linkText: Visit the store
 
@@ -49,12 +49,12 @@ research:
   title: Large-scale Nengo Brain Boards
   content: >
     Our small Nengo Brain Boards are just the beginning, developed to
-    be inexpensive and targeting DE1-SoC and PYNQ-Z1 FPGA boards. These
+    be inexpensive and targeting DE1-SoC, PYNQ-Z1 and PYNQ-Z2 FPGA boards. These
     initial proof-of-concept Brain Boards offer encouraging results and
     motivate us to actively continue development! Take a look at
     [this conference paper](http://compneuro.uwaterloo.ca/publications/morcos2018.html)
-    for more information about the design and performance of our
-    early PYNQ implementation of Nengo Brain Board.
+    for more information about the design and performance of
+    the PYNQ implementation of Nengo Brain Board.
     See also, the [paper presentation](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18.pdf)
     and [talk](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18_talk.mp4)
     for further explanations.
@@ -77,7 +77,8 @@ The Nengo Brain Board implements a learning, spiking neural network
 that you can directly program from within Nengo.
 Use Nengo to build brains in hardware.
 
-These inexpensive boards open neuromorphics up to anyone.
+The Brain Board software works on inexpensive off-the-shelf
+boards, which opens neuromorphics up to anyone.
 Explore and exploit the advantages of neuromorphic computing
 in the classroom, the innovation lab, or your basement.
 

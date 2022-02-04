@@ -57,8 +57,9 @@ collections:
     output: true
     order:
       - nengo.md
-      - brainboard.md
+      - lmu.md
       - adaptivecontrol.md
+      - brainboard.md
   releases:
     output: false
     order:
