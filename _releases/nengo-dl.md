@@ -1,8 +1,10 @@
 ---
 name: NengoDL
 external_url: https://www.nengo.ai/nengo-dl/
-latest: 2021-11-09
+latest: 2022-02-10
 versions:
+  - version: 3.4.4
+    external_url: https://github.com/nengo/nengo-dl/releases/tag/v3.4.4
   - version: 3.4.3
     external_url: https://github.com/nengo/nengo-dl/releases/tag/v3.4.3
   - version: 3.4.2

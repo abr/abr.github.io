@@ -1,8 +1,10 @@
 ---
 name: KerasLMU
 external_url: https://www.nengo.ai/keras-lmu/
-latest: 2021-08-16
+latest: 2022-02-10
 versions:
+  - version: 0.4.1
+    external_url: https://github.com/nengo/keras-lmu/releases/tag/v0.4.1
   - version: 0.4.0
     external_url: https://forum.nengo.ai/t/keraslmu-0-4-0-released/1863
   - version: 0.3.1
