@@ -61,11 +61,13 @@ products:
         id: 4437094105131
         commercialId: 31697854038059
         academicId: 31697854070827
+        disabled: true
 
       - name: NengoFPGA for Xilinx PYNQ-Z1 & Z2
         id: 4450087174187
         commercialId: 31740826091563
         academicId: 31740826124331
+        disabled: true
 
   - title: Algorithms
     items:
@@ -244,6 +246,19 @@ support:
         </thead>
         <tbody>
           {% for item in group.items %}
+          {% if item.disabled %}
+          <tr class="shopify-disabled">
+            <td>
+              <div>{{ item.name }}</div>
+            </td>
+            <td>
+              <span>Please contact <a href="mailto:sales@appliedbrainresearch.com">sales@appliedbrainresearch.com</a></span>
+            </td>
+            <td>
+              <div>Please contact <a href="mailto:sales@appliedbrainresearch.com">sales@appliedbrainresearch.com</a></div>
+            </td>
+          </tr>
+          {% else %}
           <tr>
             <td>
               <div
@@ -265,6 +280,7 @@ support:
               ></div>
             </td>
           </tr>
+          {% endif %}
           {% endfor %}
         </tbody>
       </table>
