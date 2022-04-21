@@ -6,7 +6,7 @@ img: xuan.jpg
 email: xuan.choo@appliedbrainresearch.com
 links:
   - text: Website
-    url: https://sites.google.com/site/fxchoo/
+    url: https://github.com/xchoo
 ---
 
 Xuan has a rather wide set of research interests. First, he is
