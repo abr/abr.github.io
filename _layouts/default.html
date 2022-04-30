@@ -50,7 +50,12 @@
                 {% for ordered in products.order %}
                 {% for product in site.products %}
                 {% if product.path contains ordered %}
-                <a class="dropdown-item" href="{{ product.url }}">{{ product.title }}</a>
+                <a class="dropdown-item" href="{{ product.url }}">
+                  {{ product.title }}
+                  {% if product.badge %}
+                  <span class="badge bg-light text-dark">{{ product.badge }}</span>
+                  {% endif %}
+                </a>
                 {% endif %}
                 {% endfor %}
                 {% endfor %}

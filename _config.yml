@@ -58,6 +58,7 @@ collections:
     order:
       - nengo.md
       - lmu.md
+      - tsp.md
       - adaptivecontrol.md
       - brainboard.md
   releases:

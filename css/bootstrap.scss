@@ -71,9 +71,14 @@ header.header-top {
   }
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
-  background: rgba(theme-color("primary"), 0.33);
+.dropdown-item {
+  &:hover, &:focus {
+    background: rgba(theme-color("primary"), 0.33);
+  }
+
+  .badge {
+    margin-left: 8px;
+  }
 }
 
 /* Main Content */
@@ -319,6 +324,11 @@ h5 img.nengo {
       color: theme-color(dark);
       font-weight: 400;
     }
+  }
+
+  h3 .badge {
+    float: right;
+    // text-decoration: none;
   }
 }
 

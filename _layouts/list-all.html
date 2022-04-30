@@ -18,7 +18,13 @@ layout: default
         />
       </div>
       <div class="col-10 col-lg-6 col-xl-7">
-        <h3>{{ item.title }}</h3>
+        <h3>
+          {{ item.title }}
+          {% if item.badge %}
+          <span class="badge bg-light text-dark">{{ item.badge }}</span>
+          {% endif %}
+        </h3>
+
         <div>
           {{ item.pitch | markdownify }}
         </div>
