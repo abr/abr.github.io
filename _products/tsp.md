@@ -3,16 +3,15 @@ layout: product
 theme: theme-blue
 
 title: Time Series Processor
-altTitle: Optimal time series edge processor
+altTitle: Edge Time Series Processor
 badge: 2023
 img: tsp.png
 tagline: Efficient hardware for the revolutionary LMU
 
 pitch: >
-    Process speech, language, audio, biosignals, RF signals, network traffic,
-    and more at the edge using the lowest power,
-    with the fastest response, at the lowest cost,
-    with the most privacy.
+    Process time series including speech, language, audio, biosignals,
+    RF signals, network traffic, and more at the edge.
+    Our TSP provides extremely low power usage, low latency, and low cost.
 
 feature:
   cta:
@@ -29,51 +28,47 @@ feature:
       icon: /img/icon-privacy.svg
 ---
 
-Product managers for devices like cars, appliances, and IoT sensors
-are faced with 3 sub-optimal options when attempting to process
-time-series data for their devices:
+<em>{{ page.pitch }}</em>
 
-1. Process large data in the cloud---PMs incur cloud compute and latency costs
-2. Process large data on CPU/GPU---PMs pay $50-$200 and require high power.
-3. Process small data at the edge with small chips---PMs are restricted to
-   feature-limited, small models.
+The Time Series Processor chip (TSP) is based on a revolutionary
+new algorithm for AI signal processing,
+the provably **optimal** [Legendre Memory
+Unit]({{ site.baseurl }}{% link _products/lmu.md %}) (LMU) architecture.
 
-The Time Series Processor chip (TSP) is a **groundbreaking
-addition to the PMs arsenal, allowing for low-cost, power-efficient
-processing of large time-series data in a small chip for a low cost**.
+Currently, product managers for electronics, cars, appliances, and IoT sensors
+have 3 options when dealing with time series data in their devices:
 
-Now, all devices can have complex, full-featured AI in devices for
-always-on, low-power AI. Full-featured speech and language interfaces
-can affordably be designed into everyday devices without an expensive
+1. Process large data in the cloud---PMs incur cloud compute and latency costs.
+2. Process large data on CPU/GPU---PMs pay $50-$200 for hardware
+   and require significant power.
+3. Process small amounts  of data at the edge with small chips---PMs
+   are restricted to feature-limited, small models.
+
+The TSP is a **groundbreaking
+addition to the PM's arsenal, allowing for low-cost, power-efficient
+processing using large AI models for time series data**.
+
+Now, all devices can have complex, full-featured AI.
+For example, **full-featured natural speech and language interfaces**
+can be affordably designed into everyday devices without an expensive
 or inconsistent internet connection.
 
-Devices must be able to interact with their users regardless of the
-state of their connection which also saves power, increases response
-speed, accuracy and privacy while lowering costs to device makers and
-consumers.
+The TSP saves power and increases response speed, accuracy, and privacy
+while lowering costs to device makers and consumers.
 
-This chip is based on the **provably optimal** [Legendre Memory
-Unit]({{ site.baseurl }}{% link _products/lmu.md %}).
-
-- Design-ins underway in automotive, healthcare and ioT. Brings
-  revolutionary edge AI capabilities to all devices.
-- Other first customers in healthcare, consumer electronics.
-- **Full speech and natural language processing <10 mW**.
-- Production chips expected Q4 2023
-- Production chip cost is expected to be <$4 USD. Compare to over $50
-  USD for CPU / GPU with memory for full real-time speech recognition.
-- **10x to 25x cost advantage over CPU, GPU.**
-- **10x to 100x power advantage over existing algorithms computed on
-  CPU, GPU.**
-- **Algorithmic proof of optimality.**
-- Covered by many issued and pending patents.
-- Full software stack including AI model design and deployment,
-  speech, language, dialog, anomaly and sound scape networks.
+- Design-ins underway in automotive, healthcare and ioT.
+- Production chips expected Q4 2023.
+- Production chip cost is expected to be <$4 USD. Compares to full CPU/GPU
+  with memory for full real-time speech recognition at over $50 USD.
+- **10x to 25x** cost advantage over CPU / GPU.
+- **10x to 100x** power advantage over existing algorithms computed on
+  CPU / GPU.
+- Full speech and natural language processing **<10 mW**.
+- Full software stack including AI model design and deployment.
+  Custom and pre-trained networks available.
 
 First production chip quantities are being allocated now.
+Design-in and applications development services are available now.
 
-Design-in and applications development services available now.
-
-Contact <sales@appliedbrainresearch.com> to get started
-revolutionizing your market with the fullest, edge AI features for
-your device!
+Contact <sales@appliedbrainresearch.com> to start leading your market
+with revolutionary edge AI features for your device!
