@@ -1,8 +1,10 @@
 ---
 name: NengoGUI
 external_url: https://github.com/nengo/nengo-gui
-latest: 2021-06-09
+latest: 2022-05-24
 versions:
+  - version: 0.4.9
+    external_url: https://github.com/nengo/nengo-gui/releases/tag/v0.4.9
   - version: 0.4.8
     external_url: https://forum.nengo.ai/t/nengogui-0-4-8-released/1784
   - version: 0.4.7
