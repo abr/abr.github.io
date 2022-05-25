@@ -56,5 +56,5 @@ The Zynq AXI DNA IP block, along with source code and an example implementation,
 is publicly available [on GitHub](https://github.com/abr/zynq-axi-dna).
 
 For more information about NengoFPGA check out the
-[Brain Board]({{ site.baseurl }}{% link _products/brainboard.md %}) section of
+[Brain Board Bitstream]({{ site.baseurl }}{% link _products/brainboard.md %}) section of
 our website or [get in touch]({{ site.baseurl }}{% link contact.html %})!

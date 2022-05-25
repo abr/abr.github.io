@@ -2,7 +2,7 @@
 layout: product
 theme: theme-red
 
-title: Brain Board
+title: Brain Board Bitstream
 img: fpga-board3.png
 tagline: Own a piece of the neuromorphic revolution
 
@@ -52,12 +52,11 @@ research:
     be inexpensive and targeting DE1-SoC, PYNQ-Z1 and PYNQ-Z2 FPGA boards. These
     initial proof-of-concept Brain Boards offer encouraging results and
     motivate us to actively continue development! Take a look at
-    [this conference paper](http://compneuro.uwaterloo.ca/publications/morcos2018.html)
+    [this conference paper](http://compneuro.uwaterloo.ca/files/publications/morcos.2018.pdf)
     for more information about the design and performance of
     the PYNQ implementation of Nengo Brain Board.
-    See also, the [paper presentation](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18.pdf)
-    and [talk](https://github.com/bmorcos/presentations/blob/master/FPT18/NEF_on_PYNQ_FPT18_talk.mp4)
-    for further explanations.
+    See also, the [paper presentation](/img/nef-on-pynq-fpt18.pdf)
+    and [talk](https://www.youtube.com/watch?v=dj8Wlk4h1-Y) for further explanations.
 
     To make neuromorphics easy and fast to deploy at scale, beyond our currently
     available Nengo Brain Boards, we're developing larger and more capable
@@ -73,11 +72,11 @@ research:
     cases.
 ---
 
-The Nengo Brain Board implements a learning, spiking neural network
+The Nengo Brain Board Bitstream implements a learning, spiking neural network
 that you can directly program from within Nengo.
 Use Nengo to build brains in hardware.
 
-The Brain Board software works on inexpensive off-the-shelf
+The Brain Board Bitstream works on inexpensive off-the-shelf
 boards, which opens neuromorphics up to anyone.
 Explore and exploit the advantages of neuromorphic computing
 in the classroom, the innovation lab, or your basement.

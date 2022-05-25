@@ -3,7 +3,7 @@ layout: md_template
 title: Privacy policy
 ---
 
-Last Updated: April 8, 2019
+Last Updated: May 25, 2022
 
 Your privacy is important to us. This privacy statement explains the
 personal data ABR processes, how ABR processes it and for what
@@ -11,7 +11,7 @@ purposes.
 
 References to ABR products in this statement include ABR services,
 websites, apps, software, servers and devices. Our products include
-ABR Nengo, ABR Nengo Brain Boards, and the ABR websites including
+Nengo, NengoEdge, Brain Board Bitstream, and the ABR websites including
 [www.appliedbrainresearch.com](https://www.appliedbrainresearch.com),
 [www.nengo.ai](https://www.nengo.ai) and other electronic services such
 as our customer support application, our electronic file repositories,
