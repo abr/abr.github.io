@@ -56,10 +56,11 @@ collections:
   products:
     output: true
     order:
-      - nengo.md
       - lmu.md
       - tsp.md
+      - nengoedge.md
       - adaptivecontrol.md
+      - nengo.md
       - brainboard.md
   releases:
     output: false
