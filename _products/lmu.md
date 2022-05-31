@@ -57,6 +57,9 @@ service:
         Let us build an AI solution for your time series problem using LMUs.
       link: /services/lmu
 
+related:
+  - Time Series Processor
+  - NengoEdge
 ---
 
 Time series problems include processing of language, audio,

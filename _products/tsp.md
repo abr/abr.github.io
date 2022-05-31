@@ -26,6 +26,10 @@ feature:
       icon: /img/icon-wifi.svg
     - title: Give your customers privacy
       icon: /img/icon-privacy.svg
+
+related:
+  - Legendre Memory Units
+  - NengoEdge
 ---
 
 <em>{{ page.pitch }}</em>

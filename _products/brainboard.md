@@ -70,6 +70,9 @@ research:
     but has already generated promising results, showing significantly
     better performance for high bandwidth and compute intensive use
     cases.
+
+related:
+  - Nengo
 ---
 
 The Nengo Brain Board Bitstream implements a learning, spiking neural network

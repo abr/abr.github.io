@@ -27,6 +27,10 @@ feature:
       icon: /img/icon-speed.svg
     - title: Easy to use
       icon: /img/icon-rocket.svg
+
+related:
+  - Legendre Memory Units
+  - Time Series Processor
 ---
 
 <em>{{ page.pitch }}</em>

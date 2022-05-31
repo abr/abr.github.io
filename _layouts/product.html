@@ -72,6 +72,37 @@ layout: default
       </div>
       {% endfor %}
     </div>
+    {% if page.related %}
+    <div class="container">
+      <div class="row justify-content-center pt-5">
+        <div class="col-10 pt-5">
+          <h2 class="display-4">Related products</h2>
+          <div class="title-bar"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div class="row">
+            {% for related in page.related %}
+            {% assign related_page = site.products | where: 'title', related %}
+            <div class="col-5 pt-5">
+              <h3>{{ related_page[0].title }}</h3>
+              <p>{{ related_page[0].pitch }}</p>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="row">
+            {% for related in page.related %}
+            {% assign related_page = site.products | where: 'title', related %}
+            <div class="col-5 pb-5">
+              <a href="{{ related_page[0].url }}">More about {{ related_page[0].title }} &gt;</a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
     {% if page.service.services %}
     <div class="container">
       <div class="row justify-content-center pt-5">
@@ -139,20 +170,5 @@ layout: default
       {% endif %}
     </div>
     {% endif %}
-  </div>
-  <div class="awards">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-10 py-5">
-          <h3 class="text-center py-0 my-0">
-            <a
-              class="text-dark"
-              href="{{ site.baseurl }}{% link products.html %}"
-              >Explore more products &gt;</a
-            >
-          </h3>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
