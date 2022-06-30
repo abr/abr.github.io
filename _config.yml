@@ -11,6 +11,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # These we can modify.
+exclude: [Dockerfile, docker-compose.yml, .dockerignore, Gemfile.lock, Gemfile]
 encoding: UTF-8
 permalink: pretty
 

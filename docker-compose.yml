@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+  abr:
+    image: abr
+    container_name: abr
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/home/abr/src
+    command: >
+      bundle exec jekyll serve
+      --host 0.0.0.0
+      --force-polling
+      --destination /home/abr/site

@@ -7,76 +7,29 @@ It's generated with the [Jekyll](https://jekyllrb.com/)
 static website generator.
 
 Github will build this website on each push.
-If you want to build the site locally,
-you will need a Ruby environment.
 
 Build the site locally
 ======================
 
-Installation
-------------
+To simplify building locally, we include `Dockerfile` and `docker-compose.yml`
+files to easily generate a docker container that can listen for file changes.
 
-If you want to build the site just as Github builds it,
-you can install the Github pages RubyGem.
-From your cloned repository directory, do
-
-```bash
-gem install bundler
-bundle install
-```
-
-Alternatively, to install these requirements
-outside of system directories, do
+Initially, and whenever a dependency is updated or another core change is made,
+you will need to build the docker image.
 
 ```bash
-gem install --user-install bundler
-bundle install --path ~/.bundles
+docker build -t abr .
 ```
 
-This will install `bundler` and the Github pages bundle
-to your user directory.
-If you haven't already, you may have to add
-the user Gems folder to your `$PATH`.
-To do this for the current session, do
+After building, you can serve the website with
 
 ```bash
-export PATH=$HOME/.gem/ruby/<version>/bin:$PATH
+docker compose up --build
 ```
 
-where `<version>` is the version of Ruby you're using.
-To have this take effect permanently,
-add this line to your `.profile`, `.bashrc`,
-or whatever your particular shell uses for configuration.
-
-If you want to serve the page dynamically,
-then you also have to install NodeJS.
-On Debian and Debian-derivatives,
-this can be done with `sudo apt-get install nodejs`.
-For more details and install instructions on other platforms,
-see the [NodeJS install guilde](
-https://nodejs.org/en/download/package-manager/).
-
-When Github pages updates, run
-
-```bash
-bundle update
-```
-
-To build the site, run
-
-```bash
-bundle exec jekyll build
-```
-
-The site will be generated in `_site`.
-
-If you would like to serve the site locally, run
-
-```bash
-bundle exec jekyll serve
-```
-
-The site will now be served at <http://localhost:4000>.
+You can then open up <http://localhost:4000> and should see the website.
+When you change files, the served website should update to reflect
+those changes without having to rebuild the image or the container.
 
 Props
 =====
