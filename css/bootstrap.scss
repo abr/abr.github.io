@@ -297,6 +297,9 @@ h5 img.nengo {
   background: rgba(theme-color("primary"), 0.33);
   .carousel-item {
     height: 110px;
+    a {
+      color: theme-color(dark);
+    }
     img {
       height: 100%;
     }

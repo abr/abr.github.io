@@ -8,7 +8,7 @@ RUN gem install bundler -v 2.3.17
 USER abr
 WORKDIR /home/abr/src
 
-COPY Gemfile .
+COPY Gemfile Gemfile.lock ./
 RUN bundle config set path /home/abr/bundle && bundle install
 
 ADD . .
