@@ -21,43 +21,27 @@ const ShopifyBuyInit = () => {
 
     for (let i = 0; i < productNodes.length; i++) {
       const productNode = productNodes[i];
-
-      const productVariantNodes = document.getElementsByClassName(
+      console.log(productNode);
+      const singleProductNode = document.getElementsByClassName(
         `shopify-product-${productNode.dataset.productid}`
       );
 
-      for (let a = 0; a < productVariantNodes.length; a++) {
-        const variantNode = productVariantNodes[a];
-
+      if ("productname" in productNode.dataset) {
         generateComponent({
           ui,
           id: productNode.dataset.productid,
-          variantId: variantNode.dataset.variantid,
-          node: variantNode,
-          options: ADDPRODUCT,
+          node: productNode,
+          options: VIEWPRODUCT,
+          text: productNode.dataset.productname,
         });
-      }
-
-      const singleProductNode = document.getElementsByClassName(
-        `shopify-single-product-${productNode.dataset.productid}`
-      );
-
-      if (singleProductNode.length > 0) {
+      } else {
         generateComponent({
           ui,
           id: productNode.dataset.productid,
-          node: singleProductNode[0],
+          node: productNode,
           options: ADDPRODUCT,
         });
       }
-
-      generateComponent({
-        ui,
-        id: productNode.dataset.productid,
-        node: productNode,
-        options: VIEWPRODUCT,
-        text: productNode.dataset.productname,
-      });
     }
 
     const supportNodes = document.getElementsByClassName("shopify-support");
@@ -158,16 +142,22 @@ const ADDPRODUCT = {
       },
     },
     prices: {
+      display: "flex",
       margin: "0 !important",
-      float: "left",
-      width: "60%",
+      float: "right",
       "text-align": "right",
       padding: "3px 10px 3px 0",
     },
+    price: {
+      order: "2",
+    },
+    compareAt: {
+      order: "1",
+      "margin-right": "4px",
+    },
     buttonWithQuantity: {
       margin: "0 !important",
-      float: "left",
-      width: "40%",
+      float: "right",
       "text-align": "right",
     },
     button: {
@@ -190,6 +180,10 @@ const ADDPRODUCT = {
       ":focus": {
         outline: "none",
       },
+    },
+    vertical: {
+      display: "flex",
+      "justify-content": "flex-end",
     },
   },
   contents: {

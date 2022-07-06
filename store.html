@@ -6,77 +6,52 @@ extrajs:
 theme: theme-yellow
 
 products:
-  - title: Bundles
+  - title: Software
+    subTitle: Price is for a 1-year commercial license
     items:
-      - name: Nengo developer bundle
-        id: 4437114978347
-        commercialId: 31697978687531
-        academicId: 31697978720299
-
-      - name: Nengo backends bundle
-        id: 4437115732011
-        commercialId: 31697984946219
-        academicId: 31697984978987
-        disabled: true
-
       - name: Nengo complete bundle
         id: 4437117337643
-        commercialId: 31697989697579
-        academicId: 31697989730347
-        disabled: true
+        bundles:
+          - id: 4437117337643
+            text: 1 license
+          - id: 6894217265195
+            text: 2 licenses
+          - id: 6894222540843
+            text: 5 licenses
+          - text: >
+              For more than 5 licenses, please contact<br>
+              <a href="mailto:sales@appliedbrainresearch.com">
+                sales@appliedbrainresearch.com
+              </a>
 
-  - title: General
+      - name: Brain Board bitstream
+        id: 6892042485803
+        override: >
+          Please contact
+          <a href="mailto:sales@appliedbrainresearch.com">
+            sales@appliedbrainresearch.com
+          </a>
+
+  - title: Hardware
     items:
-      - name: NengoCore + NengoExtras
-        id: 4436279001131
-        commercialId: 31697913085995
-        academicId: 31697913118763
-
-      - name: NengoDL
-        id: 4436640038955
-        commercialId: 31697950834731
-        academicId: 31697950867499
-
-      - name: KerasSpiking + PyTorchSpiking
-        id: 4800760774699
-        commercialId: 32874854023211
-        academicId: 32874854055979
-
-      - name: NengoSPA
-        id: 4437086830635
-        commercialId: 31697965482027
-        academicId: 31697965514795
-
-      - name: NengoGUI
-        id: 4437089058859
-        commercialId: 31697952669739
-        academicId: 31697952702507
-
-  - title: Backends
-    items:
-      - name: NengoOCL
-        id: 4437090992171
-        commercialId: 31697925177387
-        academicId: 31697925210155
-
-      - name: NengoFPGA for Intel DE1-SoC
-        id: 4437094105131
-        commercialId: 31697854038059
-        academicId: 31697854070827
-        disabled: true
-
-      - name: NengoFPGA for Xilinx PYNQ-Z1 & Z2
-        id: 4450087174187
-        commercialId: 31740826091563
-        academicId: 31740826124331
-        disabled: true
+      - name: Time Series Processor chip
+        override: >
+          Limited quantities available in 2023. Please contact<br>
+          <a href="mailto:sales@appliedbrainresearch.com">
+            sales@appliedbrainresearch.com
+          </a>
 
   - title: Algorithms
+    subTitle: Price is for a 1-year commercial license for 1 processor
     items:
       - name: Legendre Memory Units
         id: 4437120909355
-        commercialId: 31698004607019
-        academicId: 31698004639787
+
+      - name: Adaptive Controller
+        id: 6892043141163
+
+      - name: Semantic, Time and Spatial Semantic Pointers
+        id: 6892043501611
 
 support:
   - name: Free community support
@@ -206,7 +181,7 @@ support:
                   targeting edge hardware in a user-friendly cloud platform.
                 </strong>
                 NengoEdge is ABR's latest product that is currently in
-                the alpha testing stage. Bring your own data and
+                the beta testing stage. Bring your own data and
                 leverage the power of LMUs to solve challenging time
                 series problems with AI solutions optimized
                 specifically for your desired deployment
@@ -216,48 +191,48 @@ support:
               <p>
                 We are looking for people who are building keyword
                 spotting solutions, or addressing similarly sized time
-                series problems, in low-power environments. Alpha
-                users will get free access to NengoEdge in return for
-                their feedback. If you're interested in becoming an
-                alpha user, please email us through the link below and
-                tell us why you're interested in trying NengoEdge.
+                series problems, in low-power environments. Beta users
+                will get access to NengoEdge and a $100 USD credit in
+                return for their feedback. If you're interested in
+                becoming an beta user, please email us through the
+                link below and tell us why you're interested in trying
+                NengoEdge.
               </p>
             </div>
             <a
               class="mt-3 btn btn-block btn-secondary text-white"
               target="_blank"
-              href="mailto:sales@appliedbrainresearch.com?subject=NengoEdge alpha application"
+              href="mailto:sales@appliedbrainresearch.com?subject=NengoEdge beta application"
             >
-              Apply to be an alpha user
+              Apply to be a beta user
             </a>
           </div>
         </div>
       </div>
     </div>
 
-    {% for group in page.products %}
     <div class="shopify-product-group">
-      <h2>{{ group.title }}</h2>
       <table class="shopify-products">
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Commercial use (per year)</th>
-            <th>Academic and personal use (one-time)</th>
-          </tr>
-        </thead>
         <tbody>
+          {% for group in page.products %}
+          <tr>
+            <th colspan="2">
+              <h3>
+                {{ group.title }}
+                {% if group.subTitle %}
+                <small>{{ group.subTitle }}</small>
+                {% endif %}
+              </h3>
+            </th>
+          </tr>
           {% for item in group.items %}
-          {% if item.disabled %}
+          {% if item.override %}
           <tr class="shopify-disabled">
             <td>
               <div>{{ item.name }}</div>
             </td>
             <td>
-              <span>Please contact <a href="mailto:sales@appliedbrainresearch.com">sales@appliedbrainresearch.com</a></span>
-            </td>
-            <td>
-              <div>Please contact <a href="mailto:sales@appliedbrainresearch.com">sales@appliedbrainresearch.com</a></div>
+              <span>{{ item.override }}</span>
             </td>
           </tr>
           {% else %}
@@ -270,24 +245,26 @@ support:
               ></div>
             </td>
             <td>
-              <span
-                class="shopify-variant shopify-product-{{ item.id }}"
-                data-variantId="{{ item.commercialId }}"
-              ></span>
-            </td>
-            <td>
-              <div
-                class="shopify-variant shopify-product-{{ item.id }}"
-                data-variantId="{{ item.academicId }}"
-              ></div>
+              {% if item.bundles %}
+              {% for bundle in item.bundles %}
+              <div class="shopify-bundle">
+                <span>{{ bundle.text }}</span>
+                {% if bundle.id %}
+                <span class="shopify-product" data-productid="{{ bundle.id }}"></span>
+                {% endif %}
+              </div>
+              {% endfor %}
+              {% else %}
+              <span class="shopify-product" data-productid="{{ item.id }}"></span>
+              {% endif %}
             </td>
           </tr>
           {% endif %}
           {% endfor %}
+          {% endfor %}
         </tbody>
       </table>
     </div>
-    {% endfor %}
 
     <div class="shopify-product-group shopify-support-container">
       <div class="row justify-content-center">
