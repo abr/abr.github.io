@@ -6,7 +6,7 @@ img: terry.jpg
 email: terry.stewart@appliedbrainresearch.com
 links:
   - text: Website
-    url: https://www.researchgate.net/profile/Terrence_Stewart
+    url: https://www.researchgate.net/profile/Terrence-Stewart
 ---
 
 Terry's initial training was as an engineer (B.A.Sc. in Systems
