@@ -3,7 +3,7 @@
   <div class="row justify-content-center">
     <div class="col-sm-10 col-md-5 col-xl-4">
       <div class="form-group fade-in">
-        <label for="contactName">Name</label>
+        <label for="contactName">Name *</label>
         <input type="text" class="form-control" id="contactName" name="contactName" placeholder="First Last">
       </div>
       <div class="form-group fade-in">
@@ -13,8 +13,8 @@
     </div>
     <div class="col-sm-10 col-md-5 col-xl-4">
       <div class="form-group fade-in">
-        <label for="contactEmail">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        <label for="contactEmail">Email address *</label>
+        <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="name@example.com">
       </div>
       <div class="form-group fade-in">
         <label for="contactSubject">Subject</label>
@@ -49,7 +49,7 @@
   <div class="row justify-content-center">
     <div class="col-sm-10 col-md-10 col-xl-8">
       <div class="form-group fade-in">
-        <label for="contactMessage">Message</label>
+        <label for="contactMessage">Message (must be at least 25 characters)</label>
         <textarea class="form-control" id="contactMessage" name="contactMessage" rows="3"></textarea>
       </div>
     </div>
@@ -70,33 +70,43 @@
   </div>
 </form>
 <script type="text/javascript">
-  /**
+ /**
   * Will change the subject on the contact form
   */
-  const changeSubject = (subjectParam) => {
-    const select = document.getElementById('contactSubject');
-    subjectSelect = select.value = subjectParam;
-  }
+ const changeSubject = (subjectParam) => {
+   const select = document.getElementById('contactSubject');
+   subjectSelect = select.value = subjectParam;
+ }
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const subjectParam = urlParams.get('subject');
+ const urlParams = new URLSearchParams(window.location.search);
+ const subjectParam = urlParams.get('subject');
 
-  if(subjectParam) {
-    changeSubject(subjectParam);
-  }
+ if(subjectParam) {
+   changeSubject(subjectParam);
+ }
 
-  {% if include.subject %}
-  changeSubject("{{ include.subject }}");
-  {% endif %}
+ {% if include.subject %}
+ changeSubject("{{ include.subject }}");
+ {% endif %}
 
-  /**
-  * Listens for consent change and will disable submit when not consenting
-  */
+ /** Validation */
+ const name = document.getElementById('contactName');
+ const email = document.getElementById('contactEmail');
+ const textarea = document.getElementById('contactMessage');
+ const checkbox = document.getElementById('consent');
+ const submitButton = document.getElementById('submit');
 
-  const checkbox = document.getElementById('consent');
-  const submitButton = document.getElementById('submit');
+ function setSubmitStatus() {
+   submit.disabled = !(
+     name.value.length > 0
+     && email.value.includes("@")
+     && textarea.value.length >= 25
+     && checkbox.checked
+   );
+ }
 
-  checkbox.addEventListener('change', function() {
-    submit.disabled = !this.checked;
-  });
+ name.addEventListener('input', setSubmitStatus);
+ email.addEventListener('input', setSubmitStatus);
+ textarea.addEventListener('input', setSubmitStatus);
+ checkbox.addEventListener('change', setSubmitStatus);
 </script>
