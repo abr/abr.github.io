@@ -57,6 +57,8 @@ For example, **full-featured natural speech and language interfaces**
 can be affordably designed into everyday devices without an expensive
 or inconsistent internet connection.
 
+<iframe width="100%" height="340" src="https://www.youtube-nocookie.com/embed/Fqhy4yzB4Dk" title="In car voice demo video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The TSP saves power and increases response speed, accuracy, and privacy
 while lowering costs to device makers and consumers.
 
